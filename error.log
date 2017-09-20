@@ -1,0 +1,70 @@
+[Wed Sep 20 16:10:14.546776 2017] [:error] [pid 20724:tid 1964] [client 127.0.0.1:56495] PHP Notice:  Undefined variable: a2 in C:\\xampp\\htdocs\\lds\\layout\\sidebar.php on line 97
+[Wed Sep 20 16:10:14.546776 2017] [:error] [pid 20724:tid 1964] [client 127.0.0.1:56495] PHP Notice:  Undefined variable: a3 in C:\\xampp\\htdocs\\lds\\layout\\sidebar.php on line 104
+[Wed Sep 20 16:10:14.546776 2017] [:error] [pid 20724:tid 1964] [client 127.0.0.1:56495] PHP Notice:  Undefined variable: a4 in C:\\xampp\\htdocs\\lds\\layout\\sidebar.php on line 111
+[Wed Sep 20 16:10:14.546776 2017] [:error] [pid 20724:tid 1964] [client 127.0.0.1:56495] PHP Notice:  Undefined variable: a5 in C:\\xampp\\htdocs\\lds\\layout\\sidebar.php on line 118
+[Wed Sep 20 16:10:14.578026 2017] [:error] [pid 20724:tid 1964] [client 127.0.0.1:56495] PHP Notice:  Undefined variable: a6 in C:\\xampp\\htdocs\\lds\\layout\\sidebar.php on line 125
+[Wed Sep 20 16:10:14.578026 2017] [:error] [pid 20724:tid 1964] [client 127.0.0.1:56495] PHP Notice:  Undefined variable: target in C:\\xampp\\htdocs\\lds\\layout\\home.php on line 74
+[Wed Sep 20 16:10:25.395900 2017] [:error] [pid 20724:tid 1956] [client 127.0.0.1:56500] PHP Notice:  Undefined variable: a2 in C:\\xampp\\htdocs\\lds\\layout\\sidebar.php on line 97
+[Wed Sep 20 16:10:25.395900 2017] [:error] [pid 20724:tid 1956] [client 127.0.0.1:56500] PHP Notice:  Undefined variable: a3 in C:\\xampp\\htdocs\\lds\\layout\\sidebar.php on line 104
+[Wed Sep 20 16:10:25.395900 2017] [:error] [pid 20724:tid 1956] [client 127.0.0.1:56500] PHP Notice:  Undefined variable: a4 in C:\\xampp\\htdocs\\lds\\layout\\sidebar.php on line 111
+[Wed Sep 20 16:10:25.395900 2017] [:error] [pid 20724:tid 1956] [client 127.0.0.1:56500] PHP Notice:  Undefined variable: a5 in C:\\xampp\\htdocs\\lds\\layout\\sidebar.php on line 118
+[Wed Sep 20 16:10:25.395900 2017] [:error] [pid 20724:tid 1956] [client 127.0.0.1:56500] PHP Notice:  Undefined variable: a6 in C:\\xampp\\htdocs\\lds\\layout\\sidebar.php on line 125
+[Wed Sep 20 16:10:25.395900 2017] [:error] [pid 20724:tid 1956] [client 127.0.0.1:56500] PHP Notice:  Undefined variable: target in C:\\xampp\\htdocs\\lds\\layout\\home.php on line 74
+[Wed Sep 20 16:10:29.502467 2017] [:error] [pid 20724:tid 1956] [client 127.0.0.1:56500] PHP Warning:  include(layout/store.php): failed to open stream: No such file or directory in C:\\xampp\\htdocs\\lds\\index.php on line 18, referer: http://lds.loc/?page=object
+[Wed Sep 20 16:10:29.502467 2017] [:error] [pid 20724:tid 1956] [client 127.0.0.1:56500] PHP Warning:  include(): Failed opening 'layout/store.php' for inclusion (include_path='C:\\xampp\\php\\PEAR') in C:\\xampp\\htdocs\\lds\\index.php on line 18, referer: http://lds.loc/?page=object
+[Wed Sep 20 16:10:31.788862 2017] [:error] [pid 20724:tid 1956] [client 127.0.0.1:56500] PHP Notice:  Undefined variable: b2 in C:\\xampp\\htdocs\\lds\\layout\\settings.php on line 127, referer: http://lds.loc/?page=object
+[Wed Sep 20 16:10:31.788862 2017] [:error] [pid 20724:tid 1956] [client 127.0.0.1:56500] PHP Notice:  Undefined variable: b3 in C:\\xampp\\htdocs\\lds\\layout\\settings.php on line 128, referer: http://lds.loc/?page=object
+[Wed Sep 20 16:10:31.788862 2017] [:error] [pid 20724:tid 1956] [client 127.0.0.1:56500] PHP Notice:  Undefined variable: b4 in C:\\xampp\\htdocs\\lds\\layout\\settings.php on line 129, referer: http://lds.loc/?page=object
+[Wed Sep 20 16:10:31.788862 2017] [:error] [pid 20724:tid 1956] [client 127.0.0.1:56500] PHP Notice:  Undefined variable: b5 in C:\\xampp\\htdocs\\lds\\layout\\settings.php on line 130, referer: http://lds.loc/?page=object
+[Wed Sep 20 16:10:31.788862 2017] [:error] [pid 20724:tid 1956] [client 127.0.0.1:56500] PHP Notice:  Undefined variable: b6 in C:\\xampp\\htdocs\\lds\\layout\\settings.php on line 131, referer: http://lds.loc/?page=object
+[Wed Sep 20 16:10:33.860920 2017] [:error] [pid 20724:tid 1956] [client 127.0.0.1:56500] PHP Notice:  Undefined variable: target in C:\\xampp\\htdocs\\lds\\layout\\home.php on line 74, referer: http://lds.loc/?page=settings
+[Wed Sep 20 16:15:12.608222 2017] [:error] [pid 20724:tid 1956] [client 192.168.0.5:1658] PHP Notice:  Undefined variable: a2 in C:\\xampp\\htdocs\\lds\\layout\\sidebar.php on line 97
+[Wed Sep 20 16:15:12.608222 2017] [:error] [pid 20724:tid 1956] [client 192.168.0.5:1658] PHP Notice:  Undefined variable: a3 in C:\\xampp\\htdocs\\lds\\layout\\sidebar.php on line 104
+[Wed Sep 20 16:15:12.608222 2017] [:error] [pid 20724:tid 1956] [client 192.168.0.5:1658] PHP Notice:  Undefined variable: a4 in C:\\xampp\\htdocs\\lds\\layout\\sidebar.php on line 111
+[Wed Sep 20 16:15:12.608222 2017] [:error] [pid 20724:tid 1956] [client 192.168.0.5:1658] PHP Notice:  Undefined variable: a5 in C:\\xampp\\htdocs\\lds\\layout\\sidebar.php on line 118
+[Wed Sep 20 16:15:12.608222 2017] [:error] [pid 20724:tid 1956] [client 192.168.0.5:1658] PHP Notice:  Undefined variable: a6 in C:\\xampp\\htdocs\\lds\\layout\\sidebar.php on line 125
+[Wed Sep 20 16:15:12.608222 2017] [:error] [pid 20724:tid 1956] [client 192.168.0.5:1658] PHP Notice:  Undefined variable: target in C:\\xampp\\htdocs\\lds\\layout\\home.php on line 74
+[Wed Sep 20 16:15:23.408890 2017] [:error] [pid 20724:tid 1964] [client 192.168.0.5:1662] PHP Warning:  include(layout/store.php): failed to open stream: No such file or directory in C:\\xampp\\htdocs\\lds\\index.php on line 18, referer: http://192.168.0.68/?page=object
+[Wed Sep 20 16:15:23.408890 2017] [:error] [pid 20724:tid 1964] [client 192.168.0.5:1662] PHP Warning:  include(): Failed opening 'layout/store.php' for inclusion (include_path='C:\\xampp\\php\\PEAR') in C:\\xampp\\htdocs\\lds\\index.php on line 18, referer: http://192.168.0.68/?page=object
+[Wed Sep 20 16:15:26.414819 2017] [:error] [pid 20724:tid 1964] [client 192.168.0.5:1662] PHP Notice:  Undefined variable: b2 in C:\\xampp\\htdocs\\lds\\layout\\settings.php on line 127, referer: http://192.168.0.68/?page=object
+[Wed Sep 20 16:15:26.414819 2017] [:error] [pid 20724:tid 1964] [client 192.168.0.5:1662] PHP Notice:  Undefined variable: b3 in C:\\xampp\\htdocs\\lds\\layout\\settings.php on line 128, referer: http://192.168.0.68/?page=object
+[Wed Sep 20 16:15:26.414819 2017] [:error] [pid 20724:tid 1964] [client 192.168.0.5:1662] PHP Notice:  Undefined variable: b4 in C:\\xampp\\htdocs\\lds\\layout\\settings.php on line 129, referer: http://192.168.0.68/?page=object
+[Wed Sep 20 16:15:26.414819 2017] [:error] [pid 20724:tid 1964] [client 192.168.0.5:1662] PHP Notice:  Undefined variable: b5 in C:\\xampp\\htdocs\\lds\\layout\\settings.php on line 130, referer: http://192.168.0.68/?page=object
+[Wed Sep 20 16:15:26.414819 2017] [:error] [pid 20724:tid 1964] [client 192.168.0.5:1662] PHP Notice:  Undefined variable: b6 in C:\\xampp\\htdocs\\lds\\layout\\settings.php on line 131, referer: http://192.168.0.68/?page=object
+[Wed Sep 20 16:15:30.636110 2017] [:error] [pid 20724:tid 1964] [client 192.168.0.5:1662] PHP Notice:  Undefined variable: target in C:\\xampp\\htdocs\\lds\\layout\\home.php on line 74, referer: http://192.168.0.68/?page=settings
+[Wed Sep 20 16:15:46.890654 2017] [:error] [pid 20724:tid 1964] [client 192.168.0.5:1664] PHP Notice:  Undefined variable: target in C:\\xampp\\htdocs\\lds\\layout\\home.php on line 74, referer: http://192.168.0.68/?page=object
+[Wed Sep 20 16:19:57.092251 2017] [:error] [pid 20724:tid 1964] [client 192.168.0.6:1407] PHP Notice:  Undefined variable: a2 in C:\\xampp\\htdocs\\lds\\layout\\sidebar.php on line 97
+[Wed Sep 20 16:19:57.092251 2017] [:error] [pid 20724:tid 1964] [client 192.168.0.6:1407] PHP Notice:  Undefined variable: a3 in C:\\xampp\\htdocs\\lds\\layout\\sidebar.php on line 104
+[Wed Sep 20 16:19:57.092251 2017] [:error] [pid 20724:tid 1964] [client 192.168.0.6:1407] PHP Notice:  Undefined variable: a4 in C:\\xampp\\htdocs\\lds\\layout\\sidebar.php on line 111
+[Wed Sep 20 16:19:57.092251 2017] [:error] [pid 20724:tid 1964] [client 192.168.0.6:1407] PHP Notice:  Undefined variable: a5 in C:\\xampp\\htdocs\\lds\\layout\\sidebar.php on line 118
+[Wed Sep 20 16:19:57.092251 2017] [:error] [pid 20724:tid 1964] [client 192.168.0.6:1407] PHP Notice:  Undefined variable: a6 in C:\\xampp\\htdocs\\lds\\layout\\sidebar.php on line 125
+[Wed Sep 20 16:19:57.092251 2017] [:error] [pid 20724:tid 1964] [client 192.168.0.6:1407] PHP Notice:  Undefined variable: target in C:\\xampp\\htdocs\\lds\\layout\\home.php on line 74
+[Wed Sep 20 16:21:38.077502 2017] [:error] [pid 20724:tid 1964] [client 192.168.0.6:1425] PHP Notice:  Undefined variable: a2 in C:\\xampp\\htdocs\\lds\\layout\\sidebar.php on line 97
+[Wed Sep 20 16:21:38.093126 2017] [:error] [pid 20724:tid 1964] [client 192.168.0.6:1425] PHP Notice:  Undefined variable: a3 in C:\\xampp\\htdocs\\lds\\layout\\sidebar.php on line 104
+[Wed Sep 20 16:21:38.093126 2017] [:error] [pid 20724:tid 1964] [client 192.168.0.6:1425] PHP Notice:  Undefined variable: a4 in C:\\xampp\\htdocs\\lds\\layout\\sidebar.php on line 111
+[Wed Sep 20 16:21:38.093126 2017] [:error] [pid 20724:tid 1964] [client 192.168.0.6:1425] PHP Notice:  Undefined variable: a5 in C:\\xampp\\htdocs\\lds\\layout\\sidebar.php on line 118
+[Wed Sep 20 16:21:38.093126 2017] [:error] [pid 20724:tid 1964] [client 192.168.0.6:1425] PHP Notice:  Undefined variable: a6 in C:\\xampp\\htdocs\\lds\\layout\\sidebar.php on line 125
+[Wed Sep 20 16:21:38.093126 2017] [:error] [pid 20724:tid 1964] [client 192.168.0.6:1425] PHP Notice:  Undefined variable: target in C:\\xampp\\htdocs\\lds\\layout\\home.php on line 74
+[Wed Sep 20 16:24:50.636013 2017] [:error] [pid 20724:tid 1948] [client 192.168.0.6:1445] PHP Notice:  Undefined variable: a2 in C:\\xampp\\htdocs\\lds\\layout\\sidebar.php on line 97
+[Wed Sep 20 16:24:50.636013 2017] [:error] [pid 20724:tid 1948] [client 192.168.0.6:1445] PHP Notice:  Undefined variable: a3 in C:\\xampp\\htdocs\\lds\\layout\\sidebar.php on line 104
+[Wed Sep 20 16:24:50.636513 2017] [:error] [pid 20724:tid 1948] [client 192.168.0.6:1445] PHP Notice:  Undefined variable: a4 in C:\\xampp\\htdocs\\lds\\layout\\sidebar.php on line 111
+[Wed Sep 20 16:24:50.636513 2017] [:error] [pid 20724:tid 1948] [client 192.168.0.6:1445] PHP Notice:  Undefined variable: a5 in C:\\xampp\\htdocs\\lds\\layout\\sidebar.php on line 118
+[Wed Sep 20 16:24:50.636513 2017] [:error] [pid 20724:tid 1948] [client 192.168.0.6:1445] PHP Notice:  Undefined variable: a6 in C:\\xampp\\htdocs\\lds\\layout\\sidebar.php on line 125
+[Wed Sep 20 16:24:50.637013 2017] [:error] [pid 20724:tid 1948] [client 192.168.0.6:1445] PHP Notice:  Undefined variable: target in C:\\xampp\\htdocs\\lds\\layout\\home.php on line 74
+[Wed Sep 20 16:25:14.872618 2017] [:error] [pid 20724:tid 1948] [client 192.168.0.2:1371] PHP Notice:  Undefined variable: a2 in C:\\xampp\\htdocs\\lds\\layout\\sidebar.php on line 97
+[Wed Sep 20 16:25:14.872618 2017] [:error] [pid 20724:tid 1948] [client 192.168.0.2:1371] PHP Notice:  Undefined variable: a3 in C:\\xampp\\htdocs\\lds\\layout\\sidebar.php on line 104
+[Wed Sep 20 16:25:14.872618 2017] [:error] [pid 20724:tid 1948] [client 192.168.0.2:1371] PHP Notice:  Undefined variable: a4 in C:\\xampp\\htdocs\\lds\\layout\\sidebar.php on line 111
+[Wed Sep 20 16:25:14.872618 2017] [:error] [pid 20724:tid 1948] [client 192.168.0.2:1371] PHP Notice:  Undefined variable: a5 in C:\\xampp\\htdocs\\lds\\layout\\sidebar.php on line 118
+[Wed Sep 20 16:25:14.872618 2017] [:error] [pid 20724:tid 1948] [client 192.168.0.2:1371] PHP Notice:  Undefined variable: a6 in C:\\xampp\\htdocs\\lds\\layout\\sidebar.php on line 125
+[Wed Sep 20 16:25:14.872618 2017] [:error] [pid 20724:tid 1948] [client 192.168.0.2:1371] PHP Notice:  Undefined variable: target in C:\\xampp\\htdocs\\lds\\layout\\home.php on line 74
+[Wed Sep 20 16:25:25.716676 2017] [:error] [pid 20724:tid 1964] [client 192.168.0.2:1373] PHP Notice:  Undefined variable: b2 in C:\\xampp\\htdocs\\lds\\layout\\settings.php on line 127, referer: http://192.168.0.68/?page=object
+[Wed Sep 20 16:25:25.716676 2017] [:error] [pid 20724:tid 1964] [client 192.168.0.2:1373] PHP Notice:  Undefined variable: b3 in C:\\xampp\\htdocs\\lds\\layout\\settings.php on line 128, referer: http://192.168.0.68/?page=object
+[Wed Sep 20 16:25:25.716676 2017] [:error] [pid 20724:tid 1964] [client 192.168.0.2:1373] PHP Notice:  Undefined variable: b4 in C:\\xampp\\htdocs\\lds\\layout\\settings.php on line 129, referer: http://192.168.0.68/?page=object
+[Wed Sep 20 16:25:25.716676 2017] [:error] [pid 20724:tid 1964] [client 192.168.0.2:1373] PHP Notice:  Undefined variable: b5 in C:\\xampp\\htdocs\\lds\\layout\\settings.php on line 130, referer: http://192.168.0.68/?page=object
+[Wed Sep 20 16:25:25.716676 2017] [:error] [pid 20724:tid 1964] [client 192.168.0.2:1373] PHP Notice:  Undefined variable: b6 in C:\\xampp\\htdocs\\lds\\layout\\settings.php on line 131, referer: http://192.168.0.68/?page=object
+[Wed Sep 20 16:27:34.106136 2017] [:error] [pid 20724:tid 1964] [client 192.168.0.2:1401] PHP Notice:  Undefined variable: a2 in C:\\xampp\\htdocs\\lds\\layout\\sidebar.php on line 97
+[Wed Sep 20 16:27:34.106136 2017] [:error] [pid 20724:tid 1964] [client 192.168.0.2:1401] PHP Notice:  Undefined variable: a3 in C:\\xampp\\htdocs\\lds\\layout\\sidebar.php on line 104
+[Wed Sep 20 16:27:34.106136 2017] [:error] [pid 20724:tid 1964] [client 192.168.0.2:1401] PHP Notice:  Undefined variable: a4 in C:\\xampp\\htdocs\\lds\\layout\\sidebar.php on line 111
+[Wed Sep 20 16:27:34.106136 2017] [:error] [pid 20724:tid 1964] [client 192.168.0.2:1401] PHP Notice:  Undefined variable: a5 in C:\\xampp\\htdocs\\lds\\layout\\sidebar.php on line 118
+[Wed Sep 20 16:27:34.106136 2017] [:error] [pid 20724:tid 1964] [client 192.168.0.2:1401] PHP Notice:  Undefined variable: a6 in C:\\xampp\\htdocs\\lds\\layout\\sidebar.php on line 125
+[Wed Sep 20 16:27:34.106136 2017] [:error] [pid 20724:tid 1964] [client 192.168.0.2:1401] PHP Notice:  Undefined variable: target in C:\\xampp\\htdocs\\lds\\layout\\home.php on line 74
