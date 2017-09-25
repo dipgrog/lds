@@ -232,7 +232,7 @@
 
  					<div class="col-1-4">
  						<label for="telephone">Телефон</label>
- 						<input id="telephone" type="text" name="telephone" placeholder="Телефон" value="<?php echo $telephone ?>">
+ 						<input pattern="(\d{3,5}\)\d{1,3}\-\d{1,3}\-\d{1,3}" id="telephone" type="text" name="telephone" placeholder="Телефон" value="<?php echo $telephone ?>">
  					</div>
 
  				</div>

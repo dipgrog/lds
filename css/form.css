@@ -4,11 +4,11 @@
 
 body{
     font-family: 'Open Sans', sans-serif;
-    color: #1C1C1C;
-    font-size: 11px;
+    color: #323232;
+    font-size: 12px;
     margin: 0;
     padding: 0;
-    background-color: #EAEAEA;
+    background-color: #F8F8F8;
 }
 
 a{
@@ -341,7 +341,7 @@ a:hover{
 }
 
 .btn:hover{
-	background-color: #144785;
+	background-color: #0085D9;
     color: #fff;
 }
 
@@ -354,7 +354,7 @@ a:hover{
 
 }
 table {
-
+  
     vertical-align: top;
     border: 1px solid #0e5f24;
     border-collapse: collapse;
@@ -363,8 +363,8 @@ table {
 }
 
 table th {
-    background-color: #586573; /*148533   586573*/
-    border: 1px solid #586573;
+    background-color: #006DB1; /*148533   586573*/
+    border: 1px solid #006DB1;
     color: #fff;
     padding: 5px;
 }
@@ -395,7 +395,7 @@ table tr:hover{
     width: 90px;
     height: 100%;
     position: fixed;
-    background-color: #323941; /*3E3E3E*/
+    background-color: #004068; /*3E3E3E*/
     margin: 0;
     padding: 5px;
     color: #E3E3E3;
@@ -411,7 +411,7 @@ table tr:hover{
    text-transform: none;
    display: block;
    cursor: pointer;
-   background-color: #454F59;
+   background-color: #0062A0;
    text-align: center;
    padding: 5px 0;
    margin-bottom: 5px;
@@ -425,10 +425,10 @@ table tr:hover{
     background-color: #528741;
 }*/
 .sideul .selected{
-    background-color: #5077A0;
+    background-color: #0085D9;
 }
 .sideul li:hover{
-     background-color: #6698CC ; 
+     background-color: #2AADFF ; 
 }
 
 
@@ -544,6 +544,6 @@ table tr:hover{
 }
 
 .sel{
-    background-color: #144785;
+    background-color: #0085D9;
     color: #fff;
 }
