@@ -106,7 +106,7 @@
  ?>
 
  <div class="container">
- 	<?php include ('sidebar.php') ?>
+ 	
  	<div class="lside">&nbsp</div>
  	<div id="content">
  		<div id="title">

@@ -14,7 +14,7 @@ if (isset($_GET['page'])){
 	$page = 'journal';
 }
 include('components/db_connection.php');
-
+include ('layout/sidebar.php');
 include("layout/$page.php");
 include('layout/footer.php');
 ?>

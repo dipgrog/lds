@@ -169,7 +169,7 @@ if (isset($_POST['submit'])){
 
 <div class="container">
 
-    <?php include ('sidebar.php') ?>
+    
     <?php if(isset($_GET['page'])){$page = $_GET['page'];} ?>
     <div class="lside">&nbsp</div>
     <div id="content">
@@ -190,9 +190,15 @@ if (isset($_POST['submit'])){
 
         </div>
         <div class="pad"></div>
+
+
         <div class="myform">
             <form action="" method="POST" >
+                <div class="row">
+                    <div class="col-4-8">
                 <input class="inputfield" type="text" name="name" placeholder=" <?php echo $pholder; ?>">
+                    </div>
+                
                 <?php 
                 include ('components/db_connection.php');
                 if ($target == 'master'){
@@ -215,7 +221,11 @@ if (isset($_POST['submit'])){
                 ?>
                 <input class="btn pos" type="submit" name="submit" value="Добавить">
             </form>
+            </div>
         </div>
+
+
+
 
         <div class="pad"></div>
         <div class="col-5-8">
@@ -248,12 +258,12 @@ if (isset($_POST['submit'])){
 
                     }
 
-                } else {
-
-                    $query = "SELECT * FROM {$target} ORDER BY name";
+                } elseif ($target == 'master') {
+                     $query = "SELECT * FROM master, depart WHERE master.depart = depart.id ORDER BY master.name";
+                    // $query = "SELECT * FROM {$target} ORDER BY name";
                     if ($stmt = $mysqli->prepare($query)){
                         $stmt->execute();
-                        $stmt->bind_result($id,$name,$depart);
+                        $stmt->bind_result($id,$name,$depart,$id_d,$name_d);
                         $i=0;
                         echo "<tr>";
                         echo "<th id='fst'>№</th>";
@@ -267,7 +277,7 @@ if (isset($_POST['submit'])){
                             echo "<tr>";
                             echo "<td id='fst'>{$i}</td>";
                             echo "<td>{$name}</td>";
-                            echo "<td>{$depart}</td>";
+                            echo "<td>{$name_d}</td>";
                             echo "<td id='edit'>Изменить</td>";
                             echo "<tr>";
                             }

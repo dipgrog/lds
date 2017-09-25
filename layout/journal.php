@@ -19,7 +19,7 @@
     }
  ?>
     <div class="container">
-        <?php include ('sidebar.php') ?>
+        
         <div class="lside">&nbsp</div>
         <div id="content">
             <div id="title">
@@ -28,7 +28,7 @@
             </div>
             <div class="navbar">
                 <div class="navblock">
-                    <a href="">
+                    <a href="?page=order">
                      <div  class="btn pos">Добавить</div>
                     </a>
                 </div>

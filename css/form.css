@@ -1,14 +1,74 @@
 @font-face{font-family:"Ionicons";src:url("../fonts/ionicons.eot?v=2.0.0");src:url("../fonts/ionicons.eot?v=2.0.0#iefix") format("embedded-opentype"),url("../fonts/ionicons.ttf?v=2.0.0") format("truetype"),url("../fonts/ionicons.woff?v=2.0.0") format("woff"),url("../fonts/ionicons.svg?v=2.0.0#Ionicons") format("svg");font-weight:normal;font-style:normal}
 
 
+/* --- START ------ Color Palett */
+.sideul li{
+    background-color: #2D5740;
+}
+
+body{
+    background-color: #F8F8F8;
+    color: #323232;
+}
+
+.btn{
+    background-color: #fff;
+}
+
+
+.btn:hover{
+    background-color: #3cc47c;
+    color: #fff;
+}
+.sideul li:hover{
+     background-color: #3cc47c ; 
+}
+table tr:hover{
+    background-color: #3cc47c ;
+}
+
+
+
+.sel{
+    background-color: #3cc47c;
+    color: #fff;
+}
+
+.sideul .selected{
+    background-color: #3cc47c;
+}
+
+#sidebar{
+    background-color: #1e392a; /* #004068;  *//*3E3E3E*/
+    color: #E3E3E3;
+}
+
+
+
+
+/* --- END ----- Color Palett */
+
+.btn{
+    display: inline-block;
+    /* height: 30px; */
+    width: 80px;
+    border: 1px solid #BABABA;
+    border-radius: 5px;
+    font-family: sans-serif;
+    font-size: 100%;
+    cursor: pointer;
+    text-align: center;
+    max-width: 100px;
+    vertical-align: middle;
+    padding: 6px 0;
+    /* height: 24px; */
+}
 
 body{
     font-family: 'Open Sans', sans-serif;
-    color: #323232;
     font-size: 12px;
     margin: 0;
     padding: 0;
-    background-color: #F8F8F8;
 }
 
 a{
@@ -20,12 +80,14 @@ a:hover{
 /*   background-color: #144785;*/
 }
 
-
+h1{
+    color: #1e392a;
+}
 
 .row{
     width: 100%;
     height: 45px;
-
+    display: block;
 }
 .row30{
     width: 100%;
@@ -259,15 +321,16 @@ a:hover{
 .inputfield{
     display: inline-block;
     float: left;
-	width: 250px;
-    height: 22px;
+	width: calc(100% - 10px);
+    height: 24px;
     /* margin: 0px 5px 10px 0; */
     /* padding: 5px; */
 /*    float: left;*/
-    border: 1px solid #586573;
-	/* border-radius: 4px; */
-    margin-right: 5px;
+    border: 1px solid #BABABA;
+    border-radius: 5px;
+    /* margin-right: 25px; */
     font-size: 110%;
+
 }
 
 .search{
@@ -312,38 +375,23 @@ a:hover{
     text-align: center;
     color: #fff;
 }
-.btn{
-    display: inline-block;
-    /* height: 30px; */
-    width: 80px;
-	
-    background-color: #fff;
-	border: 1px solid #586573;
-    font-family: sans-serif;
-    font-size: 100%;
-    cursor: pointer;
-    text-align: center;
-    max-width: 100px;
-    vertical-align: middle;
-    padding: 6px 0;
-    /* height: 24px; */
-}
+
+
+
+
 
 .pos{
+    display: inline-block;
     float: left;
     /*width: 15%;*/
    /* height: 30px;*/
-    display: inline-block;
 }
 
 .clearfix{
     clear: left;
 }
 
-.btn:hover{
-	background-color: #0085D9;
-    color: #fff;
-}
+
 
 .tabl {
     width: auto;
@@ -363,8 +411,8 @@ table {
 }
 
 table th {
-    background-color: #006DB1; /*148533   586573*/
-    border: 1px solid #006DB1;
+    background-color: #2D5740; /*148533   586573*/
+    border: 1px solid #2D5740;
     color: #fff;
     padding: 5px;
 }
@@ -375,13 +423,7 @@ table td {
     padding: 5px;
 }
 
-table tr{
-    background-color: #FFFFFF;
-}
 
-table tr:hover{
-    background-color: #E1E4FF;
-}
 
 #default{
     font-family: sans-serif;
@@ -390,28 +432,32 @@ table tr:hover{
     margin: 0;
 }
 
+
+
 #sidebar{
     float: left;
     width: 90px;
     height: 100%;
     position: fixed;
-    background-color: #004068; /*3E3E3E*/
+   
     margin: 0;
     padding: 5px;
-    color: #E3E3E3;
+
 }
+
 .sideul{
     list-style: none;
     margin: 0;
     padding: 0;
 }
 
+
+
 .sideul li{
    font-family: Ionicons;
    text-transform: none;
    display: block;
    cursor: pointer;
-   background-color: #0062A0;
    text-align: center;
    padding: 5px 0;
    margin-bottom: 5px;
@@ -424,12 +470,7 @@ table tr:hover{
 /*.sideul li.active{
     background-color: #528741;
 }*/
-.sideul .selected{
-    background-color: #0085D9;
-}
-.sideul li:hover{
-     background-color: #2AADFF ; 
-}
+
 
 
 
@@ -543,7 +584,3 @@ table tr:hover{
     text-align: center;
 }
 
-.sel{
-    background-color: #0085D9;
-    color: #fff;
-}
