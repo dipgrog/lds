@@ -1,6 +1,6 @@
-<div class="footer">
-	Разработка: Драгун Е.В.
-</div>
+<!-- <div class="footer">
+	
+</div> -->
 
 
 </body>

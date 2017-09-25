@@ -79,20 +79,25 @@ if (isset($_GET['page'])){
 
 }else{
   
-        $selected = 'home';
-        $a1 = 'selected';
+        $selected = 'journal';
+        $a1 = '';
+        $a2 = 'selected';
+        $a3 = '';
+        $a4 = '';
+        $a5 = '';
+        $a6 = '';
     }
 
 ?>
 <div id="sidebar">
             <ul class="sideul">
-                <a href="?page=home">
+               <!--  <a href="?page=home">
                     <li class="<?php echo $a1 ?>">
                         <span class="ion-ios-home-outline sbf"></span>
                         <br>
                         <span id="default">Главная</span>
                     </li>
-                </a>
+                </a> -->
                 <a href="?page=journal">
                     <li class="<?php echo $a2 ?>">
                         <span class="ion-ios-list-outline sbf"></span>

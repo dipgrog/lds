@@ -1,16 +1,17 @@
-<div id="wrapper">
+<div class="container">
 	<?php include ('sidebar.php') ?>
 	<div class="lside">&nbsp</div>
 	<div id="content">
 		<div id="title">
 			<h1>Оборудование на учёте</h1>
+			<!-- <h3>Перечень оборудования на обслуживании (в основном по кассам)</h3> -->
 		</div>
 		<div class="navbar">
 			<div class="navblock">
 				<a href="?target=status">
 					<div  class="btn pos">Добавить</div>
 				</a>
-				<select class="departselect">
+				<!-- <select class="list-dropdown">
 					<option>
 						Все отделы
 					</option>
@@ -23,12 +24,12 @@
 					<option>
 						ВТ
 					</option>
-				</select>
+				</select> -->
 			</div>
 			<div class="navblock">
-				<form action="" method="POST" >
-					<input class="inputfield" type="text" name="name" placeholder="Введите строку поиска">
+				<form class="formright" action="" method="POST" >
 					<input class="btn pos" type="submit" name="submit" value="Поиск">
+					<input class="inputfield" type="text" name="name" placeholder="Введите строку поиска">
 				</form>
 			</div>
 		</div>
@@ -37,35 +38,33 @@
             	<table>
             		<tr>
             			<th id="fst">№</th>
-            			<th>Статус</th>
-            			<th>Оборудование</th>
-            			
+            			<th class="table-td-4">Статус</th>
+            			<th class="table-td-6">Техника</th>
             			<th>Контрагент</th>
             			<th>Договор</th>
-            			
             			<th>Мастер</th>
             			<th id="lst">Место</th>
             			<!-- <th>Действие</th> -->
             		</tr>
             		<tr>
             			<td id='fst'>1</td>
-            			<td  class='status done'>
+            			<td>
             				<div>Обслуживание</div>
             			</td>
             			<td>Касса ШТРИХ-М</a></td>
-            			<td>ООО Контрагент<div class='date'>(85594) 2-35-78</div></td>
+            			<td>ООО Контрагент (85594) 2-35-78 </td>
             			<td>№ККТ-1723</td>
             		
             			<td>Сорокин Е.Ю.</td>
-            			<td id="lst">В работе</td>
+            			<td id="lst">Гафиатуллина 32</td>
             		</tr>
 	            	<tr>
 	            			<td id='fst'>2</td>
-	            			<td  class='status new'>
+	            			<td>
 	            				<div>Разовое</div>
 	            			</td>
 	            			<td>Принтер HP LBP-810</a></td>
-	            			<td>Сергеев А.Ф.<div class='date'>(917) 232-35-78</div></td>
+	            			<td>Сергеев А.Ф. (917) 232-35-78 </td>
 	            			<td>Без договора</td>
 	            		
 	            			<td>Сорокин Е.Ю.</td>

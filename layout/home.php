@@ -1,13 +1,14 @@
 
 
 
-    <div id="wrapper">
+    <div class="container">
         <?php include ('layout/sidebar.php') ?>
                
         <div class="lside">&nbsp</div>
         <div id="content">
             <div id="title">
                 <h1>Рабочий стол Администратора</h1>
+                <h3>Здесь должна быть краткая информация по текущему состоянию</h3>
             </div>
 
 
@@ -17,7 +18,7 @@
                     <a href="?target=status">
                      <div  class="btn pos">Новая заявка</div>
                     </a>
-                <select class="departselect">
+                <select class="list-dropdown">
                     <option>
                         Все отделы
                     </option>
@@ -70,28 +71,7 @@
                         <!-- <th>Действие</th> -->
                     </tr>
 
-                    <?php
-                    $query = "SELECT * FROM {$target}";
-                    if ($stmt = $mysqli->prepare($query)){
-                        $stmt->execute();
-                        $stmt->bind_result($id,$name);
-                        $i=0;
-                        while ($stmt->fetch()){
-                            $i++;
-                            echo "<tr>";
-                            echo "<td id='fst'>{$i}</td>";
-                            echo "<td id='edit'><a href='form.php?edit&id={$id}'>изменить</a></td>";
-                            echo "<td></td>";
-     /* статус */           echo "<td  class='status new'><div>Новый</div><div class='date'>01.02.2017</div></td>";
-                            echo "<td></td>";
-                            echo "<td></td>";
-                            echo "<td></td>";
-                            echo "<td>10</td>";
-                            // echo "<td></td>";
-                            echo "</tr>";
-                        }
-                    }
-                    ?>
+                   
 
 
                 </table>
