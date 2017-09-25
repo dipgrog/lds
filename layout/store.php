@@ -1,51 +1,58 @@
 
 <?php 
-    if (isset($_POST['submit'])){
+if (isset($_POST['submit'])){
 
-        $name = $_POST['name'];
+    $name = $_POST['name'];
 
-        if ($name !='') {
+    if ($name !='') {
             // INSERT INTO `status` (`id`, `name`) VALUES (NULL, 'asdfasdf');
-            $name = mysqli_real_escape_string($mysqli, $name);
+        $name = mysqli_real_escape_string($mysqli, $name);
 
-            $query = "INSERT INTO $target (name) VALUES ('$name')";
-            $result = mysqli_query($mysqli, $query);
-            if (!$result) {
-                $message  = 'Неверный запрос: ' . mysql_error() . "\n";
-                $message .= 'Запрос целиком: ' . $query;
-                die($message);
-            }
+        $query = "INSERT INTO $target (name) VALUES ('$name')";
+        $result = mysqli_query($mysqli, $query);
+        if (!$result) {
+            $message  = 'Неверный запрос: ' . mysql_error() . "\n";
+            $message .= 'Запрос целиком: ' . $query;
+            die($message);
         }
     }
- ?>
-    <div class="container">
-        <?php include ('sidebar.php') ?>
-        <div class="lside">&nbsp</div>
-        <div id="content">
-            <div id="title">
-                <h1>Заявки на комплектующие и расходные материалы</h1>
-                <!-- <h3>Электронная версия заявок по складу</h3> -->
-            </div>
-            <div class="navbar">
-                <div class="navblock">
-                    <a href="?target=status">
-                     <div  class="btn pos">Добавить</div>
-                    </a>
-               <!--  <select class="list-dropdown">
-                    <option>Все отделы</option>
-                    <option>ККТ</option>
-                    <option>КМТ</option>
-                    <option>ВТ</option>
-                </select> -->
-                </div>
-                <div class="navblock">
-                <form class="formright" action="" method="POST" >
-                    <input class="btn pos" type="submit" name="submit" value="Поиск">
-                    <input class="inputfield" type="text" name="name" placeholder="Введите строку поиска">
-                </form>
+}
+?>
+<div class="container">
+    <?php include ('sidebar.php') ?>
+    <div class="lside">&nbsp</div>
+    <div id="content">
+        <div id="title">
+            <h1>Заявки на комплектующие и расходные материалы</h1>
+            <!-- <h3>Электронная версия заявок по складу</h3> -->
+        </div>
+        <div class="row">
+            <div class="col-3-4">
+
+                <div class="navbar">
+                    <div class="navblock">
+                        <a href="?target=status">
+                           <div  class="btn pos">Добавить</div>
+                       </a>
+                   </div>
+                   <div class="navblock">
+                    <form class="formright" action="" method="POST" >
+                        <input class="btn pos" type="submit" name="submit" value="Поиск">
+                        <input class="inputfield" type="text" name="name" placeholder="Введите строку поиска">
+                    </form>
                 </div>
             </div>
-            <div class="pad">&nbsp</div>
+        </div>
+    </div>
+
+
+    <!-- <div class="pad">&nbsp</div> -->
+
+
+    <div class="row">
+
+        <div class="col-4-4">
+
             <div class="tabl">
                 <table>
                     <tr>
@@ -73,5 +80,12 @@
                     </tr>
                 </table>
             </div>
-        </div>
-    </div>
+
+        </div> <!-- COL end -->
+
+
+    </div> <!-- ROW end -->
+
+
+</div>
+</div>

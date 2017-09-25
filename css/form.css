@@ -3,9 +3,9 @@
 
 
 body{
-    font-family: sans-serif;
+    font-family: 'Open Sans', sans-serif;
     color: #1C1C1C;
-    font-size: 10px;
+    font-size: 11px;
     margin: 0;
     padding: 0;
     background-color: #EAEAEA;
@@ -17,7 +17,7 @@ a{
 }
 
 a:hover{
-    /* text-decoration: underline; */
+/*   background-color: #144785;*/
 }
 
 
@@ -25,6 +25,7 @@ a:hover{
 .row{
     width: 100%;
     height: 45px;
+
 }
 .row30{
     width: 100%;
@@ -138,7 +139,7 @@ a:hover{
 
 .client-form label{
     font-size: 95%;
-    font-style: oblique;
+    /*font-style: oblique;*/
     /* font-weight: bold; */
 
 }
@@ -315,7 +316,7 @@ a:hover{
     display: inline-block;
     /* height: 30px; */
     width: 80px;
-	background-image:-moz-linear-gradient(top, #fff, #ddd);
+	
     background-color: #fff;
 	border: 1px solid #586573;
     font-family: sans-serif;
@@ -340,13 +341,14 @@ a:hover{
 }
 
 .btn:hover{
-	background-image:-moz-linear-gradient(top, #187EA0, #144785); /* 528741 #18a03d, #148533 */
+	background-color: #144785;
     color: #fff;
 }
 
 .tabl {
-    width: 100%;
+    width: auto;
     height: auto;
+    /*padding: 2px;*/
 
     /* margin-left: 10px; */
 
@@ -542,6 +544,6 @@ table tr:hover{
 }
 
 .sel{
-    background-image:-moz-linear-gradient(top, #187EA0, #144785); /* 528741 #18a03d, #148533 */
+    background-color: #144785;
     color: #fff;
 }

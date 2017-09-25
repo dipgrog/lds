@@ -10,5 +10,6 @@ error_reporting(E_ALL);
 	<title>Учет ремонта оборудования</title>
 	<link rel="stylesheet" type="text/css" href="../css/form.css">
 	<link rel="stylesheet" type="text/css" href="../css/ionicons.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet"> 
 </head>
 <body>
