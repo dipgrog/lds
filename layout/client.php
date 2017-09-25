@@ -2,17 +2,11 @@
     $search = '';
     $messsage = '';
     if (isset($_GET['search'])){
-        
-
         $search = $_GET['search'];
         if ($search !=''){   
             $messsage = "Результат поиска: $search";
         }
-        
     }
-
-   
-
  ?>
 
     <div class="container">
@@ -25,15 +19,10 @@
             </div>
             <div class="navbar">
                 <div class="navblock">
-                <!-- <ul class="navul"> -->
-
                     <a href="?page=clientedit&id=new"><dip class="btn pos">Добавить</dip></a>
-                    <!-- <a href="?target=type"><li class="btn">Юр. лица</li></a> -->
-                    <!-- <a href="?target=opf"><li class="btn">Физ. лица</li></a>   -->
-                <!-- </ul> -->
                 </div>
                 <div class="navblock">
-                    
+                
                 <form class="formright" action="" method="GET" >
                     <div class="text-v-middle"><?php echo $messsage; ?></div>
                     <!-- <input class="btn pos" type="submit" name="page" value="client" text="Поиск"> -->
@@ -44,8 +33,8 @@
                 </form>
                 </div>
             </div>
-            <!-- <div class="pad"></div> -->
-            
+
+           
             <div class="pad"></div>
 
             <div class="tabl">
