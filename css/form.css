@@ -3,7 +3,7 @@
 
 /* --- START ------ Color Palett */
 .sideul li{
-    background-color: #2D5740;
+    background-color: #1e392a; /*2D5740*/
 }
 
 body{
@@ -21,7 +21,7 @@ body{
     color: #fff;
 }
 .sideul li:hover{
-     background-color: #3cc47c ; 
+     background-color: #235338 ; 
 }
 table tr:hover{
     background-color: #3cc47c ;
@@ -34,8 +34,8 @@ table tr:hover{
     color: #fff;
 }
 
-.sideul .selected{
-    background-color: #3cc47c;
+.sideul .selected{ 
+    background-color: #235338;
 }
 
 #sidebar{
@@ -66,7 +66,7 @@ table tr:hover{
 
 body{
     font-family: 'Open Sans', sans-serif;
-    font-size: 12px;
+    font-size: 11px;
     margin: 0;
     padding: 0;
 }
@@ -481,8 +481,10 @@ table td {
     /*margin-left: auto;*/
     /* margin-right: auto; */
     /* height: 1000px; */
-    width: 100% ;
+    width: 1000px ;
     min-width: 1000px; 
+    padding: auto;
+    margin: auto;
    /*  max-width: 1200px; */
     
    
@@ -562,7 +564,7 @@ table td {
     /* color: #6F6F6F; */
     border: 1px solid #586573;
     /* margin-bottom: 5px;  */
-    /* width: 412px; */
+     width: 100%; 
     /* font-size: 110%; */
 }
 
