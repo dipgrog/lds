@@ -237,7 +237,7 @@ if (isset($_POST['submit'])){
 
     <div class="row">
 
-    <div class="col-5-8">
+    <div class="col-8-8">
 
         <table>
 

@@ -1,12 +1,4 @@
-<!DOCTYPE html>
-<html>
-<head>
-	<meta charset="utf-8">
-	<title>Учет ремонта оборудования</title>
-	<link rel="stylesheet" type="text/css" href="css/form.css">
-	<link rel="stylesheet" type="text/css" href="css/ionicons.min.css">
-</head>
-<body>
+
 <?php 
 if (isset($_GET['page'])){
 	$page = $_GET['page'];
@@ -14,7 +6,10 @@ if (isset($_GET['page'])){
 	$page = 'journal';
 }
 include('components/db_connection.php');
+include ('layout/header.php');
+// echo "<div class='container'>";
 include ('layout/sidebar.php');
 include("layout/$page.php");
 include('layout/footer.php');
+// echo "</div>";
 ?>

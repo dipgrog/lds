@@ -105,6 +105,15 @@
 
  ?>
 
+
+ <?php 
+$backlink = '?page=journal';
+
+if (isset($_SERVER['HTTP_REFERER'])){
+	$backlink = $_SERVER['HTTP_REFERER'];
+}
+  ?>
+
  <div class="container">
  	
  	<div class="lside">&nbsp</div>
@@ -115,7 +124,7 @@
  		</div>
  		<div class="row30">
  			<div class="col-1-4">
- 				<a href="?page=client"><dip class="btn pos">Назад</dip></a>
+ 				<a href="<?php echo $backlink; ?>"><dip class="btn pos">Назад</dip></a>
  			</div>
  		</div>
  		<div class="addclient">
@@ -152,7 +161,7 @@
  				
  					<div class="col-1-8">	
  						<label for="contract">Договор</label>
- 						<input id="contract" type="text" name="contract" placeholder="Номер договора" value="<?php echo $contract ?>">
+ 						<input class="inputfield" id="contract" type="text" name="contract" placeholder="№ договора" value="<?php echo $contract ?>">
  					</div>
 
  					<div class="col-1-8">	
@@ -192,16 +201,16 @@
 
  					<div class="col-2-8">
  						<label for="shortname">Краткое название</label>
- 						<input id="shortname" type="text" name="shortname" placeholder="Наименование или Ф.И.О." value="<?php echo $shortname ?>">
+ 						<input class="inputfield" id="shortname" type="text" name="shortname" placeholder="Наименование или Ф.И.О." value="<?php echo $shortname ?>">
  					</div>
  					
  					<div class="col-1-8">	
  						<label for="inn">ИНН</label><br>
- 						<input id="inn" type="text" name="inn" placeholder="ИНН" value="<?php echo $inn ?>">			
+ 						<input class="inputfield" id="inn" type="text" name="inn" placeholder="ИНН" value="<?php echo $inn ?>">			
  					</div>
  					<div class="col-1-8">			
  						<label for="inn">КПП</label><br>
- 						<input id="inn" type="text" name="kpp" placeholder="КПП" value="<?php echo $kpp ?>">
+ 						<input class="inputfield" id="inn" type="text" name="kpp" placeholder="КПП" value="<?php echo $kpp ?>">
  					</div>
 
  					
@@ -211,12 +220,12 @@
  				<div class="row">
  					<div class="col-3-8">
  						<label for="name">Полное название организации</label>
- 						<input id="name" type="text" name="name" placeholder="Полное наименование" value="<?php echo $name ?>">
+ 						<input class="inputfield" id="name" type="text" name="name" placeholder="Полное наименование" value="<?php echo $name ?>">
  					</div>
 
  					<div class="col-1-8">
  						<label for="director">Директор</label>
- 						<input id="director" type="text" name="director" placeholder="Ф.И.О. Директора" value="<?php echo $director ?>">
+ 						<input class="inputfield" id="director" type="text" name="director" placeholder="Ф.И.О. Директора" value="<?php echo $director ?>">
  					</div>
 
  				</div>
@@ -226,13 +235,13 @@
 				<div class="row">
 					<div class="col-2-8">
  						<label for="adress">Адрес</label>
- 						<input id="adress" type="text" name="adress" placeholder="Адрес" value="<?php echo $adress ?>"><br>
+ 						<input class="inputfield" id="adress" type="text" name="adress" placeholder="Адрес" value="<?php echo $adress ?>"><br>
  					</div>
  					
 
  					<div class="col-1-4">
  						<label for="telephone">Телефон</label>
- 						<input pattern="(\d{3,5}\)\d{1,3}\-\d{1,3}\-\d{1,3}" id="telephone" type="text" name="telephone" placeholder="Телефон" value="<?php echo $telephone ?>">
+ 						<input class="inputfield" pattern="(\d{3,5}\)\d{1,3}\-\d{1,3}\-\d{1,3}" id="telephone" type="text" name="telephone" placeholder="Телефон" value="<?php echo $telephone ?>">
  					</div>
 
  				</div>

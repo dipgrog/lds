@@ -114,9 +114,12 @@
                             echo "</td>";
                             echo "<td>$telephone</td>";
                             echo "<td>$adress</td>";
-                            
+                            if ($inn){
+                                $inn = 'ИНН: '.$inn;
+                            }
                             if ($kpp){
-                                $cut='/';
+                                $cut='<br>';
+                                $kpp = 'КПП: '.$kpp;
                             }
                             echo "<td>$inn$cut$kpp</td>";
                             

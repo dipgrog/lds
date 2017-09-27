@@ -46,7 +46,7 @@
                 <table>
                     <tr>
                         <th id="fst">№</th>
-                        <th class="table-td-4">Дата</th>
+                        <th class="table-td-4">Дата/Статус</th>
                         <th>Контрагент</th>
                         <th class="table-td-6">Техника</th>
                         <th>Сумма</th>
@@ -65,16 +65,14 @@
                             echo "<td id='fst'>{$i}</td>";
      /* статус */           echo "<td  class='table-td-6'>
 
-                            <div>$date Принят</div>
+                            
                             <div>$date $status</div>
-                            <div>$date Выдан</div>
+                            
 
                             </td>";
                             echo "<td>$client (85594) 2-35-78</td>";
 
-                            echo "<td> $object 
-                            <div class='date'> $reason </div>
-                            </td>";
+                            echo "<td>$object</td>";
 
                             echo "<td>
                             <span>Заправка 1010 - $summa р.</span><br>
