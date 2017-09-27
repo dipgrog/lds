@@ -119,7 +119,7 @@ if (isset($_SERVER['HTTP_REFERER'])){
  	<div class="lside">&nbsp</div>
  	<div id="content">
  		<div id="title">
- 			<h1> <?php echo $title ?> </h1>
+ 			<h2> <?php echo $title ?> </h2>
  			<!-- <h3>Учет по клиентам (в основном по кассам)</h3> -->
  		</div>
  		<div class="row30">

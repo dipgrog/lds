@@ -66,7 +66,7 @@ if (isset($_GET['page'])){
         $a6 = 'selected';
 
         break;
-       
+
         default:
         $a1 = 'selected';
         $a2 = '';
@@ -78,60 +78,70 @@ if (isset($_GET['page'])){
     }
 
 }else{
-  
-        $selected = 'journal';
-        $a1 = '';
-        $a2 = 'selected';
-        $a3 = '';
-        $a4 = '';
-        $a5 = '';
-        $a6 = '';
-    }
+
+    $selected = 'journal';
+    $a1 = '';
+    $a2 = 'selected';
+    $a3 = '';
+    $a4 = '';
+    $a5 = '';
+    $a6 = '';
+}
 
 ?>
-<div id="sidebar">
-            <ul class="sideul">
-               <!--  <a href="?page=home">
-                    <li class="<?php echo $a1 ?>">
-                        <span class="ion-ios-home-outline sbf"></span>
-                        <br>
-                        <span id="default">Главная</span>
-                    </li>
-                </a> -->
-                <a href="?page=journal">
-                    <li class="<?php echo $a2 ?>">
-                        <span class="ion-ios-list-outline sbf"></span>
-                        <br>
-                        <span id="default">Журнал</span>
-                    </li>
-                </a>
-                <a href="?page=client">
-                    <li class="<?php echo $a3 ?>">
-                        <i class="ion-ios-people-outline sbf"></i>
-                        <br>
-                        <span id="default">Контрагенты</span>
-                    </li>
-                </a>
-                <a href="?page=object">
-                    <li class="<?php echo $a4 ?>">
-                        <i class="ion-ios-calculator-outline sbf"></i>
-                        <br>
-                        <span id="default">Техника</span>
-                    </li>
-                </a>
-               <a href="?page=store">
-                    <li class="<?php echo $a5 ?>">
-                        <i class="ion-ios-filing-outline sbf"></i>
-                        <br>
-                        <span id="default">Склад</span>
-                    </li>
-                </a>
-                <a href="?page=settings">
-                    <li class="<?php echo $a6 ?>">
-                        <i class="ion-ios-gear-outline sbf"></i>
-                        <br>
-                        <span id="default">Настройки</span>
-                    </li>
-                </a>
-            </ul>
+<div class="sidebar">
+
+    <a href="?page=journal">
+        <div class="side-bar-row <?php echo $a2 ?>">
+            <div class="side-bar-item"> 
+                <span class="ion-ios-list-outline sbf"></span>
+            </div> 
+
+            <span >Журнал</span>
+
         </div>
+    </a>
+
+    <a href="?page=client">
+        <div class="side-bar-row <?php echo $a3 ?>">
+            <div class="side-bar-item"> 
+                <span class="ion-ios-people-outline sbf"></span>
+            </div> 
+
+            <span>Контрагенты</span>
+        </div>
+    </a>
+
+    <a href="?page=object">
+        <div class="side-bar-row  <?php echo $a4 ?>">
+            <div class="side-bar-item">
+                <span class="ion-ios-calculator-outline sbf"></span>
+            </div> 
+
+            <span>Техника</span>
+        </div>
+    </a>
+
+
+    <a href="?page=store">
+        <div class="side-bar-row <?php echo $a5 ?>">
+            <div class="side-bar-item">
+                <span class="ion-ios-filing-outline sbf"></span>
+            </div> 
+
+            <span>Склад</span>
+        </div>
+    </a>
+
+
+    <a href="?page=settings">
+        <div class="side-bar-row <?php echo $a6 ?>">
+            <div class="side-bar-item">
+                <span class="ion-ios-gear-outline sbf"></span>
+            </div> 
+
+            <span>Настройки</span>
+        </div>
+    </a>
+
+</div>

@@ -174,7 +174,7 @@ if (isset($_POST['submit'])){
     <div class="lside">&nbsp</div>
     <div id="content">
         <div id="title">
-            <h1>Настройки справочников</h1>
+            <h2>Настройки справочников</h2>
             <!-- <h3>Предопределенные элементы для выбора в формах</h3> -->
         </div>
         <div class="navbar">

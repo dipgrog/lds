@@ -14,7 +14,7 @@
         <div class="lside">&nbsp</div>
         <div id="content">
             <div id="title">
-                <h1>Контрагенты</h1>
+                <h2>Контрагенты</h2>
                 <!-- <h3>Учет по клиентам (в основном по кассам)</h3> -->
             </div>
             <div class="navbar">
@@ -43,8 +43,7 @@
                     <tr>
                         <th id="fst">№</th>
                         <th>Контрагент</th>
-                        <th>Телефон</th>
-                        <th>Адрес</th>
+                        <th>Адрес/Телефон</th>
                         <th>ИНН/КПП</th>
                         <th>Директор</th>
                         <th>Договор</th>
@@ -112,8 +111,8 @@
                             echo "$opf $shortname";
                             echo "</a>";
                             echo "</td>";
-                            echo "<td>$telephone</td>";
-                            echo "<td>$adress</td>";
+                            
+                            echo "<td>$adress<br>$telephone</td>";
                             if ($inn){
                                 $inn = 'ИНН: '.$inn;
                             }

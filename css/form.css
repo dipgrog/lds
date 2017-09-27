@@ -2,10 +2,65 @@
 
 
 /* --- START ------ Color Palett */
-.sideul .selected{ 
+.sideul { 
     background-color: #2D772C;
     color: #FFFFFF;
 }
+
+.selected{ 
+    background-color: #E7E7E7;
+    color: #272822;
+}
+
+.sidebar{
+    float: left;
+    width: 130px;
+    height: 100%;
+    position: fixed;
+    margin: 0;
+    background-color: #2E2F29;
+    color: #fff;
+}
+
+.sidebar a{
+    color: #fff;
+}
+
+.sidebar a:hover{
+    color: #272822;
+}
+
+
+.side-bar-row{
+    width: 100%;
+    padding: 5px 0;
+    /* margin: 2px 0; */
+    height: 30px;
+}
+
+.side-bar-row:hover{
+  background-color: #E7E7E7;
+}
+
+
+.side-bar-item{
+    width: 30px;
+    height: 100%;
+    padding: 0 5px;
+    display: inline-block;
+    text-align: center;
+    vertical-align: middle;    
+}
+
+.side-bar-text{
+    margin: auto;
+    height: 100%;
+    padding: 5px;
+    display: inline-block;
+     /* color: #fff; */
+    /* vertical-align: middle; */
+}
+
 .sideul li{
     background-color: #A9FF71; /*2D5740*/
     color: #252525;
@@ -17,8 +72,8 @@
 }
 
 body{
-    background-color: #F8F8F8;
-    color: #323232;
+    background-color: #E7E7E7;
+    color: #131313;
 }
 
 .btn{
@@ -27,12 +82,16 @@ body{
 
 
 .btn:hover{
-    background-color: #3FAE3D;
+    background-color: #53544F;
     color: #fff;
 }
 
+table tr{
+    background-color: #fff ;
+}
+
 table tr:hover{
-    background-color: #A9FF71 ;
+    background-color: #D6D6D6 ;
 }
 
 
@@ -43,10 +102,7 @@ table tr:hover{
 }
 
 
-#sidebar{
-    background-color: #A9FF71; /* #004068;  *//*3E3E3E*/
-    color: #282828;
-}
+
 
 
 
@@ -78,7 +134,7 @@ body{
 
 a{
     text-decoration: none;
-    color: #3C3C3C
+    color: #000
 }
 
 a:hover{
@@ -413,7 +469,6 @@ h1{
 
 }
 table {
-  
     vertical-align: top;
     border: 1px solid #0e5f24;
     border-collapse: collapse;
@@ -422,15 +477,14 @@ table {
 }
 
 table th {
-    background-color: #2D772C; /*148533   586573*/
-    border: 1px solid #2D772C;
+    background-color: #53544F; /*148533   586573*/
+    border: 1px solid #53544F;
     color: #fff;
     padding: 5px;
 }
 
 table td {
     border: 1px solid #586573; /*0e5f24*/
-    
     padding: 5px;
 }
 
@@ -445,15 +499,7 @@ table td {
 
 
 
-#sidebar{
-    float: left;
-    width: 90px;
-    height: 100%;
-    position: fixed;
-   
-    margin: 0;
-    padding: 5px;
-}
+
 
 .sideul{
     list-style: none;
@@ -463,12 +509,14 @@ table td {
 
 
 
+
 .sideul li{
    font-family: Ionicons;
    text-transform: none;
-   display: block;
+   display: inline-block;
    cursor: pointer;
-   text-align: center;
+   vertical-align: middle;
+   /* text-align: center; */
    padding: 5px 0;
    margin-bottom: 5px;
 
@@ -485,13 +533,13 @@ table td {
 
 
 .sbf{
-    font-size: 300%;
+    font-size: 200%;
 }
 .container{
     /*margin-left: auto;*/
     /* margin-right: auto; */
     /* height: 1000px; */
-    width: 1000px ;
+    width: 100% ;
     min-width: 1000px; 
     padding: auto;
     /* margin: auto; */
@@ -508,15 +556,15 @@ table td {
     /* left: 150px; */
     /*margin: auto;*/
     /*padding: auto;*/
-    width: 85%;
+    width: 80%;
     height: vh;
-
+    
 }
 .lside{
     display: inline-block;
     float: left;
    
-    width: 110px;
+    width: 140px;
     padding: 1px;
     /* background-color: #ffff00; */
 }
