@@ -9,8 +9,10 @@
     }
  ?>
 <div class="row40">
-	<div class="col-4-4">
+		<div class="col-1-8">
 		<a href="<?php echo $add_link;?>"><dip class="btn pos">Добавить</dip></a>
+	</div>
+	<div class="col-6-8">
 
 
 		<form  action="" method="GET" >
@@ -21,5 +23,6 @@
 			<div class="text-v-middle"><?php echo $messsage; ?></div>
 
 		</form>
+
 	</div>
 </div>

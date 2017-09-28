@@ -193,7 +193,7 @@ if (isset($_POST['submit'])){
                         <form action="" method="POST" >
 
 
-                        <div class="col-2-8">
+                        <div class="col-6-8">
                             <input class="inputfield" type="text" name="name" placeholder=" <?php echo $pholder; ?>">
                         </div>
 
