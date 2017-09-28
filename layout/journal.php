@@ -95,6 +95,10 @@
                         }}?>
                 </table>
             </div>
+
+<div class="footer">
+    Разработка: Драгун Е.В.
+</div>
         </div>
 
         

@@ -8,7 +8,11 @@ if (isset($_GET['page'])){
 include('components/db_connection.php');
 include ('layout/header.php');
 // echo "<div class='container'>";
-include ('layout/sidebar.php');
+
+
+// include ('layout/sidebar.php');
+
+
 include("layout/$page.php");
 include('layout/footer.php');
 // echo "</div>";

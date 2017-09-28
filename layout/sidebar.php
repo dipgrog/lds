@@ -199,11 +199,12 @@ if (isset($_GET['page'])){
     </a>
     </li>
     </ul>
+
 </div>
 
-    <div class="page-title">
+<div class="page-title">
         <h3><?php echo $page_title; ?></h3>
 
-    </div>
+</div>
 
  </div>
