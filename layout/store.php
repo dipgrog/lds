@@ -20,7 +20,7 @@ if (isset($_POST['submit'])){
 ?>
 <div class="container">
     
-    <div class="lside">&nbsp</div>
+    <!-- <div class="lside">&nbsp</div> -->
     <div id="content">
         <div id="title">
             <h2>Заявки на комплектующие и расходные материалы</h2>

@@ -20,7 +20,7 @@
  ?>
     <div class="container">
         
-        <div class="lside">&nbsp</div>
+        <!-- <div class="lside">&nbsp</div> -->
         <div id="content">
             <div id="title">
                 <h2>Журнал учета выполненных работ</h2>

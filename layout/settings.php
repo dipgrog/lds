@@ -171,7 +171,7 @@ if (isset($_POST['submit'])){
 
 
     <?php if(isset($_GET['page'])){$page = $_GET['page'];} ?>
-    <div class="lside">&nbsp</div>
+    <!-- <div class="lside">&nbsp</div> -->
     <div id="content">
         <div id="title">
             <h2>Настройки справочников</h2>

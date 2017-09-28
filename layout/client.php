@@ -11,7 +11,7 @@
 
     <div class="container">
          
-        <div class="lside">&nbsp</div>
+        <!-- <div class="lside">&nbsp</div> -->
         <div id="content">
             <div id="title">
                 <h2>Контрагенты</h2>
@@ -108,7 +108,9 @@
                             echo "<td id='fst'>{$i}</td>";
                             echo "<td>";
                             echo "<a href='?page=clientedit&id=$id'>";
+                            echo "<div class='fill'>";
                             echo "$opf $shortname";
+                            echo "</div>";
                             echo "</a>";
                             echo "</td>";
                             

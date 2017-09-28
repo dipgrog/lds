@@ -1,6 +1,6 @@
 <div class="container">
 	
-	<div class="lside">&nbsp</div>
+	<!-- <div class="lside">&nbsp</div> -->
 	<div id="content">
 		<div id="title">
 			<h2>Техника на учёте</h2>

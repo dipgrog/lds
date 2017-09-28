@@ -116,7 +116,7 @@ if (isset($_SERVER['HTTP_REFERER'])){
 
  <div class="container">
  	
- 	<div class="lside">&nbsp</div>
+ 	<!-- <div class="lside">&nbsp</div> -->
  	<div id="content">
  		<div id="title">
  			<h2> <?php echo $title ?> </h2>
