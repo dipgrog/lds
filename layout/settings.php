@@ -173,11 +173,8 @@ if (isset($_POST['submit'])){
     <?php if(isset($_GET['page'])){$page = $_GET['page'];} ?>
     <!-- <div class="lside">&nbsp</div> -->
     <div id="content">
-        <div id="title">
-            <h2>Настройки справочников</h2>
-            <!-- <h3>Предопределенные элементы для выбора в формах</h3> -->
-        </div>
-        <div class="navbar">
+        
+        <div class="settings-navbar">
 
             <a href="?page=<?php echo $page ?>&target=status" class="btn <?php echo $b1 ?> ">Статусы</a>
             <a href="?page=<?php echo $page?>&target=type" class="btn <?php echo $b2 ?>">Типы</a>

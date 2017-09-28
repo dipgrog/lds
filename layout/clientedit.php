@@ -74,7 +74,7 @@
  		$id = $_GET['id'];
 
  		if ($id == 'new'){
- 			$title = 'Добавление контрагента';
+ 			$page_title = 'Добавление контрагента';
  			$shortname = '';
  			$name =  '';
  			$opf = '';
@@ -94,7 +94,7 @@
  				$stmt->bind_result($idclient,$name,$shortname,$inn,$kpp,$adress,$telephone,$director,$contract,$master,$opf);
  				$stmt->fetch();
 
- 				$title = "Редактирование $opf $shortname";
+ 				$$page_title = "Редактирование $opf $shortname";
  				$stmt->close();
  			}
  			$mysqli->close();
@@ -118,11 +118,8 @@
  	
  	<!-- <div class="lside">&nbsp</div> -->
  	<div id="content">
- 		<div id="title">
- 			<h2> <?php echo $title ?> </h2>
- 			<!-- <h3>Учет по клиентам (в основном по кассам)</h3> -->
- 		</div>
- 		<div class="row">
+ 		
+ 		<div class="row40">
  			<div class="col-1-4">
  				<a href="<?php echo $backlink; ?>"><dip class="btn pos">Назад</dip></a>
  			</div>
@@ -134,7 +131,7 @@
  				
  				<div class="row"> <!--****************** BIG ROW ********************-->
 
- 					<div class="col-2-8">  <!--1111111111111111 START 1111111111111111 -->
+ 					<div class="col-3-8">  <!--1111111111111111 START 1111111111111111 -->
  						<div class="row-title">
  							<label for="opf">Организационно правовая форма</label>
  						</div>
@@ -207,7 +204,7 @@
 
 
  				<div class="row"> <!--****************** BIG ROW ********************-->
- 					<div class="col-2-8">	
+ 					<div class="col-3-8">	
  						<div class="row-title">
  							<label for="shortname">Краткое название</label>
  						</div>
@@ -246,7 +243,7 @@
  						</div>
  					</div>
 
- 					<div class="col-1-8">	
+ 					<div class="col-2-8">	
  						<div class="row-title">
  							<label for="director">Директор</label>
  						</div>
@@ -269,7 +266,7 @@
  					</div>
 
 
- 					<div class="col-1-8">
+ 					<div class="col-2-8">
  						<div class="row-title">
  							<label for="telephone">Телефон</label>
  						</div>

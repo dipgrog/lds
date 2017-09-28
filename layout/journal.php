@@ -25,15 +25,7 @@
         
         <!-- <div class="lside">&nbsp</div> -->
         <div id="content">
-            <div id="title">
-                <h2>Журнал учета выполненных работ</h2>
-                <!-- <h3>Здесь информация по ремонтам (электронная версия бумажного журнала)</h3> -->
-            </div>
-
-
-
-
-<!--             <div class="navbar">
+            <!--             <div class="navbar">
                 <div class="navblock">
                     <a href="?page=order">
                      <div  class="btn pos">Добавить</div>
@@ -51,23 +43,8 @@
                 </div>
             </div> -->
 
-
-            <div class="row40">
-                <div class="col-2-4">
-                    <a href="?page=order&id=new"><dip class="btn pos">Добавить</dip></a>
-                
-                
-                <form  action="" method="GET" >
-                    <!-- <input class="btn pos" type="submit" name="page" value="client" text="Поиск"> -->
-                    
-                    <input class="search" type="text" name="search" placeholder="Введите строку поиска">
-                    <button class="btn" type="submit" name="page" value="client">Поиск</button>
-                    <div class="text-v-middle"><?php echo $messsage; ?></div>
-       
-                </form>
-                </div>
-            </div>
-
+        
+            <?php include ('layout/search.php') ?>
 
        
 
@@ -119,4 +96,6 @@
                 </table>
             </div>
         </div>
+
+        
     </div>

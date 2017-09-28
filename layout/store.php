@@ -22,25 +22,8 @@ if (isset($_POST['submit'])){
     
     <!-- <div class="lside">&nbsp</div> -->
     <div id="content">
-        <div id="title">
-            <h2>Заявки на комплектующие и расходные материалы</h2>
-            <!-- <h3>Электронная версия заявок по складу</h3> -->
-        </div>
-        <div class="row40">
-                <div class="col-2-4">
-                    <a href="?page=store&id=new"><dip class="btn pos">Добавить</dip></a>
-                
-                
-                <form  action="" method="GET" >
-                    <!-- <input class="btn pos" type="submit" name="page" value="client" text="Поиск"> -->
-                    
-                    <input class="search" type="text" name="search" placeholder="Введите строку поиска">
-                    <button class="btn" type="submit" name="page" value="client">Поиск</button>
-                    <div class="text-v-middle"><?php echo $messsage; ?></div>
-       
-                </form>
-                </div>
-            </div>
+      
+      <?php include ('layout/search.php') ?>
 
 
     <!-- <div class="pad">&nbsp</div> -->

@@ -2,12 +2,12 @@
 
 
     <div class="container">
-        <?php include ('layout/sidebar.php') ?>
+        <?php include ('layout/navbar.php') ?>
                
         <div class="lside">&nbsp</div>
         <div id="content">
             <div id="title">
-                <h2>Рабочий стол Администратора</h2>
+                <h3>Рабочий стол Администратора</h3>
                 <h3>Здесь должна быть краткая информация по текущему состоянию</h3>
             </div>
 

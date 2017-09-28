@@ -1,37 +1,11 @@
-<?php 
-    $search = '';
-    $messsage = '';
-    if (isset($_GET['search'])){
-        $search = $_GET['search'];
-        if ($search !=''){   
-            $messsage = "Результат поиска: $search";
-        }
-    }
- ?>
+
 
     <div class="container">
          
         <!-- <div class="lside">&nbsp</div> -->
         <div id="content">
-            <div id="title">
-                <h2>Контрагенты</h2>
-                <!-- <h3>Учет по клиентам (в основном по кассам)</h3> -->
-            </div>
-            <div class="row40">
-                <div class="col-2-4">
-                    <a href="?page=clientedit&id=new"><dip class="btn pos">Добавить</dip></a>
-                
-                
-                <form  action="" method="GET" >
-                    <!-- <input class="btn pos" type="submit" name="page" value="client" text="Поиск"> -->
-                    
-                    <input class="search" type="text" name="search" placeholder="Введите строку поиска">
-                    <button class="btn" type="submit" name="page" value="client">Поиск</button>
-                    <div class="text-v-middle"><?php echo $messsage; ?></div>
-       
-                </form>
-                </div>
-            </div>
+           
+           <?php include ('layout/search.php') ?>
 
            
             <!-- <div class="pad"></div> -->
@@ -43,7 +17,7 @@
                         <th id="fst">№</th>
                         <th>Контрагент</th>
                         <th>Адрес/Телефон</th>
-                        <th>ИНН/КПП</th>
+                        <!-- <th>ИНН/КПП</th> -->
                         <th>Директор</th>
                         <th>Договор</th>
                         <th>Мастер</th>
@@ -114,14 +88,14 @@
                             echo "</td>";
                             if ($adress){$adress .="<br>";}
                             echo "<td>$adress$telephone</td>";
-                            if ($inn){
-                                $inn = 'ИНН: '.$inn;
-                            }
-                            if ($kpp){
-                                $cut='<br>';
-                                $kpp = 'КПП: '.$kpp;
-                            }
-                            echo "<td>$inn$cut$kpp</td>";
+                            // if ($inn){
+                            //     $inn = 'ИНН: '.$inn;
+                            // }
+                            // if ($kpp){
+                            //     $cut='<br>';
+                            //     $kpp = 'КПП: '.$kpp;
+                            // }
+                            // echo "<td>$inn$cut$kpp</td>";
                             
                             echo "<td>$director</td>";
                             echo "<td>$contract</td>";
