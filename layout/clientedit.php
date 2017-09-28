@@ -107,12 +107,12 @@
 
 
  <?php 
-$backlink = '?page=journal';
+ $backlink = '?page=journal';
 
-if (isset($_SERVER['HTTP_REFERER'])){
-	$backlink = $_SERVER['HTTP_REFERER'];
-}
-  ?>
+ if (isset($_SERVER['HTTP_REFERER'])){
+ 	$backlink = $_SERVER['HTTP_REFERER'];
+ }
+ ?>
 
  <div class="container">
  	
@@ -122,138 +122,181 @@ if (isset($_SERVER['HTTP_REFERER'])){
  			<h2> <?php echo $title ?> </h2>
  			<!-- <h3>Учет по клиентам (в основном по кассам)</h3> -->
  		</div>
- 		<div class="row30">
+ 		<div class="row">
  			<div class="col-1-4">
  				<a href="<?php echo $backlink; ?>"><dip class="btn pos">Назад</dip></a>
  			</div>
  		</div>
- 		<div class="addclient">
+
+ 		<div class="addclient"> <!-- START addclient-->
 
  			<form action="" method="POST" class="client-form">
  				
- 				<div class="row">
- 					<div class="col-1-4">
- 						<label for="opf">Организационно правовая форма</label><br>
+ 				<div class="row"> <!--****************** BIG ROW ********************-->
 
- 						<?php  
- 						include ('components/db_connection.php');
- 						$query = "SELECT * FROM opf ORDER BY name";
- 						if ($stmt = $mysqli->prepare($query)){
- 							$stmt->execute();
- 							$stmt->bind_result($idopf, $nameopf);
- 							echo "<select class='list-dropdown' name='opf'>";
- 							echo "<option>";
- 							echo $opf;
- 							echo "</option>";
-
- 							while ($stmt->fetch()){
- 								echo "<option value='$nameopf'>";
- 								echo $nameopf;
+ 					<div class="col-2-8">  <!--1111111111111111 START 1111111111111111 -->
+ 						<div class="row-title">
+ 							<label for="opf">Организационно правовая форма</label>
+ 						</div>
+ 						<div class="row-fill"> 
+ 							<?php  
+ 							include ('components/db_connection.php');
+ 							$query = "SELECT * FROM opf ORDER BY name";
+ 							if ($stmt = $mysqli->prepare($query)){
+ 								$stmt->execute();
+ 								$stmt->bind_result($idopf, $nameopf);
+ 								echo "<select class='list-dropdown' name='opf'>";
+ 								echo "<option>";
+ 								echo $opf;
  								echo "</option>";
+
+ 								while ($stmt->fetch()){
+ 									echo "<option value='$nameopf'>";
+ 									echo $nameopf;
+ 									echo "</option>";
+ 								}
+ 								echo "</select>";
+ 								$stmt->close();
  							}
- 							echo "</select>";
- 							$stmt->close();
- 						}
- 						$mysqli->close();
- 						?>
+ 							$mysqli->close();
+ 							?>
+ 						</div>
+ 					</div> <!--111111111111111  END 111111111111111*-->
 
- 					</div>
- 				
- 					<div class="col-1-8">	
- 						<label for="contract">Договор</label>
- 						<input class="inputfield" id="contract" type="text" name="contract" placeholder="№ договора" value="<?php echo $contract ?>">
- 					</div>
+ 					<div class="col-1-8"> <!-- 22222222222 START 22222222222222 -->
+ 						<div class="row-title">
+ 							<label for="contract">Договор</label>
+ 						</div>
 
- 					<div class="col-1-8">	
- 						<label for="master">Мастер</label>
+ 						<div class="row-fill">
+ 							<input class="inputfield" id="contract" type="text" name="contract" placeholder="№ договора" value="<?php echo $contract ?>">
+ 						</div>
+ 					</div> <!-- 22222222222 END 22222222222 -->
 
- 						<?php  
- 						include ('components/db_connection.php');
- 						$query = "SELECT * FROM master ORDER BY name";
- 						if ($stmt2 = $mysqli->prepare($query)){
- 							$stmt2->execute();
- 							$stmt2->bind_result($id2, $name2, $depart2);
- 							echo "<select class='list-dropdown' name='master'>";
- 							echo "<option>";
- 							echo $master;
- 							echo "</option>";
 
- 							while ($stmt2->fetch()){
- 								echo "<option value='$name2'>";
- 								echo $name2;
+ 					<div class="col-1-8"> <!-- 3333333333333333 START 3333333333333333 -->
+ 						<div class="row-title">
+ 							<label for="master">Мастер</label>
+ 						</div>
+ 						<div class="row-fill">
+ 							<?php  
+ 							include ('components/db_connection.php');
+ 							$query = "SELECT * FROM master ORDER BY name";
+ 							if ($stmt2 = $mysqli->prepare($query)){
+ 								$stmt2->execute();
+ 								$stmt2->bind_result($id2, $name2, $depart2);
+ 								echo "<select class='list-dropdown' name='master'>";
+ 								echo "<option>";
+ 								echo $master;
  								echo "</option>";
+
+ 								while ($stmt2->fetch()){
+ 									echo "<option value='$name2'>";
+ 									echo $name2;
+ 									echo "</option>";
+ 								}
+ 								echo "</select>";
+ 								$stmt2->close();
  							}
- 							echo "</select>";
- 							$stmt2->close();
- 						}
- 						$mysqli->close();
- 						?>
- 						<!-- <input id="master" type="text" name="master" placeholder="Ф.И.О. мастера" value=""> -->
- 						
+ 							$mysqli->close();
+ 							?>
+ 						</div>
+ 					</div> <!-- 3333333333333333 END 3333333333333333 -->
+
+ 				</div> 
+
+
+ 				<div class="row"> <!--****************** BIG ROW ********************-->
+ 					<div class="col-2-8">	
+ 						<div class="row-title">
+ 							<label for="shortname">Краткое название</label>
+ 						</div>
+ 						<div class="row-fill">
+ 							<input class="inputfield" id="shortname" type="text" name="shortname" placeholder="Наименование или Ф.И.О." value="<?php echo $shortname ?>">
+ 						</div>
  					</div>
- 				
- 			</div>
 
-
-
-
- 				<div class="row">
-
- 					<div class="col-2-8">
- 						<label for="shortname">Краткое название</label>
- 						<input class="inputfield" id="shortname" type="text" name="shortname" placeholder="Наименование или Ф.И.О." value="<?php echo $shortname ?>">
- 					</div>
- 					
  					<div class="col-1-8">	
- 						<label for="inn">ИНН</label><br>
- 						<input class="inputfield" id="inn" type="text" name="inn" placeholder="ИНН" value="<?php echo $inn ?>">			
- 					</div>
- 					<div class="col-1-8">			
- 						<label for="inn">КПП</label><br>
- 						<input class="inputfield" id="inn" type="text" name="kpp" placeholder="КПП" value="<?php echo $kpp ?>">
+ 						<div class="row-title">
+ 							<label for="inn">ИНН</label>
+ 						</div>
+ 						<div class="row-fill">
+ 							<input class="inputfield" id="inn" type="text" name="inn" placeholder="ИНН" value="<?php echo $inn ?>">
+ 						</div>
  					</div>
 
- 					
+ 					<div class="col-1-8">	
+ 						<div class="row-title">
+ 							<label for="inn">КПП</label>
+ 						</div>
+ 						<div class="row-fill">
+ 							<input class="inputfield" id="inn" type="text" name="kpp" placeholder="КПП" value="<?php echo $kpp ?>">
+ 						</div>
+ 					</div>
+ 				</div> 
 
+ 				<div class="row"> <!--****************** BIG ROW ********************-->
+
+ 					<div class="col-3-8">
+ 						<div class="row-title">
+ 							<label for="name">Полное название организации</label>
+ 						</div>
+ 						<div class="row-fill">
+ 							<input class="inputfield" id="name" type="text" name="name" placeholder="Полное наименование" value="<?php echo $name ?>">
+ 						</div>
+ 					</div>
+
+ 					<div class="col-1-8">	
+ 						<div class="row-title">
+ 							<label for="director">Директор</label>
+ 						</div>
+ 						<div class="row-fill">
+ 							<input class="inputfield" id="director" type="text" name="director" placeholder="Ф.И.О. Директора" value="<?php echo $director ?>">
+ 						</div>
+ 					</div>
  				</div>
 
- 				<div class="row">
+
+ 				<div class="row"> <!--****************** BIG ROW ********************-->
+
  					<div class="col-3-8">
- 						<label for="name">Полное название организации</label>
- 						<input class="inputfield" id="name" type="text" name="name" placeholder="Полное наименование" value="<?php echo $name ?>">
+ 						<div class="row-title">
+ 							<label for="adress">Адрес</label>
+ 						</div>
+ 						<div class="row-fill">
+ 							<input class="inputfield" id="adress" type="text" name="adress" placeholder="Адрес" value="<?php echo $adress ?>">	
+ 						</div>
  					</div>
+
 
  					<div class="col-1-8">
- 						<label for="director">Директор</label>
- 						<input class="inputfield" id="director" type="text" name="director" placeholder="Ф.И.О. Директора" value="<?php echo $director ?>">
+ 						<div class="row-title">
+ 							<label for="telephone">Телефон</label>
+ 						</div>
+ 						<div class="row-fill">
+ 							<input class="inputfield" pattern="(\d{3,5}\)\d{1,3}\-\d{1,3}\-\d{1,3}" id="telephone" type="text" name="telephone" placeholder="Телефон" value="<?php echo $telephone ?>">
+ 						</div>
  					</div>
 
  				</div>
 
 
+ 				<div class="row">	<!--****************** BIG ROW ********************-->
 
-				<div class="row">
-					<div class="col-2-8">
- 						<label for="adress">Адрес</label>
- 						<input class="inputfield" id="adress" type="text" name="adress" placeholder="Адрес" value="<?php echo $adress ?>"><br>
- 					</div>
- 					
-
- 					<div class="col-1-4">
- 						<label for="telephone">Телефон</label>
- 						<input class="inputfield" pattern="(\d{3,5}\)\d{1,3}\-\d{1,3}\-\d{1,3}" id="telephone" type="text" name="telephone" placeholder="Телефон" value="<?php echo $telephone ?>">
- 					</div>
-
- 				</div>
-
- 				<div class="row">
  					<div class="col-2-4">
- 						<input class="btn pos" type="submit" name="submit" value="Записать"><br>
+ 						<div class="row-title">
+ 						</div>
+ 						<div class="row-fill">
+ 							<input class="btn pos" type="submit" name="submit" value="Записать">
+ 						</div>
  					</div>
+
  				</div>
 
  			</form>
- 		</div>
+
+ 		</div> <!-- END addclient-->
+
  	</div>
  </div>
- 
+

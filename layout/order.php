@@ -40,7 +40,7 @@ if (isset($_SERVER['HTTP_REFERER'])){
 					</div>
 				</div>
 				
-				<div class="row30">
+				<div class="row">
 					<div class="col-3-8">
 						<?php  
 						include ('components/db_connection.php');
@@ -73,6 +73,11 @@ if (isset($_SERVER['HTTP_REFERER'])){
 				</div>
 		</div>
 
+				<div class="row">
+					<div class="col-2-4">
+						<input class="btn pos" type="submit" name="submit" value="Записать"><br>
+					</div>
+				</div>
 
 				<div class="row">
 					<div class="col-2-8">	
@@ -113,49 +118,8 @@ if (isset($_SERVER['HTTP_REFERER'])){
 					</div>
 
 				</div>
-				<div class="row">
-					<div class="col-2-8">	
-						
-						<?php  
-						include ('components/db_connection.php');
-						$query = "SELECT object FROM journal ORDER BY object";
-						if ($stmt = $mysqli->prepare($query)){
-							$stmt->execute();
-							$stmt->bind_result($object);
-							echo "<input list='objects' name='object' class='inputfield'>";
-							echo "<datalist id='objects'>";
-							echo "<option value='$object'>";
-							echo "$object";
-							echo "</option>";
 
-							while ($stmt->fetch()){
-								echo "<option value='$object'>";
-								echo "$object";
-								echo "</option>";
-							}
-							echo "</datalist>";
-							$stmt->close();
-						}
-						$mysqli->close();
-						?>
-						<!-- <input id="master" type="text" name="master" placeholder="Ф.И.О. мастера" value=""> -->
 
-					</div>
-
-				
-
-					<div class="col-2-8">
-
-						<input class="inputfield" type="text" name="reason" placeholder="Причина обращения" value="">
-					</div>
-
-				</div>
-
-				<div class="row">
-					<div class="col-2-4">
-						<input class="btn pos" type="submit" name="submit" value="Записать"><br>
-					</div>
-				</div>
 
 			</form>
 		</div>

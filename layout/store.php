@@ -26,24 +26,21 @@ if (isset($_POST['submit'])){
             <h2>Заявки на комплектующие и расходные материалы</h2>
             <!-- <h3>Электронная версия заявок по складу</h3> -->
         </div>
-        <div class="row">
-            <div class="col-3-4">
-
-                <div class="navbar">
-                    <div class="navblock">
-                        <a href="?target=status">
-                           <div  class="btn pos">Добавить</div>
-                       </a>
-                   </div>
-                   <div class="navblock">
-                    <form class="formright" action="" method="POST" >
-                        <input class="btn pos" type="submit" name="submit" value="Поиск">
-                        <input class="inputfield" type="text" name="name" placeholder="Введите строку поиска">
-                    </form>
+        <div class="row40">
+                <div class="col-2-4">
+                    <a href="?page=store&id=new"><dip class="btn pos">Добавить</dip></a>
+                
+                
+                <form  action="" method="GET" >
+                    <!-- <input class="btn pos" type="submit" name="page" value="client" text="Поиск"> -->
+                    
+                    <input class="search" type="text" name="search" placeholder="Введите строку поиска">
+                    <button class="btn" type="submit" name="page" value="client">Поиск</button>
+                    <div class="text-v-middle"><?php echo $messsage; ?></div>
+       
+                </form>
                 </div>
             </div>
-        </div>
-    </div>
 
 
     <!-- <div class="pad">&nbsp</div> -->

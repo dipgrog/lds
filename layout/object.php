@@ -1,3 +1,6 @@
+<?php 
+$messsage = '';
+ ?>
 <div class="container">
 	
 	<!-- <div class="lside">&nbsp</div> -->
@@ -6,34 +9,22 @@
 			<h2>Техника на учёте</h2>
 			<!-- <h3>Перечень оборудования на обслуживании (в основном по кассам)</h3> -->
 		</div>
-		<div class="navbar">
-			<div class="navblock">
-				<a href="?target=status">
-					<div  class="btn pos">Добавить</div>
-				</a>
-				<!-- <select class="list-dropdown">
-					<option>
-						Все отделы
-					</option>
-					<option>
-						ККТ
-					</option>
-					<option>
-						КМТ
-					</option>
-					<option>
-						ВТ
-					</option>
-				</select> -->
-			</div>
-			<div class="navblock">
-				<form class="formright" action="" method="POST" >
-					<input class="btn pos" type="submit" name="submit" value="Поиск">
-					<input class="inputfield" type="text" name="name" placeholder="Введите строку поиска">
-				</form>
-			</div>
-		</div>
-		<div class="pad">&nbsp</div>
+		<div class="row40">
+                <div class="col-2-4">
+                    <a href="?page=clientedit&id=new"><dip class="btn pos">Добавить</dip></a>
+                
+                
+                <form  action="" method="GET" >
+                    <!-- <input class="btn pos" type="submit" name="page" value="client" text="Поиск"> -->
+                    
+                    <input class="search" type="text" name="search" placeholder="Введите строку поиска">
+                    <button class="btn" type="submit" name="page" value="client">Поиск</button>
+                    <div class="text-v-middle"><?php echo $messsage; ?></div>
+       
+                </form>
+                </div>
+            </div>
+
             <div class="tabl">
             	<table>
             		<tr>

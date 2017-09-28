@@ -17,25 +17,24 @@
                 <h2>Контрагенты</h2>
                 <!-- <h3>Учет по клиентам (в основном по кассам)</h3> -->
             </div>
-            <div class="navbar">
-                <div class="navblock">
+            <div class="row40">
+                <div class="col-2-4">
                     <a href="?page=clientedit&id=new"><dip class="btn pos">Добавить</dip></a>
-                </div>
-                <div class="navblock">
                 
-                <form class="formright" action="" method="GET" >
-                    <div class="text-v-middle"><?php echo $messsage; ?></div>
+                
+                <form  action="" method="GET" >
                     <!-- <input class="btn pos" type="submit" name="page" value="client" text="Поиск"> -->
                     
-                    <button class="btn al-right" type="submit" name="page" value="client">Поиск</button>
-                    <input class="inputfield" type="text" name="search" placeholder="Введите строку поиска">
+                    <input class="search" type="text" name="search" placeholder="Введите строку поиска">
+                    <button class="btn" type="submit" name="page" value="client">Поиск</button>
+                    <div class="text-v-middle"><?php echo $messsage; ?></div>
        
                 </form>
                 </div>
             </div>
 
            
-            <div class="pad"></div>
+            <!-- <div class="pad"></div> -->
 
             <div class="tabl">
 
@@ -94,7 +93,7 @@
                     $query .= "LIKE '%$search%' ";
 
 
-                    $query .= "ORDER BY opf, shortname";
+                    $query .= "ORDER BY  opf, shortname";
 
                     if ($stmt = $mysqli->prepare($query)){
                         $stmt->execute();
@@ -109,12 +108,12 @@
                             echo "<td>";
                             echo "<a href='?page=clientedit&id=$id'>";
                             echo "<div class='fill'>";
-                            echo "$opf $shortname";
+                            echo "$shortname $opf";
                             echo "</div>";
                             echo "</a>";
                             echo "</td>";
-                            
-                            echo "<td>$adress<br>$telephone</td>";
+                            if ($adress){$adress .="<br>";}
+                            echo "<td>$adress$telephone</td>";
                             if ($inn){
                                 $inn = 'ИНН: '.$inn;
                             }

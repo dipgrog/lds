@@ -18,6 +18,9 @@
         }
     }
  ?>
+
+
+ <?php  $messsage = ''; ?>
     <div class="container">
         
         <!-- <div class="lside">&nbsp</div> -->
@@ -26,20 +29,47 @@
                 <h2>Журнал учета выполненных работ</h2>
                 <!-- <h3>Здесь информация по ремонтам (электронная версия бумажного журнала)</h3> -->
             </div>
-            <div class="navbar">
+
+
+
+
+<!--             <div class="navbar">
                 <div class="navblock">
                     <a href="?page=order">
                      <div  class="btn pos">Добавить</div>
                     </a>
                 </div>
                 <div class="navblock">
+
+
+
+
                 <form class="formright" action="" method="POST" >
                     <input class="btn pos" type="submit" name="submit" value="Поиск">
                     <input class="inputfield" type="text" name="name" placeholder="Введите строку поиска">
                 </form>
                 </div>
+            </div> -->
+
+
+            <div class="row40">
+                <div class="col-2-4">
+                    <a href="?page=order&id=new"><dip class="btn pos">Добавить</dip></a>
+                
+                
+                <form  action="" method="GET" >
+                    <!-- <input class="btn pos" type="submit" name="page" value="client" text="Поиск"> -->
+                    
+                    <input class="search" type="text" name="search" placeholder="Введите строку поиска">
+                    <button class="btn" type="submit" name="page" value="client">Поиск</button>
+                    <div class="text-v-middle"><?php echo $messsage; ?></div>
+       
+                </form>
+                </div>
             </div>
-            <div class="pad">&nbsp</div>
+
+
+       
 
             <div class="tabl">
 
@@ -70,7 +100,7 @@
                             
 
                             </td>";
-                            echo "<td>$client (85594) 2-35-78</td>";
+                            echo "<td>$client <br>(85594) 2-35-78</td>";
 
                             echo "<td>$object</td>";
 
