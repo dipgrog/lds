@@ -6,6 +6,8 @@ if (isset($_GET['page'])){
 	$page = 'journal';
 }
 include('components/db_connection.php');
+
+include ('layout/clienteditget.php');
 include ('layout/header.php');
 // echo "<div class='container'>";
 

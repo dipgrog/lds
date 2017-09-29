@@ -14,7 +14,7 @@ if (isset($_GET['target'])){
         $b6 = '';
         $b7 = '';
         $b8 = '';
-
+        $b9 = '';
         break;
 
         case 'type':
@@ -28,6 +28,7 @@ if (isset($_GET['target'])){
         $b6 = '';
         $b7 = '';
         $b8 = '';
+        $b9 = '';
         break;
 
         case 'opf':
@@ -41,6 +42,7 @@ if (isset($_GET['target'])){
         $b6 = '';
         $b7 = '';
         $b8 = '';
+        $b9 = '';
         break;
 
         case 'prof':
@@ -54,6 +56,7 @@ if (isset($_GET['target'])){
         $b6 = '';
         $b7 = '';
         $b8 = '';
+        $b9 = '';
         break;
 
         case 'depart':
@@ -67,6 +70,7 @@ if (isset($_GET['target'])){
         $b6 = '';
         $b7 = '';
         $b8 = '';
+        $b9 = '';
         break;
 
         case 'work':
@@ -80,6 +84,7 @@ if (isset($_GET['target'])){
         $b6 = 'sel';
         $b7 = '';
         $b8 = '';
+        $b9 = '';
         break;
 
         case 'master':
@@ -93,6 +98,7 @@ if (isset($_GET['target'])){
         $b6 = '';
         $b7 = 'sel';
         $b8 = '';
+        $b9 = '';
 
         break;
         case 'zip':
@@ -106,6 +112,22 @@ if (isset($_GET['target'])){
         $b6 = '';
         $b7 = '';
         $b8 = 'sel';
+        $b9 = '';
+
+        break;
+
+        case 'model':
+        $nm = 'Модели техники';
+        $pholder ='Введите наименование';
+        $b1 = '';
+        $b2 = '';
+        $b3 = '';
+        $b4 = '';
+        $b5 = '';
+        $b6 = '';
+        $b7 = '';
+        $b8 = '';
+        $b9 = 'sel';
 
         break;
 
@@ -121,6 +143,7 @@ if (isset($_GET['target'])){
         $b6 = '';
         $b7 = '';
         $b8 = '';
+        $b9 = '';
         break;
     }
 
@@ -136,6 +159,7 @@ if (isset($_GET['target'])){
     $b6 = '';
     $b7 = '';
     $b8 = '';
+    $b9 = '';
 }
 
 ?>
@@ -173,23 +197,52 @@ if (isset($_POST['submit'])){
     <?php if(isset($_GET['page'])){$page = $_GET['page'];} ?>
     <!-- <div class="lside">&nbsp</div> -->
     <div id="content">
-        
-        <div class="settings-navbar">
-
-            <a href="?page=<?php echo $page ?>&target=status" class="btn <?php echo $b1 ?> ">Статусы</a>
-            <a href="?page=<?php echo $page?>&target=type" class="btn <?php echo $b2 ?>">Типы</a>
-            <a href="?page=<?php echo $page?>&target=opf" class="btn <?php echo $b3 ?>">ОПФ</a>
-            <a href="?page=<?php echo $page?>&target=prof" class="btn <?php echo $b4 ?>">Должности</a>
-            <a href="?page=<?php echo $page?>&target=depart" class="btn <?php echo $b5 ?>">Отделы</a>
-            <a href="?page=<?php echo $page?>&target=master" class="btn <?php echo $b7 ?>">Сотрудники</a>
-            <a href="?page=<?php echo $page?>&target=work" class="btn <?php echo $b6 ?>">Работы</a>
-            <a href="?page=<?php echo $page?>&target=zip" class="btn <?php echo $b8 ?>">Расходники</a>
-
-        </div>
-        <div class="pad"></div>
-
-
         <div class="row">
+            <div class="col-1-8">
+            <ul class="settings-link-list">
+                <li>
+            <a href="?page=<?php echo $page ?>&target=status" class="btn <?php echo $b1 ?> ">Статусы</a>
+                    
+                </li>
+                  <li>
+            <a href="?page=<?php echo $page?>&target=type" class="btn <?php echo $b2 ?>">Типы техники</a>
+                </li>
+                 <li>
+            <a href="?page=<?php echo $page?>&target=model" class="btn <?php echo $b9 ?>">Модели техники</a>
+                </li>
+
+                  <li>
+            <a href="?page=<?php echo $page?>&target=opf" class="btn <?php echo $b3 ?>">ОПФ</a>
+                    
+                </li>
+                  <li>
+            <a href="?page=<?php echo $page?>&target=prof" class="btn <?php echo $b4 ?>">Должности</a>
+                    
+                </li>
+                  <li>
+            <a href="?page=<?php echo $page?>&target=depart" class="btn <?php echo $b5 ?>">Отделы</a>
+                    
+                </li>
+                  <li>
+            <a href="?page=<?php echo $page?>&target=master" class="btn <?php echo $b7 ?>">Сотрудники</a>
+                    
+                </li>
+                  <li>
+            <a href="?page=<?php echo $page?>&target=work" class="btn <?php echo $b6 ?>">Работы</a>
+                    
+                </li>
+                  <li>
+            <a href="?page=<?php echo $page?>&target=zip" class="btn <?php echo $b8 ?>">Расходники</a>
+                    
+                </li>
+                
+            
+            </ul>
+            </div>
+        
+        <div class="col-6-8">
+
+        <div class="row40">
                         <form action="" method="POST" >
 
 
@@ -300,6 +353,7 @@ if (isset($_POST['submit'])){
 </div>
 </div>
 
-
+</div>
+</div>
 </div>
 </div>

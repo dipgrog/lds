@@ -10,19 +10,23 @@
  ?>
 <div class="row40">
 		<div class="col-1-8">
-		<a href="<?php echo $add_link;?>"><dip class="btn pos">Добавить</dip></a>
+		<a href="<?php echo $add_link;?>"><dip class="btn primary">Добавить</dip></a>
 	</div>
-	<div class="col-6-8">
+	<div class="col-2-8">
 
 
 		<form  action="" method="GET" >
 			<!-- <input class="btn pos" type="submit" name="page" value="client" text="Поиск"> -->
 
-			<input class="search" type="text" name="search" placeholder="Введите строку поиска">
-			<button class="btn" type="submit" name="page" value="client">Поиск</button>
-			<div class="text-v-middle"><?php echo $messsage; ?></div>
+			<input class="inputfield" type="text" name="search" placeholder="Введите строку поиска">
 
-		</form>
 
 	</div>
+		<div class="col-1-8">
+			<button class="btn" type="submit" name="page" value="client">Поиск</button>
+		</div>
+		<div class="col-2-8">
+			<div class="text-v-middle"><?php echo $messsage; ?></div>
+		</div>
+		</form>
 </div>

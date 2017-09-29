@@ -19,11 +19,15 @@ if (isset($_SERVER['HTTP_REFERER'])){
 	<!-- <div class="lside">&nbsp</div> -->
 	<div id="content">
 	
-		<div class="row">
-			<div class="col-1-8">
+		<div class="row40">
+			<div class="col-4-8">
 
-				<a href="<?php echo $backlink; ?>"><dip class="btn pos">Назад</dip></a>
+				<a href="?page=journal"><dip class="btn">Назад</dip></a>
+				<span class="devider">&nbsp</span>
+				<a href="?page=clientedit&id=new"><dip class="btn">Новый контрагент</dip></a>
+				
 			</div>
+					
 
 		</div>
 		<div class="addclient">
@@ -31,14 +35,14 @@ if (isset($_SERVER['HTTP_REFERER'])){
 			<form action="" method="POST" class="client-form">
 
 				
-					<div class="row-auto">
+					<div class="row30">
 					<div class="col-3-8">
 						<label for="client">Контрагент</label><br>
 					</div>
 				</div>
 				
 				<div class="row">
-					<div class="col-3-8">
+					<div class="col-2-8">
 						<?php  
 						include ('components/db_connection.php');
 						$query = "SELECT shortname, telephone FROM client ORDER BY name";
@@ -62,59 +66,15 @@ if (isset($_SERVER['HTTP_REFERER'])){
 						$mysqli->close();
 						?>
 					</div>
-					
-					<div class="col-1-8">
-						<a href="?page=clientedit&id=new"><dip class="btn pos">Новый</dip></a>
+					<div class="col-2-4">
+						<input class="btn pos" type="submit" name="submit" value="Выбрать технику контрагента"><br>
 					</div>
 
 				</div>
 		</div>
 
-				<div class="row">
-					<div class="col-2-4">
-						<input class="btn pos" type="submit" name="submit" value="Записать"><br>
-					</div>
-				</div>
-
-				<div class="row">
-					<div class="col-2-8">	
-						
-						<label for="master">Техника</label>
-
-						<?php  
-						include ('components/db_connection.php');
-						$query = "SELECT object FROM journal ORDER BY object";
-						if ($stmt = $mysqli->prepare($query)){
-							$stmt->execute();
-							$stmt->bind_result($object);
-							echo "<input list='objects' name='object' class='inputfield'>";
-							echo "<datalist id='objects'>";
-							echo "<option value='$object'>";
-							echo "$object";
-							echo "</option>";
-
-							while ($stmt->fetch()){
-								echo "<option value='$object'>";
-								echo "$object";
-								echo "</option>";
-							}
-							echo "</datalist>";
-							$stmt->close();
-						}
-						$mysqli->close();
-						?>
-						<!-- <input id="master" type="text" name="master" placeholder="Ф.И.О. мастера" value=""> -->
-
-					</div>
-
 				
-
-					<div class="col-2-8">
-						<label for="shortname">Описание неисправности</label>
-						<input class="inputfield" type="text" name="reason" placeholder="Причина обращения" value="">
-					</div>
-
-				</div>
+			
 
 
 

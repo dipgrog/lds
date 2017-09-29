@@ -56,6 +56,7 @@
                         <th class="table-td-4">Дата/Статус</th>
                         <th>Контрагент</th>
                         <th class="table-td-6">Техника</th>
+                        <th>Работы</th>
                         <th>Сумма</th>
                         <th>Мастер</th>
                         <th id="lst">Место</th>
@@ -88,6 +89,7 @@
                             </td>";
                            
                        
+                            echo "<td class='text-h-center'><span class='summ-pay'>500 р.</span></td>";
                             echo "<td class='text-h-center'>$master</td>";
                             echo "<td class='text-h-center'>$place</td>";
                             // echo "<td></td>";
@@ -96,9 +98,7 @@
                 </table>
             </div>
 
-<div class="footer">
-    Разработка: Драгун Е.В.
-</div>
+
         </div>
 
         

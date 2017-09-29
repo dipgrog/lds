@@ -17,7 +17,7 @@ error_reporting(E_ALL);
 
 
 	<?php 
-$page_title ='';
+
 $add_link = '';
 if (isset($_GET['page'])){
     $selected = $_GET['page'];
@@ -105,7 +105,7 @@ if (isset($_GET['page'])){
          if ($_GET['id'] == 'new'){
             $page_title ='Добавление контрагента';
         }else{
-            $page_title ='Редактирование контрагента';
+            $page_title ='Редактирование контрагента: '. $shortname;
         }
         $a1 = '';
         $a2 = '';
@@ -143,7 +143,7 @@ if (isset($_GET['page'])){
 
 <div class="top-header">
 
-
+<div class="row-auto">
 <div class="navbar">
     <ul class="navbar-ul">
         <li>
@@ -219,7 +219,7 @@ if (isset($_GET['page'])){
     </li>
     </ul>
 </div>
-
+</div>
     <div class="page-title">
         <h3><?php echo $page_title; ?></h3>
 

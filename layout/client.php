@@ -1,5 +1,10 @@
 
 
+
+
+
+
+
     <div class="container">
          
         <!-- <div class="lside">&nbsp</div> -->
@@ -107,8 +112,6 @@
 
                 </table>
             </div>
-            <div class="footer">
-    Разработка: Драгун Е.В.
-</div>
+
         </div>
     </div>
