@@ -71,6 +71,126 @@ if (isset($_SERVER['HTTP_REFERER'])){
 					</div>
 
 				</div>
+
+				<div class="row">
+					<div class="col-8-8">
+						<table>
+							<tr>
+								<th class="fst">№</th>
+								<th class="fst"></th>
+								<th>Техника</th>
+								<th>Работы/ЗиП</th>
+								<th>Сумма</th>
+								<th>Место</th>
+								<th></th>
+
+							</tr>
+
+							<tr>
+								<td class="text-h-center">1</td>
+								<td class="ion-checkmark-circled sbf text-h-center yes"></td>
+								<td>Картридж HP 1010</td>
+								<td>
+									
+									<table class="table-simple">
+										<tr>
+											<td class="table-td-150">Заправка</td>
+											<td class="table-td-50">1 шт.</td>
+											<td class="table-td-50">250 р.</td>
+											<td class="table-td-50">250 р.</td>
+											<td class="table-td-50">
+												<input type="checkbox" checked="true" name="">
+											</td>
+										</tr>
+										<tr>
+											<td>Тонер HP 1010</td>
+											<td>1 шт.</td>
+											<td>90 р.</td>
+											<td>90 р.</td>
+											<td class="table-td-50">
+												<input type="checkbox" checked="true" name="">
+											</td>
+										</tr>
+										<tr>
+											<td>Замена фотобарабана</td>
+											<td>1 шт.</td>
+											<td>50 р.</td>
+											<td>50 р.</td>
+											<td class="table-td-50">
+												<input type="checkbox" checked="true" name="">
+											</td>
+										</tr>
+										<tr>
+											<td>Фотобарабан HP 1010</td>
+											<td>1 шт.</td>
+											<td>310 р.</td>
+											<td>310 р.</td>
+											<td class="table-td-50">
+												<input type="checkbox" checked="true" name="">
+											</td>
+										</tr>
+
+									</table>
+
+
+
+								</td>
+								<td class="summ-pay text-h-center"><?php echo 250+90+50+310 .' р.'; ?></td>
+								<td class="text-h-center">5</td>
+								<td class="ion-edit btn-edit"></td>
+							</tr>
+							<tr>
+								<td class="text-h-center">2</td>
+								<td class="ion-close-circled sbf text-h-center no"></td>
+								<td>Картридж ML 1210</td>
+								<td>
+									<table class="table-simple">
+										<tr>
+											<td class="table-td-150">Поврежден корпус, ремонту не подлежит.</td>
+											<td class="table-td-50">1 шт.</td>
+											<td class="table-td-50">0 р.</td>
+											<td class="table-td-50">0 р.</td>
+											<td class="table-td-50">
+												<input type="checkbox" unchecked name="">
+											</td>
+										</tr>
+									</table>
+
+								</td>
+								<td>0 р.</td>
+								<td class="text-h-center">5</td>
+								<td class="ion-edit btn-edit"></td>
+							</tr>
+							<tr>
+								<td class="text-h-center">3</td>
+								<td class="ion-help-circled sbf text-h-center maybe"></td>
+								<td>Картридж XRX 1560</td>
+								<td>
+									<table class="table-simple">
+										<tr>
+											<td class="table-td-150">Заправка не требуется.</td>
+											<td class="table-td-50">1 шт.</td>
+											<td class="table-td-50">0 р.</td>
+											<td class="table-td-50">0 р.</td>
+											<td class="table-td-50">
+												<input type="checkbox" unchecked name="">
+											</td>
+										</tr>
+									</table>
+
+								</td>
+								<td>0 р.</td>
+								<td class="text-h-center">5</td>
+								<td class="ion-edit btn-edit"></td>
+							</tr>
+
+						</table>
+
+					</div>
+
+
+				</div>
+
 		</div>
 
 				

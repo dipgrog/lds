@@ -9,7 +9,7 @@
             <div class="tabl">
             	<table>
             		<tr>
-            			<th id="fst">№</th>
+            			<th class="fst">№</th>
             			<th class="table-td-4">Статус</th>
             			<th class="table-td-6">Техника</th>
             			<th>Контрагент</th>
@@ -19,7 +19,7 @@
             			<!-- <th>Действие</th> -->
             		</tr>
             		<tr>
-            			<td id='fst'>1</td>
+            			<td class='fst'>1</td>
             			<td>
             				<div>Обслуживание</div>
             			</td>
@@ -31,7 +31,7 @@
             			<td id="lst">Гафиатуллина 32</td>
             		</tr>
 	            	<tr>
-	            			<td id='fst'>2</td>
+	            			<td class='fst'>2</td>
 	            			<td>
 	            				<div>Разовое</div>
 	            			</td>

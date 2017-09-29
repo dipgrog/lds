@@ -205,10 +205,10 @@ if (isset($_POST['submit'])){
                     
                 </li>
                   <li>
-            <a href="?page=<?php echo $page?>&target=type" class="btn <?php echo $b2 ?>">Типы техники</a>
+            <a href="?page=<?php echo $page?>&target=type" class="btn <?php echo $b2 ?>">Типы</a>
                 </li>
                  <li>
-            <a href="?page=<?php echo $page?>&target=model" class="btn <?php echo $b9 ?>">Модели техники</a>
+            <a href="?page=<?php echo $page?>&target=model" class="btn <?php echo $b9 ?>">Модели</a>
                 </li>
 
                   <li>
@@ -301,7 +301,7 @@ if (isset($_POST['submit'])){
                     $stmt->bind_result($id,$name);
                     $i=0;
                     echo "<tr>";
-                    echo "<th id='fst'>№</th>";
+                    echo "<th class='fst'>№</th>";
                     echo "<th>$nm</th>";
                     echo "<th>Действие</th>";
                     echo "</tr>";
@@ -309,7 +309,7 @@ if (isset($_POST['submit'])){
                     while ($stmt->fetch()){
                         $i++;
                         echo "<tr>";
-                        echo "<td id='fst'>{$i}</td>";
+                        echo "<td class='fst'>{$i}</td>";
                         echo "<td>{$name}</td>";
                         echo "<td id='edit'><a href='?page={$page}&target={$target}&edit={$id}'>изменить</a></td>";
                         echo "</tr>";
@@ -325,7 +325,7 @@ if (isset($_POST['submit'])){
                 $stmt->bind_result($id,$name,$depart,$id_d,$name_d);
                 $i=0;
                 echo "<tr>";
-                echo "<th id='fst'>№</th>";
+                echo "<th class='fst'>№</th>";
                 echo "<th>$nm</th>";
                 echo "<th>Отдел</th>";
                 echo "<th>Действие</th>";
@@ -334,7 +334,7 @@ if (isset($_POST['submit'])){
                 while ($stmt->fetch()){
                     $i++;
                     echo "<tr>";
-                    echo "<td id='fst'>{$i}</td>";
+                    echo "<td class='fst'>{$i}</td>";
                     echo "<td>{$name}</td>";
                     echo "<td>{$name_d}</td>";
                     echo "<td id='edit'>Изменить</td>";

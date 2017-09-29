@@ -19,12 +19,13 @@
 
                 <table>
                     <tr>
-                        <th id="fst">№</th>
+                        <th class="fst">№</th>
                         <th>Контрагент</th>
-                        <th>Адрес/Телефон</th>
+                        <!-- <th>Адрес/Телефон</th> -->
                         <!-- <th>ИНН/КПП</th> -->
                         <th>Директор</th>
                         <th>Договор</th>
+                        <th>Рассчеты</th>
                         <th>Мастер</th>
                     </tr>
 
@@ -83,16 +84,16 @@
                             $i++;
                             $cut='';
                             echo "<tr>";
-                            echo "<td id='fst'>{$i}</td>";
+                            echo "<td class='fst'>{$i}</td>";
                             echo "<td>";
                             echo "<a href='?page=clientedit&id=$id'>";
                             echo "<div class='fill'>";
-                            echo "$shortname $opf";
+                            echo "$opf $shortname";
                             echo "</div>";
                             echo "</a>";
-                            echo "</td>";
-                            if ($adress){$adress .="<br>";}
-                            echo "<td>$adress$telephone</td>";
+                            // echo "</td>";
+                            // if ($adress){$adress .="<br>";}
+                            // echo "<td>$adress$telephone</td>";
                             // if ($inn){
                             //     $inn = 'ИНН: '.$inn;
                             // }
@@ -104,6 +105,7 @@
                             
                             echo "<td>$director</td>";
                             echo "<td>$contract</td>";
+                            echo "<td class='text-h-center'><span class='yes'>5344</span>/<span class='no'>234</span></td>";
                             echo "<td>$master</td>";
                             echo "</tr>";
                         }}?>
