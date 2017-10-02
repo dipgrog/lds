@@ -82,8 +82,15 @@
                             </td>";
                             echo "<td>$client <br>(85594) 2-35-78</td>";
 
-                            echo "<td>$object</td>";
-
+                            // echo "<td>";
+                            // echo "<table class='table-simple'>";
+                            // echo   "<tr>";
+                            echo        "<td>$object</td>";
+                            // echo    "</tr>";
+                            // echo   "<tr>";
+                            // echo        "<td>$object</td>";
+                            // // echo    "</tr>";
+                            // echo "</table>";
                             echo "<td>Заправка</td>";
                            
                        
@@ -92,6 +99,301 @@
                             echo "<td class='text-h-center'>$place</td>";
                             echo "</tr>";
                         }}?>
+                            <tr>
+                            <td class='fst'>#</td>
+                            <td class='text-h-center'><a href='?page=order_edit&id=12' class='ion-android-menu sbf'></a></td>
+                            <td  class='table-td-6'>
+                            <div>$date $status</div>
+                            </td>                        
+                            <td>$client <br>(85594) 2-35-78</td>
+                            <td>$object</td>                        
+                            <td>Заправка</td>                    
+                            <td class='text-h-center'><span class='summ-pay'>500 р.</span></td>
+                            <td class='text-h-center'>$master</td>
+                            <td class='text-h-center'>$place</td>
+                            </tr>
+
+                            <tr>
+                            <td class='fst'>#</td>
+                            <td class='text-h-center'><a href='?page=order_edit&id=12' class='ion-android-menu sbf'></a></td>
+                            <td  class='table-td-6'>
+                            <div>$date $status</div>
+                            </td>                        
+                            <td>$client <br>(85594) 2-35-78</td>
+                            <td>$object</td>                        
+                            <td>Заправка</td>                    
+                            <td class='text-h-center'><span class='summ-pay'>500 р.</span></td>
+                            <td class='text-h-center'>$master</td>
+                            <td class='text-h-center'>$place</td>
+                            </tr>
+
+                            <tr>
+                            <td class='fst'>#</td>
+                            <td class='text-h-center'><a href='?page=order_edit&id=12' class='ion-android-menu sbf'></a></td>
+                            <td  class='table-td-6'>
+                            <div>$date $status</div>
+                            </td>                        
+                            <td>$client <br>(85594) 2-35-78</td>
+                            <td>$object</td>                        
+                            <td>Заправка</td>                    
+                            <td class='text-h-center'><span class='summ-pay'>500 р.</span></td>
+                            <td class='text-h-center'>$master</td>
+                            <td class='text-h-center'>$place</td>
+                            </tr>
+
+                            <tr>
+                            <td class='fst'>#</td>
+                            <td class='text-h-center'><a href='?page=order_edit&id=12' class='ion-android-menu sbf'></a></td>
+                            <td  class='table-td-6'>
+                            <div>$date $status</div>
+                            </td>                        
+                            <td>$client <br>(85594) 2-35-78</td>
+                            <td>$object</td>                        
+                            <td>Заправка</td>                    
+                            <td class='text-h-center'><span class='summ-pay'>500 р.</span></td>
+                            <td class='text-h-center'>$master</td>
+                            <td class='text-h-center'>$place</td>
+                            </tr>
+
+                            <tr>
+                            <td class='fst'>#</td>
+                            <td class='text-h-center'><a href='?page=order_edit&id=12' class='ion-android-menu sbf'></a></td>
+                            <td  class='table-td-6'>
+                            <div>$date $status</div>
+                            </td>                        
+                            <td>$client <br>(85594) 2-35-78</td>
+                            <td>$object</td>                        
+                            <td>Заправка</td>                    
+                            <td class='text-h-center'><span class='summ-pay'>500 р.</span></td>
+                            <td class='text-h-center'>$master</td>
+                            <td class='text-h-center'>$place</td>
+                            </tr>
+
+                            <tr>
+                            <td class='fst'>#</td>
+                            <td class='text-h-center'><a href='?page=order_edit&id=12' class='ion-android-menu sbf'></a></td>
+                            <td  class='table-td-6'>
+                            <div>$date $status</div>
+                            </td>                        
+                            <td>$client <br>(85594) 2-35-78</td>
+                            <td>$object</td>                        
+                            <td>Заправка</td>                    
+                            <td class='text-h-center'><span class='summ-pay'>500 р.</span></td>
+                            <td class='text-h-center'>$master</td>
+                            <td class='text-h-center'>$place</td>
+                            </tr>
+
+                            <tr>
+                            <td class='fst'>#</td>
+                            <td class='text-h-center'><a href='?page=order_edit&id=12' class='ion-android-menu sbf'></a></td>
+                            <td  class='table-td-6'>
+                            <div>$date $status</div>
+                            </td>                        
+                            <td>$client <br>(85594) 2-35-78</td>
+                            <td>$object</td>                        
+                            <td>Заправка</td>                    
+                            <td class='text-h-center'><span class='summ-pay'>500 р.</span></td>
+                            <td class='text-h-center'>$master</td>
+                            <td class='text-h-center'>$place</td>
+                            </tr>
+
+                            <tr>
+                            <td class='fst'>#</td>
+                            <td class='text-h-center'><a href='?page=order_edit&id=12' class='ion-android-menu sbf'></a></td>
+                            <td  class='table-td-6'>
+                            <div>$date $status</div>
+                            </td>                        
+                            <td>$client <br>(85594) 2-35-78</td>
+                            <td>$object</td>                        
+                            <td>Заправка</td>                    
+                            <td class='text-h-center'><span class='summ-pay'>500 р.</span></td>
+                            <td class='text-h-center'>$master</td>
+                            <td class='text-h-center'>$place</td>
+                            </tr>
+
+                            <tr>
+                            <td class='fst'>#</td>
+                            <td class='text-h-center'><a href='?page=order_edit&id=12' class='ion-android-menu sbf'></a></td>
+                            <td  class='table-td-6'>
+                            <div>$date $status</div>
+                            </td>                        
+                            <td>$client <br>(85594) 2-35-78</td>
+                            <td>$object</td>                        
+                            <td>Заправка</td>                    
+                            <td class='text-h-center'><span class='summ-pay'>500 р.</span></td>
+                            <td class='text-h-center'>$master</td>
+                            <td class='text-h-center'>$place</td>
+                            </tr>
+
+                            <tr>
+                            <td class='fst'>#</td>
+                            <td class='text-h-center'><a href='?page=order_edit&id=12' class='ion-android-menu sbf'></a></td>
+                            <td  class='table-td-6'>
+                            <div>$date $status</div>
+                            </td>                        
+                            <td>$client <br>(85594) 2-35-78</td>
+                            <td>$object</td>                        
+                            <td>Заправка</td>                    
+                            <td class='text-h-center'><span class='summ-pay'>500 р.</span></td>
+                            <td class='text-h-center'>$master</td>
+                            <td class='text-h-center'>$place</td>
+                            </tr>
+
+                            <tr>
+                            <td class='fst'>#</td>
+                            <td class='text-h-center'><a href='?page=order_edit&id=12' class='ion-android-menu sbf'></a></td>
+                            <td  class='table-td-6'>
+                            <div>$date $status</div>
+                            </td>                        
+                            <td>$client <br>(85594) 2-35-78</td>
+                            <td>$object</td>                        
+                            <td>Заправка</td>                    
+                            <td class='text-h-center'><span class='summ-pay'>500 р.</span></td>
+                            <td class='text-h-center'>$master</td>
+                            <td class='text-h-center'>$place</td>
+                            </tr>
+
+                            <tr>
+                            <td class='fst'>#</td>
+                            <td class='text-h-center'><a href='?page=order_edit&id=12' class='ion-android-menu sbf'></a></td>
+                            <td  class='table-td-6'>
+                            <div>$date $status</div>
+                            </td>                        
+                            <td>$client <br>(85594) 2-35-78</td>
+                            <td>$object</td>                        
+                            <td>Заправка</td>                    
+                            <td class='text-h-center'><span class='summ-pay'>500 р.</span></td>
+                            <td class='text-h-center'>$master</td>
+                            <td class='text-h-center'>$place</td>
+                            </tr>
+
+                            <tr>
+                            <td class='fst'>#</td>
+                            <td class='text-h-center'><a href='?page=order_edit&id=12' class='ion-android-menu sbf'></a></td>
+                            <td  class='table-td-6'>
+                            <div>$date $status</div>
+                            </td>                        
+                            <td>$client <br>(85594) 2-35-78</td>
+                            <td>$object</td>                        
+                            <td>Заправка</td>                    
+                            <td class='text-h-center'><span class='summ-pay'>500 р.</span></td>
+                            <td class='text-h-center'>$master</td>
+                            <td class='text-h-center'>$place</td>
+                            </tr>
+
+                            <tr>
+                            <td class='fst'>#</td>
+                            <td class='text-h-center'><a href='?page=order_edit&id=12' class='ion-android-menu sbf'></a></td>
+                            <td  class='table-td-6'>
+                            <div>$date $status</div>
+                            </td>                        
+                            <td>$client <br>(85594) 2-35-78</td>
+                            <td>$object</td>                        
+                            <td>Заправка</td>                    
+                            <td class='text-h-center'><span class='summ-pay'>500 р.</span></td>
+                            <td class='text-h-center'>$master</td>
+                            <td class='text-h-center'>$place</td>
+                            </tr>
+
+                            <tr>
+                            <td class='fst'>#</td>
+                            <td class='text-h-center'><a href='?page=order_edit&id=12' class='ion-android-menu sbf'></a></td>
+                            <td  class='table-td-6'>
+                            <div>$date $status</div>
+                            </td>                        
+                            <td>$client <br>(85594) 2-35-78</td>
+                            <td>$object</td>                        
+                            <td>Заправка</td>                    
+                            <td class='text-h-center'><span class='summ-pay'>500 р.</span></td>
+                            <td class='text-h-center'>$master</td>
+                            <td class='text-h-center'>$place</td>
+                            </tr>
+
+                            <tr>
+                            <td class='fst'>#</td>
+                            <td class='text-h-center'><a href='?page=order_edit&id=12' class='ion-android-menu sbf'></a></td>
+                            <td  class='table-td-6'>
+                            <div>$date $status</div>
+                            </td>                        
+                            <td>$client <br>(85594) 2-35-78</td>
+                            <td>$object</td>                        
+                            <td>Заправка</td>                    
+                            <td class='text-h-center'><span class='summ-pay'>500 р.</span></td>
+                            <td class='text-h-center'>$master</td>
+                            <td class='text-h-center'>$place</td>
+                            </tr>
+
+                            <tr>
+                            <td class='fst'>#</td>
+                            <td class='text-h-center'><a href='?page=order_edit&id=12' class='ion-android-menu sbf'></a></td>
+                            <td  class='table-td-6'>
+                            <div>$date $status</div>
+                            </td>                        
+                            <td>$client <br>(85594) 2-35-78</td>
+                            <td>$object</td>                        
+                            <td>Заправка</td>                    
+                            <td class='text-h-center'><span class='summ-pay'>500 р.</span></td>
+                            <td class='text-h-center'>$master</td>
+                            <td class='text-h-center'>$place</td>
+                            </tr>
+
+                            <tr>
+                            <td class='fst'>#</td>
+                            <td class='text-h-center'><a href='?page=order_edit&id=12' class='ion-android-menu sbf'></a></td>
+                            <td  class='table-td-6'>
+                            <div>$date $status</div>
+                            </td>                        
+                            <td>$client <br>(85594) 2-35-78</td>
+                            <td>$object</td>                        
+                            <td>Заправка</td>                    
+                            <td class='text-h-center'><span class='summ-pay'>500 р.</span></td>
+                            <td class='text-h-center'>$master</td>
+                            <td class='text-h-center'>$place</td>
+                            </tr>
+
+                            <tr>
+                            <td class='fst'>#</td>
+                            <td class='text-h-center'><a href='?page=order_edit&id=12' class='ion-android-menu sbf'></a></td>
+                            <td  class='table-td-6'>
+                            <div>$date $status</div>
+                            </td>                        
+                            <td>$client <br>(85594) 2-35-78</td>
+                            <td>$object</td>                        
+                            <td>Заправка</td>                    
+                            <td class='text-h-center'><span class='summ-pay'>500 р.</span></td>
+                            <td class='text-h-center'>$master</td>
+                            <td class='text-h-center'>$place</td>
+                            </tr>
+
+                            <tr>
+                            <td class='fst'>#</td>
+                            <td class='text-h-center'><a href='?page=order_edit&id=12' class='ion-android-menu sbf'></a></td>
+                            <td  class='table-td-6'>
+                            <div>$date $status</div>
+                            </td>                        
+                            <td>$client <br>(85594) 2-35-78</td>
+                            <td>$object</td>                        
+                            <td>Заправка</td>                    
+                            <td class='text-h-center'><span class='summ-pay'>500 р.</span></td>
+                            <td class='text-h-center'>$master</td>
+                            <td class='text-h-center'>$place</td>
+                            </tr>
+
+                            <tr>
+                            <td class='fst'>#</td>
+                            <td class='text-h-center'><a href='?page=order_edit&id=12' class='ion-android-menu sbf'></a></td>
+                            <td  class='table-td-6'>
+                            <div>$date $status</div>
+                            </td>                        
+                            <td>$client <br>(85594) 2-35-78</td>
+                            <td>$object</td>                        
+                            <td>Заправка</td>                    
+                            <td class='text-h-center'><span class='summ-pay'>500 р.</span></td>
+                            <td class='text-h-center'>$master</td>
+                            <td class='text-h-center'>$place</td>
+                            </tr>
+
+
                 </table>
             </div>
 

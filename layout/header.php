@@ -11,7 +11,7 @@ error_reporting(E_ALL);
     <!-- <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet"> -->
 
  <!-- ok -->   
- <!-- <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300,500&amp;subset=cyrillic" rel="stylesheet">  -->
+ <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300,500&amp;subset=cyrillic" rel="stylesheet"> 
 
     <!-- <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:400,500&amp;subset=cyrillic" rel="stylesheet"> -->
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600&amp;subset=cyrillic" rel="stylesheet">
@@ -160,6 +160,7 @@ if (isset($_GET['page'])){
     $a5 = '';
     $a6 = '';
     $page_title ='Журнал учета выполненных работ';
+    $add_link = '?page=order&id=new';
 }
 ?>
 

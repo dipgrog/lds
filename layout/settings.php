@@ -228,7 +228,7 @@ if (isset($_POST['submitsettings'])){
                     
                 </li>
                   <li>
-            <a href="?page=<?php echo $page?>&target=work" class="btn <?php echo $b6 ?>">Работы</a>
+            <a href="?page=<?php echo $page?>&target=work" class="btn <?php echo $b6 ?>">Прейскурант</a>
                     
                 </li>
                   <li>
@@ -295,7 +295,7 @@ if (isset($_POST['submitsettings'])){
 
             <?php
 
-            if ($target !== 'master'){
+            if ($target !== 'master' && $target !== 'model'){
 
                 $query = "SELECT * FROM {$target} ORDER BY name";
                 if ($stmt = $mysqli->prepare($query)){
@@ -345,6 +345,31 @@ if (isset($_POST['submitsettings'])){
 
             } 
 
+        }elseif ($target == 'model') {
+            $query = "SELECT * FROM model AS m, type AS t WHERE m.type = t.id ORDER BY t.name";
+                if ($stmt = $mysqli->prepare($query)){
+                    $stmt->execute();
+                    $stmt->bind_result($id, $name, $type, $id2, $name2);
+                    $i=0;
+                    echo "<tr>";
+                    echo "<th class='table-td-num'>№</th>";
+                    echo "<th class='table-td-100'>тип</th>";
+                    echo "<th>$nm</th>";
+                    echo "<th>Действие</th>";
+                    echo "</tr>";
+
+                    while ($stmt->fetch()){
+                        $i++;
+                        echo "<tr>";
+                        echo "<td class='fst'>{$i}</td>";
+                        echo "<td>{$name2}</td>";
+                        echo "<td>{$name}</td>";
+                        echo "<td id='edit'><a href='?page={$page}&target={$target}&edit={$id}'>изменить</a></td>";
+                        echo "</tr>";
+                    }
+
+                }
+            
         }
 
 

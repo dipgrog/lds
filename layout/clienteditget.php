@@ -116,8 +116,6 @@
  				$stmt->close();
  			}
  			$mysqli->close();
- 		}else{
- 			echo "string2";
  		}
  }
 
