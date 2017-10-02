@@ -53,10 +53,11 @@
                 <table>
                     <tr>
                         <th id="fst">№</th>
+                        <th></th>
                         <th class="table-td-4">Дата/Статус</th>
                         <th>Контрагент</th>
                         <th class="table-td-6">Техника</th>
-                        <th>Работы</th>
+                        <th>Неисправность</th>
                         <th>Сумма</th>
                         <th>Мастер</th>
                         <th id="lst">Место</th>
@@ -70,7 +71,8 @@
                         while ($stmt->fetch()){
                             $i++;
                             echo "<tr>";
-                            echo "<td id='fst'>{$i}</td>";
+                            echo "<td class='fst'>{$i}</td>";
+                            echo "<td class='text-h-center'><a href='?page=order_edit&id=12' class='ion-android-menu sbf'></a></td>";
      /* статус */           echo "<td  class='table-td-6'>
 
                             
@@ -82,17 +84,12 @@
 
                             echo "<td>$object</td>";
 
-                            echo "<td>
-                            <span>Заправка 1010 - $summa р.</span><br>
-                            <span>Заправка 1210 - $summa р.</span>
-
-                            </td>";
+                            echo "<td>Заправка</td>";
                            
                        
                             echo "<td class='text-h-center'><span class='summ-pay'>500 р.</span></td>";
                             echo "<td class='text-h-center'>$master</td>";
                             echo "<td class='text-h-center'>$place</td>";
-                            // echo "<td></td>";
                             echo "</tr>";
                         }}?>
                 </table>

@@ -166,8 +166,8 @@ if (isset($_GET['target'])){
 
 
 <?php 
-if (isset($_POST['submit'])){
-
+if (isset($_POST['submitsettings'])){
+    
     $name = $_POST['name'];
 
     if ($name !='') {
@@ -251,7 +251,8 @@ if (isset($_POST['submit'])){
                         </div>
 
                         <div class="col-2-8">
-                            <?php include ('components/db_connection.php');
+                            <?php 
+                            include ('components/db_connection.php');
 
                             if ($target == 'master'){
                             $query = "SELECT * FROM depart ORDER BY name";
@@ -274,7 +275,8 @@ if (isset($_POST['submit'])){
                         </div>
 
                         <div class="col-1-8">
-                            <input class="btn pos" type="submit" name="submit" value="Добавить">
+                            <button type="submit" name="submitsettings">Добавить</button>
+                            <!-- <input class="btn pos" type="submit" name="submitsettings" value="Добавить"> -->
                         </div>
 
                         </form>
@@ -288,7 +290,7 @@ if (isset($_POST['submit'])){
     <div class="row">
 
     <div class="col-8-8">
-
+        <div class="tabl">
         <table>
 
             <?php
@@ -337,8 +339,8 @@ if (isset($_POST['submit'])){
                     echo "<td class='fst'>{$i}</td>";
                     echo "<td>{$name}</td>";
                     echo "<td>{$name_d}</td>";
-                    echo "<td id='edit'>Изменить</td>";
-                    echo "<tr>";
+                    echo "<td id='edit'><a href='?page={$page}&target={$target}&edit={$id}'>изменить</a></td>";
+                    echo "</tr>";
                 }
 
             } 
@@ -350,6 +352,7 @@ if (isset($_POST['submit'])){
 
 
     </table>
+</div>
 </div>
 </div>
 

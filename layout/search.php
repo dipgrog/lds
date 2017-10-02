@@ -10,7 +10,7 @@
  ?>
 <div class="row40">
 		<div class="col-1-8">
-		<a href="<?php echo $add_link;?>"><dip class="btn primary">Добавить</dip></a>
+		<a href="<?php echo $add_link;?>"><div class="btn primary">Добавить</div></a>
 	</div>
 	<div class="col-2-8">
 
@@ -23,7 +23,7 @@
 
 	</div>
 		<div class="col-1-8">
-			<button class="btn" type="submit" name="page" value="client">Поиск</button>
+			<button  type="submit" name="page" value="client">Поиск</button>
 		</div>
 		<div class="col-2-8">
 			<div class="text-v-middle"><?php echo $messsage; ?></div>

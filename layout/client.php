@@ -14,21 +14,33 @@
 
            
             <!-- <div class="pad"></div> -->
-
+            <table>
+                    <tr>
+                        <th class="table-td-num">№</th>
+                        <th class="ion-edit table-td-status"></th>
+                        <th class="table-td-client">Контрагент</th>
+                        <!-- <th>Адрес/Телефон</th> -->
+                        <!-- <th>ИНН/КПП</th> -->
+                        <th class="table-td-director">Директор</th>
+                        <th class="table-td-contract">Договор</th>
+                        <th class="table-td-payment">Рассчеты</th>
+                        <th class="table-td-master">Мастер</th>
+                    </tr>
+            </table>
             <div class="tabl">
 
                 <table>
-                    <tr>
+<!--                     <tr>
                         <th class="fst">№</th>
+                        <th class="ion-edit"></th>
                         <th>Контрагент</th>
-                        <!-- <th>Адрес/Телефон</th> -->
-                        <!-- <th>ИНН/КПП</th> -->
+ 
                         <th>Директор</th>
                         <th>Договор</th>
                         <th>Рассчеты</th>
                         <th>Мастер</th>
                     </tr>
-
+ -->
                     <?php
                     $query  = "SELECT * FROM client ";
                     $query .= "WHERE ";
@@ -84,14 +96,11 @@
                             $i++;
                             $cut='';
                             echo "<tr>";
-                            echo "<td class='fst'>{$i}</td>";
-                            echo "<td>";
-                            echo "<a href='?page=clientedit&id=$id'>";
-                            echo "<div class='fill'>";
-                            echo "$opf $shortname";
-                            echo "</div>";
-                            echo "</a>";
-                            // echo "</td>";
+                            echo "<td class='table-td-num text-h-center'>{$i}</td>";
+                            echo "<td class='table-td-status text-h-center'><a href='?page=clientedit&id=$id' class='ion-person sbf'></a></td>";
+                            echo "<td class='table-td-client'><div class='fill'>$opf $shortname</div>";
+                       
+                            echo "</td>";
                             // if ($adress){$adress .="<br>";}
                             // echo "<td>$adress$telephone</td>";
                             // if ($inn){
@@ -103,10 +112,10 @@
                             // }
                             // echo "<td>$inn$cut$kpp</td>";
                             
-                            echo "<td>$director</td>";
-                            echo "<td>$contract</td>";
-                            echo "<td class='text-h-center'><span class='yes'>5344</span>/<span class='no'>234</span></td>";
-                            echo "<td>$master</td>";
+                            echo "<td class='table-td-director'>$director</td>";
+                            echo "<td class='table-td-contract'>$contract</td>";
+                            echo "<td class='table-td-payment'><span class='good'>5344</span>/<span class='bad'>234</span></td>";
+                            echo "<td class='table-td-master'>$master</td>";
                             echo "</tr>";
                         }}?>
                     

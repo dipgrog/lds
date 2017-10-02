@@ -12,7 +12,7 @@ error_reporting(E_ALL);
 
  <!-- ok -->   
  <!-- <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300,500&amp;subset=cyrillic" rel="stylesheet">  -->
- 
+
     <!-- <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:400,500&amp;subset=cyrillic" rel="stylesheet"> -->
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600&amp;subset=cyrillic" rel="stylesheet">
     <!-- <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">  -->
@@ -28,6 +28,7 @@ $add_link = '';
 if (isset($_GET['page'])){
     $selected = $_GET['page'];
     switch ( $selected) {
+
         case 'home':
         $a1 = 'selected';
         $a2 = '';
@@ -40,7 +41,6 @@ if (isset($_GET['page'])){
         break;
 
         case 'journal':
-
         $a1 = '';
         $a2 = 'selected';
         $a3 = '';
@@ -52,7 +52,6 @@ if (isset($_GET['page'])){
         break;
 
         case 'client':
-
         $a1 = '';
         $a2 = '';
         $a3 = 'selected';
@@ -63,8 +62,9 @@ if (isset($_GET['page'])){
         $add_link = '?page=clientedit&id=new';
         break;
 
-        case 'object':
+        
 
+        case 'object':
         $a1 = '';
         $a2 = '';
         $a3 = '';
@@ -75,7 +75,6 @@ if (isset($_GET['page'])){
         break;
 
         case 'store':
-
         $a1 = '';
         $a2 = '';
         $a3 = '';
@@ -86,7 +85,6 @@ if (isset($_GET['page'])){
         break;
 
         case 'settings':
-
         $a1 = '';
         $a2 = '';
         $a3 = '';
@@ -97,7 +95,6 @@ if (isset($_GET['page'])){
         break;
 
         case 'order':
-
         $a1 = '';
         $a2 = 'selected';
         $a3 = '';
@@ -107,11 +104,21 @@ if (isset($_GET['page'])){
         $page_title ='Новый заказ';
         break;
 
-         case 'clientedit':
+        case 'order_edit':
+        $a1 = '';
+        $a2 = 'selected';
+        $a3 = '';
+        $a4 = '';
+        $a5 = '';
+        $a6 = '';
+        $page_title ='Заказ № ';
+        break;
+
+        case 'clientedit':
          if ($_GET['id'] == 'new'){
             $page_title ='Добавление контрагента';
         }else{
-            $page_title ='Редактирование контрагента: '. $shortname;
+            $page_title ='Контрагент: '. $opf . ' ' . $name;
         }
         $a1 = '';
         $a2 = '';
@@ -119,7 +126,17 @@ if (isset($_GET['page'])){
         $a4 = '';
         $a5 = '';
         $a6 = '';
-        
+        break;
+
+        case 'clienttech':
+        $a1 = '';
+        $a2 = '';
+        $a3 = 'selected';
+        $a4 = '';
+        $a5 = '';
+        $a6 = '';
+        $page_title ='Контрагент: '. $opf . ' ' . $name;
+        $add_link = '?page=clientedit&id=new';
         break;
 
         default:
@@ -226,10 +243,15 @@ if (isset($_GET['page'])){
     </ul>
 </div>
 </div>
+<div class="row30">
     <div class="page-title">
-        <h3><?php echo $page_title; ?></h3>
-
+      <!--   <div class="col-20">
+            <a href="?page=journal" class="ion-arrow-left-a sbf"></a>
+        </div> -->
+        <div class="col-7-8">
+            <h3><?php echo $page_title; ?></h3>
+        </div>
     </div>
-	
+</div>
 
  </div>

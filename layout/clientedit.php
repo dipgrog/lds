@@ -7,9 +7,19 @@
  	<div id="content">
  		
  		<div class="row40">
- 			<div class="col-1-4">
- 				<a href="<?php echo $backlink; ?>"><dip class="btn pos">Назад</dip></a>
+ 			<div class="col-1-8">
+ 				<a href="<?php echo $backlink; ?>"><div class="btn pos">Назад</div></a>
  			</div>
+		<div class="col-7-8">
+ 				<a href="<?php echo $backlink; ?>" class="btn sel">Реквизиты</a>
+ 		
+ 				<a href="?page=clienttech&id=11" class="btn">Техника</a>
+ 		
+ 				<a href="<?php echo $backlink; ?>" class="btn">Раcсчеты</a>
+ 			</div>
+
+
+
  		</div>
 
  		<div class="addclient"> <!-- START addclient-->
@@ -18,7 +28,7 @@
  				
  				<div class="row"> <!--****************** BIG ROW ********************-->
 
- 					<div class="col-3-8">  <!--1111111111111111 START 1111111111111111 -->
+ 					<div class="col-2-8">  <!--1111111111111111 START 1111111111111111 -->
  						<div class="row-title">
  							<label for="opf">Организационно правовая форма</label>
  						</div>
@@ -45,11 +55,32 @@
  							$mysqli->close();
  							?>
  						</div>
+
  					</div> <!--111111111111111  END 111111111111111*-->
+
+
+ 					<div class="col-1-8">	
+ 						<div class="row-title">
+ 							<label for="inn">ИНН</label>
+ 						</div>
+ 						<div class="row-fill">
+ 							<input class="inputfield" id="inn" type="text" name="inn" placeholder="ИНН" value="<?php echo $inn ?>">
+ 						</div>
+ 					</div>
+
+ 					<div class="col-1-8">	
+ 						<div class="row-title">
+ 							<label for="inn">КПП</label>
+ 						</div>
+ 						<div class="row-fill">
+ 							<input class="inputfield" id="inn" type="text" name="kpp" placeholder="КПП" value="<?php echo $kpp ?>">
+ 						</div>
+ 					</div>
+
 
  					<div class="col-1-8"> <!-- 22222222222 START 22222222222222 -->
  						<div class="row-title">
- 							<label for="contract">Договор</label>
+ 							<label for="contract">Договор ККТ</label>
  						</div>
 
  						<div class="row-fill">
@@ -60,7 +91,7 @@
 
  					<div class="col-1-8"> <!-- 3333333333333333 START 3333333333333333 -->
  						<div class="row-title">
- 							<label for="master">Мастер</label>
+ 							<label for="master">Мастер ККТ</label>
  						</div>
  						<div class="row-fill">
  							<?php  
@@ -91,7 +122,7 @@
 
 
  				<div class="row"> <!--****************** BIG ROW ********************-->
- 					<div class="col-3-8">	
+ 					<div class="col-2-8">	
  						<div class="row-title">
  							<label for="shortname">Краткое название</label>
  						</div>
@@ -99,29 +130,7 @@
  							<input class="inputfield" id="shortname" type="text" name="shortname" placeholder="Наименование или Ф.И.О." value="<?php echo $shortname ?>">
  						</div>
  					</div>
-
- 					<div class="col-1-8">	
- 						<div class="row-title">
- 							<label for="inn">ИНН</label>
- 						</div>
- 						<div class="row-fill">
- 							<input class="inputfield" id="inn" type="text" name="inn" placeholder="ИНН" value="<?php echo $inn ?>">
- 						</div>
- 					</div>
-
- 					<div class="col-1-8">	
- 						<div class="row-title">
- 							<label for="inn">КПП</label>
- 						</div>
- 						<div class="row-fill">
- 							<input class="inputfield" id="inn" type="text" name="kpp" placeholder="КПП" value="<?php echo $kpp ?>">
- 						</div>
- 					</div>
- 				</div> 
-
- 				<div class="row"> <!--****************** BIG ROW ********************-->
-
- 					<div class="col-3-8">
+ 					<div class="col-4-8">
  						<div class="row-title">
  							<label for="name">Полное название организации</label>
  						</div>
@@ -130,18 +139,16 @@
  						</div>
  					</div>
 
- 					<div class="col-2-8">	
- 						<div class="row-title">
- 							<label for="director">Директор</label>
- 						</div>
- 						<div class="row-fill">
- 							<input class="inputfield" id="director" type="text" name="director" placeholder="Ф.И.О. Директора" value="<?php echo $director ?>">
- 						</div>
- 					</div>
- 				</div>
+ 				</div> 
+
+ 				<!--****************** BIG ROW ********************-->
+ 				<!-- <div class="row"> 
 
 
- 				<div class="row"> <!--****************** BIG ROW ********************-->
+ 				</div> -->
+
+
+ 				<div class="row40"> <!--****************** BIG ROW ********************-->
 
  					<div class="col-3-8">
  						<div class="row-title">
@@ -162,11 +169,18 @@
  						</div>
  					</div>
 
+ 					<div class="col-1-8">	
+ 						<div class="row-title">
+ 							<label for="director">Директор</label>
+ 						</div>
+ 						<div class="row-fill">
+ 							<input class="inputfield" id="director" type="text" name="director" placeholder="Ф.И.О. Директора" value="<?php echo $director ?>">
+ 						</div>
+ 					</div>
  				</div>
 
 
  				<div class="row">	<!--****************** BIG ROW ********************-->
-
  					<div class="col-2-4">
  						<div class="row-title">
  						</div>

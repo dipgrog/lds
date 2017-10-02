@@ -63,6 +63,7 @@
  		die($message);
 
  	}
+
  	header('Location: ?page=client');
  }
 
@@ -102,7 +103,22 @@
  			$mysqli->close();
  		}
 
- 	}
+ 	}elseif ($page == 'clienttech'){
+ 	
+ 		$id = $_GET['id'];
+ 		$query = "SELECT name, opf FROM client WHERE id = $id";
+ 			if ($stmt = $mysqli->prepare($query)){
+ 				$stmt->execute();
+ 				$stmt->bind_result($name,$opf);
+ 				$stmt->fetch();
+
+ 				$page_title = "Техника $opf $name";
+ 				$stmt->close();
+ 			}
+ 			$mysqli->close();
+ 		}else{
+ 			echo "string2";
+ 		}
  }
 
  ?>
