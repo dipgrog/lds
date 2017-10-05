@@ -23,9 +23,9 @@
                         <!-- <th>Адрес/Телефон</th> -->
                         <!-- <th>ИНН/КПП</th> -->
                         <th class="table-td-director">Директор</th>
-                        <th class="table-td-contract">Договор</th>
+                        <th class="table-td-contract">Договор ККТ</th>
                         <th class="table-td-payment">Рассчеты</th>
-                        <th class="table-td-master">Мастер</th>
+                        <th class="table-td-master">Мастер ККТ</th>
                     </tr>
             </table>
             <div class="tabl">
@@ -98,8 +98,13 @@
                             $cut='';
                             echo "<tr>";
                             echo "<td class='table-td-num text-h-center'>{$i}</td>";
-                            echo "<td class='table-td-status text-h-center'><a href='?page=clientedit&id=$id' class='ion-person sbf'></a></td>";
-                            echo "<td class='table-td-client'><div class='fill'>$opf $shortname</div>";
+                            echo "<td class='table-td-status text-h-center'><a href='?page=clientedit&clid=$id' class='ion-person sbf'></a></td>";
+                            if ($opf == 'ФЛ'){
+                                echo "<td class='table-td-client'><div class='fill'>$opf $shortname $telephone</div>";
+                            }else{
+                                echo "<td class='table-td-client'><div class='fill'>$opf $shortname</div>";
+                            }
+
                        
                             echo "</td>";
                             // if ($adress){$adress .="<br>";}

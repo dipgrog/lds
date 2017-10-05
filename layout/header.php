@@ -21,7 +21,12 @@ error_reporting(E_ALL);
 </head>
 <body>
 
+<?php 
+    if (isset($_GET['clid'])) {
+        $clid = $_GET['clid'];
+    }
 
+ ?>
 	<?php 
 
 $add_link = '';
@@ -115,10 +120,10 @@ if (isset($_GET['page'])){
         break;
 
         case 'clientedit':
-         if ($_GET['id'] == 'new'){
+         if ($_GET['clid'] == 'new'){
             $page_title ='Добавление контрагента';
         }else{
-            $page_title ='Контрагент: '. $opf . ' ' . $name;
+            $page_title ='Контрагент: '. $opf . ' ' . $shortname;
         }
         $a1 = '';
         $a2 = '';

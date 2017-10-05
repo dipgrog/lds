@@ -5,8 +5,8 @@
 	</div>
 	<div class="col-3-8">
 		<a href="?page=client"><button type="submit" name="page" value="store">ВСЕ</button></a>
-		<button type="submit" name="page" value="store">ЮР.Лица</button>
-		<button type="submit" name="page" value="store">ФИЗ.лица</button>
+		<button type="submit" name="page" value="store">ЮР</button>
+		<button type="submit" name="page" value="store">ФИЗ</button>
 		<button type="submit" name="page" value="store">ИП</button>
 	</div>
 		

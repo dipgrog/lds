@@ -180,7 +180,7 @@ if (isset($_POST['submitsettings'])){
         }
         $result = mysqli_query($mysqli, $query);
         if (!$result) {
-            $message  = 'Неверный запрос: ' . mysql_error() . "\n";
+            $message  = 'Неверный запрос: ' . mysqli_error() . "\n";
             $message .= 'Запрос целиком: ' . $query;
             die($message);
         }

@@ -45,8 +45,10 @@
 
         
             <div class="row40"> 
-           <?php include ('layout/toolbar.php') ?>
-           <?php include ('layout/search.php') ?>
+            <?php 
+            // include ('layout/toolbar.php');
+            include ('layout/search.php');
+            ?>
            </div>
 
        

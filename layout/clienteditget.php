@@ -18,7 +18,7 @@
         //     // INSERT INTO `status` (`id`, `name`) VALUES (NULL, 'asdfasdf');
         //     $name = mysqli_real_escape_string($mysqli, $name);
 
- 	if ($_GET['id'] == 'new'){
+ 	if ($_GET['clid'] == 'new'){
 
  		$query  = "INSERT INTO client (shortname, name, opf, inn, kpp, adress, telephone, director, contract, master) ";
  		$query .= " VALUES (";
@@ -36,7 +36,7 @@
 
  	}else{
 
- 		$id = $_GET['id'];
+ 		$id = $_GET['clid'];
  		$query  = "UPDATE client SET ";
  		$query .= "shortname='$shortname', ";
  		$query .= "name='$name', ";
@@ -48,7 +48,7 @@
  		$query .= "director='$director', ";
  		$query .= "contract='$contract', ";
  		$query .= "master='$master' ";
- 		$query .= "WHERE id=$id";
+ 		$query .= "WHERE id=$clid";
 
  	}
  	
@@ -74,9 +74,9 @@
  	$page = $_GET['page'];
 
  	if ($page == 'clientedit'){
- 		$id = $_GET['id'];
+ 		$clid = $_GET['clid'];
 
- 		if ($id == 'new'){
+ 		if ($clid == 'new'){
  			$page_title = 'Добавление контрагента';
  			$shortname = '';
  			$name =  '';
@@ -91,7 +91,7 @@
 
  		}else{
 
- 			$query = "SELECT * FROM client WHERE id = $id";
+ 			$query = "SELECT * FROM client WHERE id = $clid";
  			if ($stmt = $mysqli->prepare($query)){
  				$stmt->execute();
  				$stmt->bind_result($idclient,$name,$shortname,$inn,$kpp,$adress,$telephone,$director,$contract,$master,$opf);
@@ -105,8 +105,8 @@
 
  	}elseif ($page == 'clienttech'){
  	
- 		$id = $_GET['id'];
- 		$query = "SELECT name, opf FROM client WHERE id = $id";
+ 		$clid = $_GET['clid'];
+ 		$query = "SELECT name, opf FROM client WHERE id = $clid";
  			if ($stmt = $mysqli->prepare($query)){
  				$stmt->execute();
  				$stmt->bind_result($name,$opf);

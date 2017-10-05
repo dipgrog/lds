@@ -1,6 +1,5 @@
 
 
-
  <div class="container">
  	
  	<!-- <div class="lside">&nbsp</div> -->
@@ -11,9 +10,9 @@
  				<a href="<?php echo $backlink; ?>"><div class="btn pos">Назад</div></a>
  			</div>
 		<div class="col-7-8">
- 				<a href="<?php echo $backlink; ?>" class="btn sel">Реквизиты</a>
+ 				<a href="?page=clientedit&clid=<?php echo $clid; ?>" class="btn sel">Реквизиты</a>
  		
- 				<a href="?page=clienttech&id=11" class="btn">Техника</a>
+ 				<a href="?page=clienttech&clid=<?php echo $clid; ?>" class="btn">Техника</a>
  		
  				<a href="<?php echo $backlink; ?>" class="btn">Раcсчеты</a>
  			</div>
