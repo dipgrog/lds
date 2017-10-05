@@ -22,9 +22,10 @@ if (isset($_POST['submit'])){
     
     <!-- <div class="lside">&nbsp</div> -->
     <div id="content">
-      
-      <?php include ('layout/search.php') ?>
-
+        <div class="row40"> 
+           <?php include ('layout/toolbar_store.php') ?>
+           <?php include ('layout/search.php') ?>
+        </div>
 
     <!-- <div class="pad">&nbsp</div> -->
 
@@ -33,8 +34,8 @@ if (isset($_POST['submit'])){
 
         <div class="col-4-4">
 
-            <div>
-                <table class="tabl">
+            <div class="tabl">
+                <table>
                     <tr>
                         <th class="table-td-25 text-h-center">№</th>
                         <th class="table-td-75">Дата</th>

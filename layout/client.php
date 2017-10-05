@@ -9,9 +9,10 @@
          
         <!-- <div class="lside">&nbsp</div> -->
         <div id="content">
-           
+           <div class="row40"> 
+           <?php include ('layout/toolbar_client.php') ?>
            <?php include ('layout/search.php') ?>
-
+           </div>
            
             <!-- <div class="pad"></div> -->
             <table>

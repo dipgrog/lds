@@ -4,7 +4,10 @@
 	<!-- <div class="lside">&nbsp</div> -->
 	<div id="content">
 		
-	<?php include ('layout/search.php') ?>
+	<div class="row40"> 
+           <?php include ('layout/toolbar.php') ?>
+           <?php include ('layout/search.php') ?>
+      </div>
 
             <div class="tabl">
             	<table>
