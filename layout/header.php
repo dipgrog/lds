@@ -164,6 +164,11 @@ if (isset($_GET['page'])){
 }
 ?>
 
+<?php 
+if (isset($_SERVER['HTTP_REFERER'])){
+    $backlink = $_SERVER['HTTP_REFERER'];
+}
+ ?>
 
 <div class="top-header">
 

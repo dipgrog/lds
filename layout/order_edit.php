@@ -2,12 +2,6 @@
 $title = 'Новый заказ';
 $backlink = '?page=journal';
 
-if (isset($_SERVER['HTTP_REFERER'])){
-	$backlink = $_SERVER['HTTP_REFERER'];
-}
-
-
-
 
 ?>
 
@@ -19,29 +13,16 @@ if (isset($_SERVER['HTTP_REFERER'])){
 	<!-- <div class="lside">&nbsp</div> -->
 	<div id="content">
 	
-<!-- 		<div class="row40">
-			<div class="col-4-8">
-
-				
-				<span class="devider">&nbsp</span>
-				<a href="?page=clientedit&id=new"><dip class="btn">Новый контрагент</dip></a>
-				
-			</div>
+	<div class="row40"> 
+           <?php include ('layout/toolbar_order_edit.php') ?>
+           
+    </div>
 					
 
-		</div> -->
+		</div>
 		<div class="addclient">
 
 			<form action="" method="POST" class="client-form">
-
-				
-					<div class="row30">
-					<div class="col-3-8">
-						<label for="client">Контрагент</label><br>
-					</div>
-				</div>
-				
-		
 
 				<div class="row">
 					<div class="col-8-8">
@@ -105,6 +86,7 @@ if (isset($_SERVER['HTTP_REFERER'])){
 												<input type="checkbox" checked="true" name="">
 											</td>
 										</tr>
+										
 									</table>
 											<!-- <div class="inputfield">&nbsp</div> -->
 
@@ -159,6 +141,15 @@ if (isset($_SERVER['HTTP_REFERER'])){
 								<td>0 р.</td>
 								<td class="text-h-center">5</td>
 								<td class="ion-edit btn-edit"></td>
+							</tr>
+							<tr>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td><div class="text-h-right">Итого:</div></td>
+								<td class="text-h-center summ-pay">700 р.</td>
+								<td colspan="2"><a href="<?php echo $add_link;?>"><div class="btn primary mm">Оформить</div></a></td>
+								
 							</tr>
 
 						</table>
