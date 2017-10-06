@@ -7,7 +7,15 @@ html{
     height: 100%;
 }
 
-
+.attention{
+    position: fixed;
+    top: calc(100% - 50px);
+    width: 100%;
+    height: 20px;
+    font-size: 200%;
+    color: #C20000;
+    text-align: center;
+}
 .settings-link-list{
     padding: 0;
     margin: 0;

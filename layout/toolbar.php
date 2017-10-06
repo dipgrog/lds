@@ -1,7 +1,7 @@
 
 
 	<div class="col-1-8">
-		<a href="<?php echo $add_link;?>"><div class="btn primary">Добавить</div></a>
+		<!-- <a href="<?php echo $add_link;?>"><div class="btn primary">Добавить</div></a> -->
 	</div>
 
 

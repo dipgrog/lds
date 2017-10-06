@@ -8,14 +8,8 @@ error_reporting(E_ALL);
 <head>
 	<meta charset="utf-8">
 	<title>Учет ремонта оборудования</title>
-    <!-- <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet"> -->
-
- <!-- ok -->   
- <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300,500&amp;subset=cyrillic" rel="stylesheet"> 
-
-    <!-- <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:400,500&amp;subset=cyrillic" rel="stylesheet"> -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300,500&amp;subset=cyrillic" rel="stylesheet"> 
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600&amp;subset=cyrillic" rel="stylesheet">
-    <!-- <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">  -->
     <link rel="stylesheet" type="text/css" href="css/form.css">
 	<link rel="stylesheet" type="text/css" href="css/ionicons.min.css">
 </head>
@@ -52,7 +46,7 @@ if (isset($_GET['page'])){
         $a4 = '';
         $a5 = '';
         $a6 = '';
-        $page_title ='Журнал учета выполненных работ';
+        $page_title ='Журнал учета выполненных работ (НЕ РАБОТАЕТ)';
         $add_link = '?page=order&id=new';
         break;
 
@@ -63,8 +57,8 @@ if (isset($_GET['page'])){
         $a4 = '';
         $a5 = '';
         $a6 = '';
-        $page_title ='Контрагенты';
-        $add_link = '?page=clientedit&id=new';
+        $page_title ='Контрагенты (РАБОТАЕТ ЧАСТИЧНО)';
+        $add_link = '?page=clientedit&clid=new';
         break;
 
         
@@ -76,7 +70,7 @@ if (isset($_GET['page'])){
         $a4 = 'selected';
         $a5 = '';
         $a6 = '';
-        $page_title ='Техника на учёте';
+        $page_title ='Техника на учёте (РАБОТАЕТ ЧАСТИЧНО)';
         break;
 
         case 'store':
@@ -86,7 +80,7 @@ if (isset($_GET['page'])){
         $a4 = '';
         $a5 = 'selected';
         $a6 = '';
-        $page_title ='Заявки на комплектующие и расходные материалы';
+        $page_title ='Заявки на комплектующие и расходные материалы (НЕ РАБОТАЕТ)';
         break;
 
         case 'settings':
@@ -96,7 +90,7 @@ if (isset($_GET['page'])){
         $a4 = '';
         $a5 = '';
         $a6 = 'selected';
-        $page_title ='Настройки справочников';
+        $page_title ='Настройки справочников (РАБОТАЕТ ЧАСТИЧНО)';
         break;
 
         case 'order':
@@ -121,7 +115,7 @@ if (isset($_GET['page'])){
 
         case 'clientedit':
          if ($_GET['clid'] == 'new'){
-            $page_title ='Добавление контрагента';
+            $page_title ='Добавление контрагента (РАБОТАЕТ)';
         }else{
             $page_title ='Контрагент: '. $opf . ' ' . $shortname;
         }
@@ -141,7 +135,7 @@ if (isset($_GET['page'])){
         $a5 = '';
         $a6 = '';
         $page_title ='Контрагент: '. $opf . ' ' . $name;
-        $add_link = '?page=clientedit&id=new';
+        $add_link = '?page=clientedit&clid=new';
         break;
 
         default:
@@ -164,7 +158,7 @@ if (isset($_GET['page'])){
     $a4 = '';
     $a5 = '';
     $a6 = '';
-    $page_title ='Журнал учета выполненных работ';
+    $page_title ='Журнал учета выполненных работ (НЕ РАБОТАЕТ)';
     $add_link = '?page=order&id=new';
 }
 ?>

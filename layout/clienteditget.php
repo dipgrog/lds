@@ -1,5 +1,17 @@
+<?php 
 
-
+ 			$page_title = '';
+ 			$shortname = '';
+ 			$name =  '';
+ 			$opf = '';
+ 			$inn = '';
+ 			$kpp = '';
+ 			$adress = '';
+ 			$telephone = '';
+ 			$director = '';
+ 			$contract = '';
+ 			$master = '';
+ ?>
  <?php 
  if (isset($_POST['submit'])){
 
@@ -23,7 +35,7 @@
  		$query  = "INSERT INTO client (shortname, name, opf, inn, kpp, adress, telephone, director, contract, master) ";
  		$query .= " VALUES (";
  		$query .= "'$shortname', ";
- 		$query .= "'$name', ";
+ 		$query .= "'$clname', ";
  		$query .= "'$opf', ";
  		$query .= "'$inn', ";
  		$query .= "'$kpp', ";
@@ -39,7 +51,7 @@
  		$id = $_GET['clid'];
  		$query  = "UPDATE client SET ";
  		$query .= "shortname='$shortname', ";
- 		$query .= "name='$name', ";
+ 		$query .= "clname='$name', ";
  		$query .= "opf='$opf', ";
  		$query .= "inn='$inn', ";
  		$query .= "kpp='$kpp', ";
@@ -91,7 +103,7 @@
 
  		}else{
 
- 			$query = "SELECT * FROM client WHERE id = $clid";
+ 			$query = "SELECT * FROM client WHERE clid = $clid";
  			if ($stmt = $mysqli->prepare($query)){
  				$stmt->execute();
  				$stmt->bind_result($idclient,$name,$shortname,$inn,$kpp,$adress,$telephone,$director,$contract,$master,$opf);
@@ -106,7 +118,7 @@
  	}elseif ($page == 'clienttech'){
  	
  		$clid = $_GET['clid'];
- 		$query = "SELECT name, opf FROM client WHERE id = $clid";
+ 		$query = "SELECT clname, opf FROM client WHERE clid = $clid";
  			if ($stmt = $mysqli->prepare($query)){
  				$stmt->execute();
  				$stmt->bind_result($name,$opf);

@@ -123,7 +123,7 @@
  				<div class="row"> <!--****************** BIG ROW ********************-->
  					<div class="col-2-8">	
  						<div class="row-title">
- 							<label for="shortname">Краткое название</label>
+ 							<label for="shortname">Краткое наименование</label>
  						</div>
  						<div class="row-fill">
  							<input class="inputfield" id="shortname" type="text" name="shortname" placeholder="Наименование или Ф.И.О." value="<?php echo $shortname ?>">
@@ -131,7 +131,7 @@
  					</div>
  					<div class="col-4-8">
  						<div class="row-title">
- 							<label for="name">Полное название организации</label>
+ 							<label for="name">Полное наименование организации</label>
  						</div>
  						<div class="row-fill">
  							<input class="inputfield" id="name" type="text" name="name" placeholder="Полное наименование" value="<?php echo $name ?>">
@@ -164,7 +164,7 @@
  							<label for="telephone">Телефон</label>
  						</div>
  						<div class="row-fill">
- 							<input class="inputfield" pattern="(\d{3,5}\)\d{1,3}\-\d{1,3}\-\d{1,3}" id="telephone" type="text" name="telephone" placeholder="Телефон" value="<?php echo $telephone ?>">
+ 							<input class="inputfield" id="telephone" type="text" name="telephone" placeholder="Телефон" value="<?php echo $telephone ?>">
  						</div>
  					</div>
 

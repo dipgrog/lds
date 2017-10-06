@@ -177,6 +177,8 @@ if (isset($_POST['submitsettings'])){
         if ($target == 'master'){
             $depart = $_POST['depart'];
             $query = "INSERT INTO $target (name, depart) VALUES ('$name', '$depart')";    
+        }elseif ($target == 'model') {
+            $query = "INSERT INTO $target (name, type) VALUES ('$name', 1)";
         }
         $result = mysqli_query($mysqli, $query);
         if (!$result) {

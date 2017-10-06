@@ -1,4 +1,6 @@
-
+<?php  
+   include ('components/db_connection.php');
+?>
 <div class="container">
 	
 	<!-- <div class="lside">&nbsp</div> -->
@@ -11,40 +13,66 @@
 
             <div class="tabl">
             	<table>
+            		<thead>
             		<tr>
-            			<th class="fst">№</th>
-            			<th class="table-td-4">Статус</th>
-            			<th class="table-td-6">Техника</th>
-            			<th>Контрагент</th>
-            			<th>Договор</th>
-            			<th>Мастер</th>
-            			<th id="lst">Место</th>
-            			<!-- <th>Действие</th> -->
+            			<th class="table-td-num">№</th>
+            			<th class="table-td-object">Техника</th>
+            			<th class="table-td-6">Серийный номер</th>
+            			<th class="table-td-client">Контрагент</th>
+            			
+            			<th id="table-td-num">Рассчет</th>
+            			<th id="table-td-num">Место</th>
+
             		</tr>
-            		<tr>
-            			<td class='fst'>1</td>
-            			<td>
-            				<div>Обслуживание</div>
-            			</td>
-            			<td>Касса ШТРИХ-М</a></td>
-            			<td>ООО Контрагент (85594) 2-35-78 </td>
-            			<td>№ККТ-1723</td>
+            		</thead>
+            		<tbody >
             		
-            			<td>Сорокин Е.Ю.</td>
-            			<td id="lst">Гафиатуллина 32</td>
-            		</tr>
-	            	<tr>
-	            			<td class='fst'>2</td>
-	            			<td>
-	            				<div>Разовое</div>
-	            			</td>
-	            			<td>Принтер HP LBP-810</a></td>
-	            			<td>Сергеев А.Ф. (917) 232-35-78 </td>
-	            			<td>Без договора</td>
-	            		
-	            			<td>Сорокин Е.Ю.</td>
-	            			<td id="lst">В ремонте</td>
-	            		</tr>
+<?php
+					
+
+					$query = "SELECT a.id, a.name, a.sn, a.clname, a.clid FROM ";
+					$query .=" (SELECT u.* , c.* FROM units AS u , client AS c ";
+					$query .=" WHERE ";
+					$query .=" u.client = c.clid) ";
+
+					$query .=" AS a ";
+					$query .=" WHERE a.name LIKE '%$search%' ";
+
+
+                    $query .= " OR ";
+                    $query .= "a.sn ";
+                    $query .= "LIKE '%$search%' ";
+
+                    $query .= " OR ";
+                    $query .= "a.clname ";
+                    $query .= "LIKE '%$search%' ";
+
+                    $query .= "ORDER BY a.clname";
+
+                    if ($stmt = $mysqli->prepare($query)){
+                        $stmt->execute();
+                        $stmt->bind_result($aid,
+                         $aname,
+                         $asn,
+                         $aclient,
+                     	 $aclid);
+                        $i=0;
+                        
+                        while ($stmt->fetch()){
+                            $i++;
+                            $cut='';
+                            echo "<tr>";
+                            echo "<td class='table-td-num text-h-center'>{$i}</td>";
+                            // echo "<td class='table-td-status text-h-center'></td>";
+                            echo "<td class='table-td-object'>$aname</td>";
+                            echo "<td class='table-td-object'>$asn</td>";
+                            echo "<td class='table-td-client'><a href='?page=clienttech&clid=$aclid'>$aclient</a></td>";
+                            echo "<td class='table-td-client'>Оплата/Долг</td>";
+                            echo "<td class='table-td-num text-h-center'>5</td>";
+                            echo "</tr>";
+                        }}?>
+
+	            	</tbody>
 	            	</table>
             </div>
         </div>

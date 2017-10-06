@@ -18,7 +18,7 @@
             <table>
                     <tr>
                         <th class="table-td-num">№</th>
-                        <th class="ion-edit table-td-status"></th>
+                        <!-- <th class="ion-edit table-td-status"></th> -->
                         <th class="table-td-client">Контрагент</th>
                         <!-- <th>Адрес/Телефон</th> -->
                         <!-- <th>ИНН/КПП</th> -->
@@ -50,7 +50,7 @@
                     $query .= "LIKE '%$search%' ";
                    
                     $query .= " OR ";
-                    $query .= "name ";
+                    $query .= "clname ";
                     $query .= "LIKE '%$search%' ";
                     
                     $query .= " OR ";
@@ -98,11 +98,11 @@
                             $cut='';
                             echo "<tr>";
                             echo "<td class='table-td-num text-h-center'>{$i}</td>";
-                            echo "<td class='table-td-status text-h-center'><a href='?page=clientedit&clid=$id' class='ion-person sbf'></a></td>";
+                            // echo "<td class='table-td-status text-h-center'><a href='?page=clientedit&clid=$id' class='ion-person sbf'></a></td>";
                             if ($opf == 'ФЛ'){
-                                echo "<td class='table-td-client'><div class='fill'>$opf $shortname $telephone</div>";
+                                echo "<td class='table-td-client'><div class='fill'><a href='?page=clientedit&clid=$id'>$opf $shortname $telephone</a></div>";
                             }else{
-                                echo "<td class='table-td-client'><div class='fill'>$opf $shortname</div>";
+                                echo "<td class='table-td-client'><div class='fill'><a href='?page=clientedit&clid=$id'>$opf $shortname</a></div>";
                             }
 
                        
