@@ -86,8 +86,6 @@
  							<input class="inputfield" id="contract" type="text" name="contract" placeholder="№ договора" value="<?php echo $contract ?>">
  						</div>
  					</div> <!-- 22222222222 END 22222222222 -->
-
-
  					<div class="col-1-8"> <!-- 3333333333333333 START 3333333333333333 -->
  						<div class="row-title">
  							<label for="master">Мастер ККТ</label>
@@ -118,8 +116,6 @@
  					</div> <!-- 3333333333333333 END 3333333333333333 -->
 
  				</div> 
-
-
  				<div class="row"> <!--****************** BIG ROW ********************-->
  					<div class="col-2-8">	
  						<div class="row-title">
