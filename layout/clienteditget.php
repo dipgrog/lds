@@ -1,5 +1,7 @@
 <?php 
-
+			if (isset($_GET['clid'])) {
+				$clid = $_GET['clid'];
+			}
  			$page_title = '';
  			$shortname = '';
  			$name =  '';
@@ -32,10 +34,10 @@
 
  	if ($_GET['clid'] == 'new'){
 
- 		$query  = "INSERT INTO client (shortname, name, opf, inn, kpp, adress, telephone, director, contract, master) ";
+ 		$query  = "INSERT INTO client (shortname, clname, opf, inn, kpp, adress, telephone, director, contract, master) ";
  		$query .= " VALUES (";
  		$query .= "'$shortname', ";
- 		$query .= "'$clname', ";
+ 		$query .= "'$name', ";
  		$query .= "'$opf', ";
  		$query .= "'$inn', ";
  		$query .= "'$kpp', ";
@@ -60,7 +62,7 @@
  		$query .= "director='$director', ";
  		$query .= "contract='$contract', ";
  		$query .= "master='$master' ";
- 		$query .= "WHERE id=$clid";
+ 		$query .= "WHERE clid=$clid";
 
  	}
  	

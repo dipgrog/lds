@@ -1,5 +1,9 @@
 
 <?php 
+
+
+
+
 if (isset($_GET['target'])){
     $target = $_GET['target'];
     switch ( $target) {
@@ -89,7 +93,7 @@ if (isset($_GET['target'])){
 
         case 'master':
         $nm = 'Сотрудник';
-        $pholder ='Введите фамилию и инициалы';
+        $pholder ='Ф.И.О. сотрудника';
         $b1 = '';
         $b2 = '';
         $b3 = '';

@@ -8,7 +8,7 @@ error_reporting(E_ALL);
 <head>
 	<meta charset="utf-8">
 	<title>Учет ремонта оборудования</title>
-    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300,500&amp;subset=cyrillic" rel="stylesheet"> 
+    <!-- <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300,500&amp;subset=cyrillic" rel="stylesheet">  -->
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600&amp;subset=cyrillic" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="css/form.css">
 	<link rel="stylesheet" type="text/css" href="css/ionicons.min.css">

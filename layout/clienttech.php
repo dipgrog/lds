@@ -73,13 +73,14 @@ $result = mysqli_query($mysqli, $query);
 					</tr> -->
 
 					<tr>
-						<th class="fst">№</th>
+						<th class="table-td-num">№</th>
 						
-						<th class="fst">С</th>
-						<th class="fst">В</th>
-						<th>Техника</th>
-						<th>SN</th>
-						<th>Сумма</th>
+						<th class="table-td-num">С</th>
+						<th class="table-td-num">В</th>
+						<th class='table-td-object'>Техника</th>
+						<th class="table-td-100">SN</th>
+						<th class="table-td-100">Сумма</th>
+						<th> </th>
 
 					</tr>
 
@@ -101,11 +102,12 @@ $result = mysqli_query($mysqli, $query);
 								$cut='';
 								echo "<tr>";
 								echo "<td class='table-td-num text-h-center'>{$i}</td>";
-								echo "<td class='ion-person sbf text-h-center out'></td>";
-								echo "<td class='text-h-center'><input type='checkbox' checked name=''></td>";
-								echo "<td>$name</td>";
-								echo "<td class='table-td-client'><div class='fill'>$sn</div></td>";
+								echo "<td class='table-td-num ion-person sbf text-h-center out'></td>";
+								echo "<td class='text-h-center'><input type='checkbox' unchecked name=''></td>";
+								echo "<td class='table-td-object'>$name</td>";
+								echo "<td class='table-td-100'><div class='fill'>$sn</div></td>";
 								echo "<td class='summ-pay text-h-center'>1340 р.</td>";
+								echo "<td ></td>";
 								echo "</tr>";
 							}
 							$stmt->close();
@@ -113,7 +115,7 @@ $result = mysqli_query($mysqli, $query);
 						$mysqli->close();
 					}
 
-					?>
+				?>
 
 				</table>
 

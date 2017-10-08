@@ -30,7 +30,7 @@
 <?php
 					
 
-					$query = "SELECT a.id, a.name, a.sn, a.clname, a.clid FROM ";
+					$query = "SELECT a.id, a.name, a.sn, a.clname, a.shortname, a.clid FROM ";
 					$query .=" (SELECT u.* , c.* FROM units AS u , client AS c ";
 					$query .=" WHERE ";
 					$query .=" u.client = c.clid) ";
@@ -55,6 +55,7 @@
                          $aname,
                          $asn,
                          $aclient,
+                         $ashortname,
                      	 $aclid);
                         $i=0;
                         
@@ -66,7 +67,7 @@
                             // echo "<td class='table-td-status text-h-center'></td>";
                             echo "<td class='table-td-object'>$aname</td>";
                             echo "<td class='table-td-object'>$asn</td>";
-                            echo "<td class='table-td-client'><a href='?page=clienttech&clid=$aclid'>$aclient</a></td>";
+                            echo "<td class='table-td-client'><a href='?page=clienttech&clid=$aclid'>$ashortname</a></td>";
                             echo "<td class='table-td-client'>Оплата/Долг</td>";
                             echo "<td class='table-td-num text-h-center'>5</td>";
                             echo "</tr>";

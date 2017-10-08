@@ -478,7 +478,7 @@ h3{
 
 .client-form select{
 
-    padding: 5px  0 5px 5px ;
+    padding: 0 ;
     /*border: 1px solid #586573;*/
     margin-bottom: 5px; 
     width: 95%;
@@ -579,6 +579,9 @@ h3{
     width: 250px;
 }
 
+.text-h-left{
+    text-align: left;
+}
 .text-h-center{
     text-align: center;
 }
@@ -930,8 +933,8 @@ table td {
     /* padding: 5px; */
     margin: 0;
     /*width: 40%;*/
-     padding: 0; 
-    height: 32px;
+    padding: 0; 
+    height: 24px;
     border: 1px solid #BABABA;
     /* border-radius: 4px; */
     /* color: #6F6F6F; */
@@ -1017,3 +1020,4 @@ table td {
     color: #646464;
     cursor: pointer;
 }
+

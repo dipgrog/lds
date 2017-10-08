@@ -11,8 +11,8 @@
 		if ($stmt = $mysqli->prepare($query)){
 			$stmt->execute();
 			$stmt->bind_result($name);
-			echo "<input required id='type' list='typelist' name='type' class='inputfield pos' placeholder='Тип устройства'>";
-			echo "<datalist id='typelist'>";
+			echo "<input required id='type' list='typelist' name='type' class='inputfield pos ' placeholder='Тип устройства'>";
+			echo "<datalist id='typelist' class='datalist'>";
 
 			while ($stmt->fetch()){
 				echo "<option value='$name'>$name</option>";
