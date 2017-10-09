@@ -27,6 +27,25 @@ $result = mysqli_query($mysqli, $query);
 }
 // header("Location: $back");
 
+
+if (isset($_POST['new_order'])) {
+	$clid = $_POST['new_order'];
+	if (isset($_POST['unit'])) {
+		$unit = $_POST['unit'];
+	foreach ($unit as $key => $value) {
+		// echo $value;
+	}
+
+		
+	}
+	
+
+}
+
+
+
+
+
 ?>
 
 
@@ -62,17 +81,11 @@ $result = mysqli_query($mysqli, $query);
 		<?php include ('layout/toolbar_client_unit.php') ?>
 
 
-
+		<form action="" method="POST">
 
 		<div class="row-auto">
 			<div class="col-8-8">
 				<table>
-
-<!-- 					<tr>
-						<th class="table-td-num">№</th>
-						<th>Техника</th>
-						<th class="table-td-client">SN</th>
-					</tr> -->
 					<thead>
 					<tr>
 						<th class="table-td-num">№</th>
@@ -89,8 +102,6 @@ $result = mysqli_query($mysqli, $query);
 					<tbody>
 				<?php  
 					include ('components/db_connection.php');
-
-
 					if (isset($_GET['clid'])) {
 						$clid = $_GET['clid'];
 						$query = "SELECT * FROM units WHERE client = $clid";
@@ -103,14 +114,14 @@ $result = mysqli_query($mysqli, $query);
 							while ($stmt->fetch()){
 								$i++;
 								$cut='';
-								echo "<tr>";
-								echo "<td class='table-td-num text-h-center'>{$i}</td>";
-								echo "<td class='table-td-num ion-person sbf text-h-center out'></td>";
-								echo "<td class='text-h-center'><input type='checkbox' unchecked name=''></td>";
-								echo "<td class='table-td-object'>$name</td>";
-								echo "<td class='table-td-100'><div class='fill'>$sn</div></td>";
-								echo "<td class='summ-pay text-h-center'>1340 р.</td>";
-								echo "<td ></td>";
+								echo "<tr>\n";
+								echo "<td class='table-td-num text-h-center'>{$i}</td>\n";
+								echo "<td class='table-td-num ion-person sbf text-h-center out'></td>\n";
+								echo "<td class='text-h-center'><input type='checkbox' unchecked name='unit[]' value='$id'></td>\n";
+								echo "<td class='table-td-object'>$name</td>\n";
+								echo "<td class='table-td-100'><div class='fill'>$sn</div></td>\n";
+								echo "<td class='summ-pay text-h-center'>1340 р.</td>\n";
+								echo "<td ></td>\n";
 								echo "</tr>";
 							}
 							$stmt->close();
@@ -129,8 +140,10 @@ $result = mysqli_query($mysqli, $query);
 		</div>
 
 		
-
-
+<div class="col-1-8">
+	<button type="submit" name="new_order" value="<?php echo($clid);?>">Новый заказ</button>
+</div>
+</form>
 	</div>
 </div>
 
