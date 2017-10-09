@@ -57,6 +57,12 @@
 	<div class="col-1-8">
 		<button name='submit_unit' type="submit" >Добавить</button>
 		<!-- <input id='sn' name='sn' class='inputfield pos' placeholder='Серийный номер'> -->
+		
+	</div>
+	<div class="col-1-8">
+		<button>Новый заказ</button>
+		<!-- <input id='sn' name='sn' class='inputfield pos' placeholder='Серийный номер'> -->
+		
 	</div>
 
 

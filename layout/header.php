@@ -176,7 +176,7 @@ if (isset($_SERVER['HTTP_REFERER'])){
     <ul class="navbar-ul">
         <li>
     <a href="?page=journal">
-        <div class="navbar-item <?php echo $a2 ?>">
+        <div class="navbar-item <?php echo $a2; ?>">
             
                 <span class="ion-navicon-round sbf">
                     <span class="default" >Журнал</span>
@@ -189,7 +189,7 @@ if (isset($_SERVER['HTTP_REFERER'])){
     <li>
 
     <a href="?page=client">
-        <div class="navbar-item <?php echo $a3 ?>">
+        <div class="navbar-item <?php echo $a3; ?>">
             
                 <span class="ion-person-stalker sbf">
                    <span class="default">Контрагенты</span> 
@@ -203,7 +203,7 @@ if (isset($_SERVER['HTTP_REFERER'])){
     <li>
 
     <a href="?page=object">
-        <div class="navbar-item  <?php echo $a4 ?>">
+        <div class="navbar-item  <?php echo $a4; ?>">
             
                 <span class="ion-printer sbf">
                     
@@ -218,7 +218,7 @@ if (isset($_SERVER['HTTP_REFERER'])){
     <li>
 
     <a href="?page=store">
-        <div class="navbar-item <?php echo $a5 ?>">
+        <div class="navbar-item <?php echo $a5; ?>">
             
                 <span class="ion-filing sbf">
                     
@@ -233,17 +233,12 @@ if (isset($_SERVER['HTTP_REFERER'])){
     <li>
 
     <a href="?page=settings">
-        <div class="navbar-item <?php echo $a6 ?>">
-            
-                <span class="ion-settings sbf">
-                    
-            <span class="default">Настройки</span>
-                    
-                </span>
-            
-
+        <div class="navbar-item <?php echo $a6; ?>">
+            <span class="ion-settings sbf"></span>
+                <span>Настройки</span>
         </div>
     </a>
+
     </li>
     </ul>
 </div>

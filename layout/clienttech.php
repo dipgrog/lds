@@ -54,6 +54,8 @@ $result = mysqli_query($mysqli, $query);
 				<a href="" class="btn sel">Техника</a>
 
 				<a href="" class="btn">Раcсчеты</a>
+
+			
 			</div>
 		</div>
 
@@ -62,7 +64,7 @@ $result = mysqli_query($mysqli, $query);
 
 
 
-		<div class="row">
+		<div class="row-auto">
 			<div class="col-8-8">
 				<table>
 
@@ -71,7 +73,7 @@ $result = mysqli_query($mysqli, $query);
 						<th>Техника</th>
 						<th class="table-td-client">SN</th>
 					</tr> -->
-
+					<thead>
 					<tr>
 						<th class="table-td-num">№</th>
 						
@@ -83,7 +85,8 @@ $result = mysqli_query($mysqli, $query);
 						<th> </th>
 
 					</tr>
-
+					</thead>
+					<tbody>
 				<?php  
 					include ('components/db_connection.php');
 
@@ -116,13 +119,17 @@ $result = mysqli_query($mysqli, $query);
 					}
 
 				?>
-
+				</tbody>
+				
 				</table>
 
 			</div>
 
 
 		</div>
+
+		
+
 
 	</div>
 </div>

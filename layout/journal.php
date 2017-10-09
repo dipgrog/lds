@@ -59,7 +59,7 @@
                         <th class="ion-edit table-td-status"></th>
                         <th class="table-td-date">Дата/Статус</th>
                         <th class="table-td-client">Контрагент</th>
-                        <!-- <th>Адрес/Телефон</th> -->
+                        <th class='table-td-num'>Телефон</th>
                         <!-- <th>ИНН/КПП</th> -->
                         <th class="table-td-object">Техника</th>
                         <th class="table-td-reason">Неисправность</th>
@@ -95,6 +95,7 @@
                             echo "<td class='table-td-status text-h-center'><a href='?page=order_edit&id=12' class='ion-android-menu sbf'></a></td>";
      /* статус */           echo "<td  class='table-td-date'><div>$date $status</div></td>";
                             echo "<td class='table-td-client'>$client</td>";
+                            echo "<td class='table-td-num'><span class='ion-ios-telephone sbf text-h-center'> </span></td>";
 
                             // echo "<td>";
                             // echo "<table class='table-simple'>";

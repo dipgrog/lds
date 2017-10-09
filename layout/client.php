@@ -96,17 +96,17 @@
                         while ($stmt->fetch()){
                             $i++;
                             $cut='';
-                            echo "<tr>";
-                            echo "<td class='table-td-num text-h-center'>{$i}</td>";
+                            echo "<tr>\n";
+                            echo "<td class='table-td-num text-h-center'>{$i}</td>\n";
                             // echo "<td class='table-td-status text-h-center'><a href='?page=clientedit&clid=$id' class='ion-person sbf'></a></td>";
                             if ($opf == 'ФЛ'){
-                                echo "<td class='table-td-client'><div class='fill'><a href='?page=clientedit&clid=$id'>$opf $shortname $telephone</a></div>";
+                                echo "<td class='table-td-client'>\n<div class='fill'>\n<a href='?page=clientedit&clid=$id'>$opf $shortname $telephone</a></div>\n";
                             }else{
-                                echo "<td class='table-td-client'><div class='fill'><a href='?page=clientedit&clid=$id'>$opf $shortname</a></div>";
+                                echo "<td class='table-td-client'>\n<div class='fill'>\n<a href='?page=clientedit&clid=$id'>$opf $shortname</a></div>\n";
                             }
 
                        
-                            echo "</td>";
+                            echo "</td>\n";
                             // if ($adress){$adress .="<br>";}
                             // echo "<td>$adress$telephone</td>";
                             // if ($inn){
@@ -118,11 +118,11 @@
                             // }
                             // echo "<td>$inn$cut$kpp</td>";
                             
-                            echo "<td class='table-td-director'>$director</td>";
-                            echo "<td class='table-td-contract'>$contract</td>";
-                            echo "<td class='table-td-payment'><span class='good'>5344</span>/<span class='bad'>234</span></td>";
-                            echo "<td class='table-td-master'>$master</td>";
-                            echo "</tr>";
+                            echo "<td class='table-td-director'>$director</td>\n";
+                            echo "<td class='table-td-contract'>$contract</td>\n";
+                            echo "<td class='table-td-payment'>\n<span class='good'>5344</span>/<span class='bad'>234</span>\n</td>\n";
+                            echo "<td class='table-td-master'>$master</td>\n";
+                            echo "</tr>\n";
                         }}?>
                     
 
