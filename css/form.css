@@ -333,6 +333,12 @@ h3{
     background-color: #375F81 ;
 }
 
+.row-auto-pad{
+    height: 30px;
+    margin: auto;
+    /*margin-top: 10px;*/
+}
+
 .row30{
     width: 100%;
     height: 30px;
@@ -538,6 +544,10 @@ h3{
 .table-td-reason{
     text-align: left;
     width: 15%;
+}
+.table-td-adress{
+    text-align: left;
+    width: 35%;
 }
 .table-td-contract,
 .table-td-payment,

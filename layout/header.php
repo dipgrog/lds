@@ -134,7 +134,7 @@ if (isset($_GET['page'])){
         $a4 = '';
         $a5 = '';
         $a6 = '';
-        $page_title ='Контрагент: '. $opf . ' ' . $name;
+        $page_title ='Контрагент: '. $opf . ' ' . $shortname;
         $add_link = '?page=clientedit&clid=new';
         break;
 

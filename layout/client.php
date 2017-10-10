@@ -20,11 +20,11 @@
                         <th class="table-td-num">№</th>
                         <!-- <th class="ion-edit table-td-status"></th> -->
                         <th class="table-td-client">Контрагент</th>
-                        <!-- <th>Адрес/Телефон</th> -->
+                        <th class="text-h-left table-td-adress">Адрес/Телефон</th>
                         <!-- <th>ИНН/КПП</th> -->
                         <th class="table-td-director">Директор</th>
                         <th class="table-td-contract">Договор ККТ</th>
-                        <th class="table-td-payment">Рассчеты</th>
+                        <!-- <th class="table-td-payment">Рассчеты</th> -->
                         <th class="table-td-master">Мастер ККТ</th>
                     </tr>
             </table>
@@ -99,16 +99,11 @@
                             echo "<tr>\n";
                             echo "<td class='table-td-num text-h-center'>{$i}</td>\n";
                             // echo "<td class='table-td-status text-h-center'><a href='?page=clientedit&clid=$id' class='ion-person sbf'></a></td>";
-                            if ($opf == 'ФЛ'){
-                                echo "<td class='table-td-client'>\n<div class='fill'>\n<a href='?page=clientedit&clid=$id'>$opf $shortname $telephone</a></div>\n";
-                            }else{
-                                echo "<td class='table-td-client'>\n<div class='fill'>\n<a href='?page=clientedit&clid=$id'>$opf $shortname</a></div>\n";
-                            }
-
-                       
+                            echo "<td class='table-td-client'>\n<div class='fill'>\n<a href='?page=clientedit&clid=$id'>$opf $shortname</a></div>\n";
+                                                   
                             echo "</td>\n";
                             // if ($adress){$adress .="<br>";}
-                            // echo "<td>$adress$telephone</td>";
+                            echo "<td class='table-td-adress'>$adress $telephone</td>";
                             // if ($inn){
                             //     $inn = 'ИНН: '.$inn;
                             // }
@@ -120,7 +115,7 @@
                             
                             echo "<td class='table-td-director'>$director</td>\n";
                             echo "<td class='table-td-contract'>$contract</td>\n";
-                            echo "<td class='table-td-payment'>\n<span class='good'>5344</span>/<span class='bad'>234</span>\n</td>\n";
+                            // echo "<td class='table-td-payment'>\n<span class='good'>5344</span>/<span class='bad'>234</span>\n</td>\n";
                             echo "<td class='table-td-master'>$master</td>\n";
                             echo "</tr>\n";
                         }}?>

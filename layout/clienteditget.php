@@ -120,13 +120,13 @@
  	}elseif ($page == 'clienttech'){
  	
  		$clid = $_GET['clid'];
- 		$query = "SELECT clname, opf FROM client WHERE clid = $clid";
+ 		$query = "SELECT clname, shortname, opf FROM client WHERE clid = $clid";
  			if ($stmt = $mysqli->prepare($query)){
  				$stmt->execute();
- 				$stmt->bind_result($name,$opf);
+ 				$stmt->bind_result($name, $shortname, $opf);
  				$stmt->fetch();
 
- 				$page_title = "Техника $opf $name";
+ 				// $page_title = "Техника $opf $shortname";
  				$stmt->close();
  			}
  			$mysqli->close();

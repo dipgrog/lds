@@ -1,11 +1,11 @@
 
+<?php  
+include ('components/db_connection.php');
+?>
+<div class="row30">
+<form action="?page=clienttech&clid= <?php echo $clid; ?> " method="POST" >	
 
 	<div class="col-1-8">
-
-		<?php  
-		include ('components/db_connection.php');
-		?>
-		<form action="?page=clienttech&clid= <?php echo $clid; ?> " method="POST" >	
 		<?php
 		$query = "SELECT name FROM type ORDER BY name";
 		if ($stmt = $mysqli->prepare($query)){
@@ -59,9 +59,9 @@
 		<!-- <input id='sn' name='sn' class='inputfield pos' placeholder='Серийный номер'> -->
 		
 	</div>
-	</form>
+</form>
 
-
+</div>
 
 
 
