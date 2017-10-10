@@ -1,4 +1,6 @@
 <?php 
+
+Db_connect();
 			if (isset($_GET['clid'])) {
 				$clid = $_GET['clid'];
 			}

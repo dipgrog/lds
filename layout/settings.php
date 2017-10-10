@@ -258,7 +258,7 @@ if (isset($_POST['submitsettings'])){
 
                         <div class="col-2-8">
                             <?php 
-                            include ('components/db_connection.php');
+                            Db_connect();
 
                             if ($target == 'master'){
                             $query = "SELECT * FROM depart ORDER BY name";

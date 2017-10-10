@@ -2,7 +2,7 @@
 
 
 
-
+<?php Db_connect(); ?>
 
 
     <div class="container">

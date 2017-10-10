@@ -33,7 +33,8 @@
  						</div>
  						<div class="row-fill"> 
  							<?php  
- 							include ('components/db_connection.php');
+ 							Db_connect(); 
+
  							$query = "SELECT * FROM opf ORDER BY name";
  							if ($stmt = $mysqli->prepare($query)){
  								$stmt->execute();
@@ -50,8 +51,8 @@
  								}
  								echo "</select>";
  								$stmt->close();
- 							}
  							$mysqli->close();
+ 							}
  							?>
  						</div>
 
@@ -92,7 +93,7 @@
  						</div>
  						<div class="row-fill">
  							<?php  
- 							include ('components/db_connection.php');
+ 							Db_connect();
  							$query = "SELECT * FROM master ORDER BY name";
  							if ($stmt2 = $mysqli->prepare($query)){
  								$stmt2->execute();
@@ -192,4 +193,3 @@
 
  	</div>
  </div>
-

@@ -1,6 +1,6 @@
-<?php  
-   include ('components/db_connection.php');
-?>
+  
+<?php Db_connect(); ?>
+
 <div class="container">
 	
 	<!-- <div class="lside">&nbsp</div> -->

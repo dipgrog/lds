@@ -1,3 +1,5 @@
+<?php  Db_connect(); ?>
+
 
 <?php 
     if (isset($_POST['submit'])){
@@ -48,6 +50,8 @@
             <?php 
             // include ('layout/toolbar.php');
             include ('layout/search.php');
+
+
             ?>
            </div>
 
@@ -95,8 +99,8 @@
                             echo "<td class='table-td-status text-h-center'><a href='?page=order_edit&id=12' class='ion-android-menu sbf'></a></td>";
      /* статус */           echo "<td  class='table-td-date'><div>$date $status</div></td>";
                             echo "<td class='table-td-client'>$client</td>";
-                            echo "<td class='table-td-telephone'><span class='ion-ios-telephone sbf text-h-center'>
-                            <span class='default'>927-234-34-54</span>
+                            echo "<td class='table-td-telephone'><span class='text-h-center'>
+                            <span>927-234-34-54</span>
                             </span></td>";
 
                             // echo "<td>";
@@ -108,7 +112,7 @@
                             // echo        "<td>$object</td>";
                             // // echo    "</tr>";
                             // echo "</table>";
-                            echo "<td class='table-td-reason'>Заправка</td>";
+                            echo "<td class='table-td-reason'>$reason</td>";
                            
                        
                             echo "<td class='text-h-center table-td-payment'><span class='summ-pay'>500 р.</span></td>";

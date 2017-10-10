@@ -5,7 +5,7 @@ if (isset($_GET['page'])){
 }else{
 	$page = 'journal';
 }
-include_once('components/db_connection.php');
+require_once('components/db_connection.php');
 
 include_once ('layout/clienteditget.php');
 include_once ('layout/header.php');
