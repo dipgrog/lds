@@ -1,6 +1,6 @@
 
 <?php  
-include ('components/db_connection.php');
+Db_connect();
 ?>
 <div class="row30">
 <form action="?page=clienttech&clid= <?php echo $clid; ?> " method="POST" >	
@@ -27,7 +27,7 @@ include ('components/db_connection.php');
 	<div class="col-1-8">
 
 		<?php  
-		include ('components/db_connection.php');
+		Db_connect();
 		?>
 		<?php
 		$query = "SELECT name FROM model ORDER BY name";

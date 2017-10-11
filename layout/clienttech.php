@@ -31,7 +31,7 @@ if (isset($_POST['submit_unit'])) {
 
 if (isset($_POST['new_order'])) {
 	$clid = $_POST['new_order'];
-	$date = date("Y-m-d"); 
+	$data = date("Y-m-d"); 
 	$summ = 0.0;
 	$master = '';
 	$place = '';
@@ -65,19 +65,27 @@ if (isset($_POST['new_order'])) {
 
 
 			Db_connect();
-			$query = "INSERT INTO journal (client, data, status, object) VALUES ('$shortname', '$date', 'Новый', '$unit_name')";
+			$query = "INSERT INTO journal (client, data, status, object) VALUES ('$shortname', '$data', 'Новый', '$unit_name')";
 			$result = mysqli_query($mysqli, $query);
 
 			if (!$result) {
-				$message  = 'Неверный запрос: ' . mysqli_error() . "\n";
+				$message  = 'Неверный запрос: ' . mysqli_error($mysqli) . "\n";
 				$message .= 'Запрос целиком: ' . $query;
 				die($message);
 			}
 
+			$id_journal = $mysqli->insert_id;
 
 
 			foreach ($unit as $key => $value) {
-		// echo $value;
+			$query = "INSERT INTO units_repair (id_journal, id_unit) VALUES ($id_journal, $value)";
+			$result = mysqli_query($mysqli, $query);
+
+			if (!$result) {
+				$message  = 'Неверный запрос: ' . mysqli_error($mysqli) . "\n";
+				$message .= 'Запрос целиком: ' . $query;
+				die($message);
+			}
 			}
 
 
@@ -90,7 +98,6 @@ if (isset($_POST['new_order'])) {
 
 		<div id="content">
 
-			<form action="" method="POST">
 
 
 				<div class="row40">
@@ -111,12 +118,13 @@ if (isset($_POST['new_order'])) {
 
 				</div>
 
-
+				<?php include ('layout/toolbar_client_unit.php'); ?>
 
 				<div class="row-auto">
 
 					<div class="col-8-8">
 
+						<form action="" method="POST">
 						<table>
 							<thead>
 								<tr>
@@ -170,7 +178,7 @@ if (isset($_POST['new_order'])) {
 				</div>
 
 				<div class="row-auto-pad">
-					<button type="submit" name="new_order" value="<?php echo($clid);?>">Новый заказ</button>
+					<button type="submit" name="new_order" value="<?php echo($clid);?>">Добавить выделенную технику в новый заказ</button>
 				</div>
 			</form>
 		</div>

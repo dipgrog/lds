@@ -62,11 +62,11 @@
                         <th class="table-td-num">№</th>
                         <th class="ion-edit table-td-status"></th>
                         <th class="table-td-date">Дата/Статус</th>
-                        <th class="table-td-client">Контрагент</th>
-                        <th class='table-td-telephone'>Телефон</th>
-                        <!-- <th>ИНН/КПП</th> -->
                         <th class="table-td-object">Техника</th>
                         <th class="table-td-reason">Неисправность</th>
+                        <th class="table-td-client">Контрагент</th>
+                        <!-- <th class='table-td-telephone'>Телефон</th> -->
+                        <!-- <th>ИНН/КПП</th> -->
                         <th class="text-h-center table-td-payment">Сумма</th>
                         <th class="table-td-master">Мастер</th>
                         <th class="table-td-place">Место</th>
@@ -95,27 +95,25 @@
                         while ($stmt->fetch()){
                             $i++;
                             echo "<tr>";
-                            echo "<td class='table-td-num text-h-center'>{$i}</td>";
-                            echo "<td class='table-td-status text-h-center'><a href='?page=order_edit&id=12' class='ion-android-menu sbf'></a></td>";
-     /* статус */           echo "<td  class='table-td-date'><div>$date $status</div></td>";
+                            echo "<td class='table-td-num text-h-center'>$id</td>";
+                            echo "<td class='table-td-status text-h-center'><a href='?page=order_edit&id=$id' class='ion-android-menu sbf'></a></td>";
+     /* статус */           echo "<td class='table-td-date'><div>$date $status</div></td>";
+                            echo "<td class='table-td-object'>$object</td>";
+                            echo "<td class='table-td-reason'>$reason</td>";
                             echo "<td class='table-td-client'>$client</td>";
-                            echo "<td class='table-td-telephone'><span class='text-h-center'>
-                            <span>927-234-34-54</span>
-                            </span></td>";
+                            // echo "<td class='table-td-telephone'><span class='text-h-center'></span></td>";
 
                             // echo "<td>";
                             // echo "<table class='table-simple'>";
                             // echo   "<tr>";
-                            echo        "<td class='table-td-object'>$object</td>";
                             // echo    "</tr>";
                             // echo   "<tr>";
                             // echo        "<td>$object</td>";
                             // // echo    "</tr>";
                             // echo "</table>";
-                            echo "<td class='table-td-reason'>$reason</td>";
                            
                        
-                            echo "<td class='text-h-center table-td-payment'><span class='summ-pay'>500 р.</span></td>";
+                            echo "<td class='text-h-center table-td-payment'><span class='summ-pay'>$summa</span></td>";
                             echo "<td class='table-td-master'>$master</td>";
                             echo "<td class='text-h-center table-td-place'>$place</td>";
                             echo "</tr>";

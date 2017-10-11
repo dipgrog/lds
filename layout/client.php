@@ -99,7 +99,7 @@
                             echo "<tr>\n";
                             echo "<td class='table-td-num text-h-center'>{$i}</td>\n";
                             // echo "<td class='table-td-status text-h-center'><a href='?page=clientedit&clid=$id' class='ion-person sbf'></a></td>";
-                            echo "<td class='table-td-client'>\n<div class='fill'>\n<a href='?page=clientedit&clid=$id'>$opf $shortname</a></div>\n";
+                            echo "<td class='table-td-client'>\n<div class='fill'>\n<a href='?page=clienttech&clid=$id'>$opf $shortname</a></div>\n";
                                                    
                             echo "</td>\n";
                             // if ($adress){$adress .="<br>";}
