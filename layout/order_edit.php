@@ -32,9 +32,9 @@ $backlink = '?page=journal';
 							<tr>
 								<th class='table-td-num'>№</th>
 								<th class='table-td-num'></th>
-								<th>Техника</th>
-								<th>Работы/ЗиП</th>
-								<th class='table-td-pay'>Сумма</th>
+								<th class='table-td-object text-h-left'>Техника</th>
+								<th class='text-h-left'>Работы/ЗиП</th>
+								<th class='table-td-pay text-h-left'>Сумма</th>
 								<th class='table-td-num'>Место</th>
 								<th></th>
 
@@ -46,11 +46,11 @@ $backlink = '?page=journal';
 							}
 
 
-							$query = "SELECT * FROM units_repair WHERE id_journal = $id_j";
+							$query = "SELECT name, id_unit, id_repair, id_journal, place, status_unit FROM units AS un, (SELECT * FROM units_repair WHERE id_journal = $id_j) AS rep WHERE un.id = rep.id_unit ";
 
                     	if ($stmt = $mysqli->prepare($query)){
                         $stmt->execute();
-                        $stmt->bind_result($id_repair, $id_journal, $id_unit, $place, $status_unit);
+                        $stmt->bind_result($name, $id_unit, $id_repair, $id_journal, $place, $status_unit);
                         $i=0;
                         
                         while ($stmt->fetch()){
@@ -58,7 +58,7 @@ $backlink = '?page=journal';
                             
                             echo "<tr>";
 
-                            echo "<td class='table-td-num'>";
+                            echo "<td class='table-td-num text-h-center'>";
                             	echo "$i";
                             echo "</td>";
 
@@ -67,7 +67,7 @@ $backlink = '?page=journal';
                             echo "</td>";
 
 							echo "<td>";
-                            	echo "$id_unit";
+                            	echo "$name";
                             echo "</td>";
 
 							echo "<td>";
@@ -97,7 +97,7 @@ $backlink = '?page=journal';
 								<td></td>
 								<td></td>
 								<td><div class="text-h-right">Итого:</div></td>
-								<td class="text-h-center summ-pay">700 р.</td>
+								<td class="text-h-left summ-pay">700 р.</td>
 								<td colspan="2"><a href="<?php echo $add_link;?>"><div class="btn primary mm">Оформить</div></a></td>
 								
 							</tr>

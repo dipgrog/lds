@@ -65,6 +65,7 @@ if (isset($_POST['new_order'])) {
 
 
 			Db_connect();
+			// Запись в журнале заказов
 			$query = "INSERT INTO journal (client, data, status, object) VALUES ('$shortname', '$data', 'Новый', '$unit_name')";
 			$result = mysqli_query($mysqli, $query);
 
@@ -76,7 +77,7 @@ if (isset($_POST['new_order'])) {
 
 			$id_journal = $mysqli->insert_id;
 
-
+			// Записи в журнале ремонта
 			foreach ($unit as $key => $value) {
 			$query = "INSERT INTO units_repair (id_journal, id_unit) VALUES ($id_journal, $value)";
 			$result = mysqli_query($mysqli, $query);
@@ -90,6 +91,7 @@ if (isset($_POST['new_order'])) {
 
 
 		}
+		header('Location: ?page=journal');
 	}
 }
 ?>

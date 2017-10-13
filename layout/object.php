@@ -16,6 +16,7 @@
             		<thead>
             		<tr>
             			<th class="table-td-num">№</th>
+            			<th class="table-td-num">C</th>
             			<th class="table-td-object">Техника</th>
             			<th class="table-td-6">Серийный номер</th>
             			<th class="table-td-client">Контрагент</th>
@@ -65,7 +66,7 @@
                             $cut='';
                             echo "<tr>";
                             echo "<td class='table-td-num text-h-center'>{$i}</td>";
-                            // echo "<td class='table-td-status text-h-center'></td>";
+                            echo "<td class='table-td-status text-h-center'>C</td>";
                             echo "<td class='table-td-object'>$aname</td>";
                             echo "<td class='table-td-object'>$asn</td>";
                             echo "<td class='table-td-client'><a href='?page=clienttech&clid=$aclid'>$aopf $ashortname</a></td>";

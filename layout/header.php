@@ -46,7 +46,7 @@ error_reporting(E_ALL);
             $a4 = '';
             $a5 = '';
             $a6 = '';
-            $page_title ='Журнал учета выполненных работ (НЕ РАБОТАЕТ)';
+            $page_title ='Журнал учета выполненных работ (РАБОТАЕТ ЧАСТИЧНО)';
             $add_link = '?page=order&id=new';
             break;
 

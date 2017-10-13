@@ -10,11 +10,11 @@
  				<a href="<?php echo $backlink; ?>"><div class="btn pos">Назад</div></a>
  			</div>
 		<div class="col-7-8">
- 				<a href="?page=clientedit&clid=<?php echo $clid; ?>" class="btn sel">Реквизиты</a>
+ 				<a href="?page=clientedit&clid=<?php echo $clid; ?>"><div class="btn sel">Реквизиты</div></a>
  		
- 				<a href="?page=clienttech&clid=<?php echo $clid; ?>" class="btn">Техника</a>
+ 				<a href="?page=clienttech&clid=<?php echo $clid; ?>"><div class="btn">Техника</div></a>
  		
- 				<a href="<?php echo $backlink; ?>" class="btn">Раcсчеты</a>
+ 				<a href="<?php echo $backlink; ?>"><div class="btn">Рассчеты</div></a>
  			</div>
 
 
