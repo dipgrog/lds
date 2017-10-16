@@ -24,34 +24,12 @@
 
  <?php  $messsage = ''; ?>
     <div class="container">
-        
-        <!-- <div class="lside">&nbsp</div> -->
+
         <div id="content">
-            <!--             <div class="navbar">
-                <div class="navblock">
-                    <a href="?page=order">
-                     <div  class="btn pos">Добавить</div>
-                    </a>
-                </div>
-                <div class="navblock">
-
-
-
-
-                <form class="formright" action="" method="POST" >
-                    <input class="btn pos" type="submit" name="submit" value="Поиск">
-                    <input class="inputfield" type="text" name="name" placeholder="Введите строку поиска">
-                </form>
-                </div>
-            </div> -->
-
         
             <div class="row40"> 
             <?php 
-            // include ('layout/toolbar.php');
             include ('layout/search.php');
-
-
             ?>
            </div>
 
@@ -94,10 +72,12 @@
                         $i=0;
                         while ($stmt->fetch()){
                             $i++;
+                            $datestamp = strtotime($date);
+                            $datef = date('d.m.y',$datestamp);
                             echo "<tr>";
                             echo "<td class='table-td-num text-h-center'>$id</td>";
                             echo "<td class='table-td-status text-h-center'><a href='?page=order_edit&id=$id' class='ion-android-menu sbf'></a></td>";
-     /* статус */           echo "<td class='table-td-date'><div>$date $status</div></td>";
+     /* статус */           echo "<td class='table-td-date'><div>$datef<br>$status</div></td>";
                             echo "<td class='table-td-object'>$object</td>";
                             echo "<td class='table-td-reason'>$reason</td>";
                             echo "<td class='table-td-client'>$client</td>";
