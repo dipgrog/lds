@@ -542,11 +542,14 @@ h3{
     text-align: left;
 }
 .table-td-director,
-.table-td-object,
 .table-td-reason{
     text-align: left;
     width: 15%;
 }
+.table-td-object{
+    width: 20%;
+}
+
 .table-td-adress{
     text-align: left;
     width: 35%;

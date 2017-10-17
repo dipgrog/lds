@@ -77,7 +77,7 @@
                             echo "<tr>";
                             echo "<td class='table-td-num text-h-center'>$id</td>";
                             echo "<td class='table-td-status text-h-center'><a href='?page=order_edit&id=$id' class='ion-android-menu sbf'></a></td>";
-     /* статус */           echo "<td class='table-td-date'><div>$datef<br>$status</div></td>";
+     /* статус */           echo "<td class='table-td-date'><div>$datef $status</div></td>";
                             echo "<td class='table-td-object'>$object</td>";
                             echo "<td class='table-td-reason'>$reason</td>";
                             echo "<td class='table-td-client'>$client</td>";

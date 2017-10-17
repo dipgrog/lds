@@ -159,7 +159,7 @@ if (isset($_POST['new_order'])) {
 											echo "<tr>\n";
 											echo "<td class='table-td-num text-h-center'>{$i}</td>\n";
 											echo "<td class='table-td-num ion-person sbf text-h-center out'></td>\n";
-											echo "<td class='text-h-center'><input type='checkbox' unchecked name='unit[]' value='$id'></td>\n";
+											echo "<td class='text-h-center'><input type='checkbox' unchecked disabled name='unit[]' value='$id'></td>\n";
 											echo "<td class='table-td-object'>$name</td>\n";
 											echo "<td class='table-td-100'><div class='fill'>$sn</div></td>\n";
 											echo "<td class='summ-pay text-h-center'>1340 р.</td>\n";
