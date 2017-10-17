@@ -203,7 +203,7 @@ if (isset($_GET['page'])){
 </div>
 
 <div class="page-title">
-        <h3><?php echo $page_title; ?></h3>
+        <h2><?php echo $page_title; ?></h2>
 
 </div>
 

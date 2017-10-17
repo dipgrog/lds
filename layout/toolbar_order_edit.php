@@ -5,9 +5,9 @@
 	</div>
 
 	<div class="col-3-8">
-		<button type="submit" name="page" value="store">Остатки</button>
-		<button type="submit" name="page" value="store">Заказы поставщикам</button>
-		<button type="submit" name="page" value="store">Приход</button>
+		<!-- <button type="submit" name="page" value="store">Остатки</button> -->
+		<!-- <button type="submit" name="page" value="store">Заказы поставщикам</button> -->
+		<!-- <button type="submit" name="page" value="store">Приход</button> -->
 	</div>
 		
 		

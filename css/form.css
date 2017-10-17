@@ -71,7 +71,7 @@ a{
    margin: auto;
    padding: 0;
     /*height: 100%;*/
-    background-color: #375F81 ;/*#424f5a;*/
+    /* background-color: #375F81 ;/*#424f5a;*/ 
     color: #fff;
 }
 
@@ -235,7 +235,7 @@ button{
     /* font-weight: 600; */
     cursor: pointer;
     text-align: center;
-    max-width: 300px;
+    /* max-width: 300px; */
     /*vertical-align: middle;*/
     padding: 6px 20px;
     /* height: 24px; */
@@ -332,7 +332,14 @@ h3{
 .row-auto{
     width: 100%;
     height: auto;
-    background-color: #375F81 ;
+}
+.new_order_btn{
+    margin-top: 20px;
+    /* width: 300px; */
+}
+
+.secolor{
+    background-color: #004858; 
 }
 
 .row-auto-pad{
@@ -782,14 +789,11 @@ table {
 }
 
 table th {
-    background-color: #355C7B; /*148533   586573*/
+    background-color: #004858; /*second color   355C7B */
     /*border: 1px solid #355C7B;*/
     color: #fff;
     padding: 6px 3px;
-    border-top: 1px solid #355C7B ;
-    border-left: 1px solid #355C7B ;
-    /* border-right: 4px solid #386182; */
-    border-bottom: 1px solid #355C7B;
+    border: 1px solid #004858 ;
 
 }
 

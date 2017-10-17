@@ -171,7 +171,7 @@ error_reporting(E_ALL);
 
     <div class="top-header">
 
-        <div class="row-auto">
+        <div class="row-auto secolor">
             <div class="navbar">
                 <ul class="navbar-ul">
                     <a href="?page=journal">
@@ -250,7 +250,7 @@ error_reporting(E_ALL);
             <a href="?page=journal" class="ion-arrow-left-a sbf"></a>
         </div> -->
         <div class="col-7-8">
-            <h3><?php echo $page_title; ?></h3>
+            <h2><?php echo $page_title; ?></h2>
         </div>
     </div>
 </div>

@@ -2,7 +2,7 @@
 // $mysqli = '';
 function Db_connect(){
 global $mysqli;	
-$mysqli = new mysqli("localhost", "root", "", "ldstest");
+$mysqli = new mysqli("localhost", "root", "input876", "ldstest");
 /* Проверить соединение */
 if (mysqli_connect_errno()) {
     printf("Попытка соединения не удалась: %s\n", mysqli_connect_error());
