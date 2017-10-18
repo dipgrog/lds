@@ -70,7 +70,7 @@
                             echo "<td class='table-td-object'>$aname</td>";
                             echo "<td class='table-td-object'>$asn</td>";
                             echo "<td class='table-td-client'><a href='?page=clienttech&clid=$aclid'>$aopf $ashortname</a></td>";
-                            echo "<td class='table-td-client'>Оплата/Долг</td>";
+                            echo "<td class='table-td-client text-h-center'>Оплата/Долг</td>";
                             echo "<td class='table-td-num text-h-center'>5</td>";
                             echo "</tr>";
                         }}?>
